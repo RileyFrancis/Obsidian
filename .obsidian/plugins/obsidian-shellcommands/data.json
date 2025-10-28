@@ -26,7 +26,7 @@
     {
       "id": "zuit40n3w5",
       "platform_specific_commands": {
-        "default": "git add .\ngit commit -m \"update\""
+        "default": "git add .\ngit commit -m \"update\"\ngit push"
       },
       "shells": {},
       "alias": "",
