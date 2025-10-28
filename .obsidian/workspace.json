@@ -34,14 +34,7 @@
               "icon": "lucide-file",
               "title": "Card Game"
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "82a528181bdcdf44",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "540e27f94bc3c711",
             "type": "leaf",
@@ -206,7 +199,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523.5
+    "width": 523.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,16 +217,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "253a94f9250c8af0",
+  "active": "66f386b9cd71af63",
   "lastOpenFiles": [
+    "COURSES/CSE 5819/Assignment_6.pdf",
     "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
     "Other Stuff/Card Game.md",
+    "Images/Pasted image 20251028164819.png",
+    "Images/Pasted image 20251028164708.png",
+    "Images/Pasted image 20251028164630.png",
+    "Images/Pasted image 20251028164239.png",
+    "Images/Pasted image 20251028164444.png",
+    "Images/Pasted image 20251028163831.png",
+    "Images/Pasted image 20251028163642.png",
+    "Images/Pasted image 20251028163559.png",
     "Untitled",
     "Other Stuff",
     "Other Stuff/D&D",
     "PDFs/CSE 5819 - Assignment 6.pdf",
     "PDFs",
-    "COURSES/CSE 5819/Assignment_6.pdf",
     "Images",
     "Images/Pasted image 20251028130734.png",
     "COURSES/CSE 5819/assignment_6.ipynb",
