@@ -13,6 +13,11 @@ The partial derivative of the Lagrangian from *part a.* with respect to $w$, $b$
 #### b.
 #### c.
 
-## Part 3: Programming
 
-![[assignment_6.ipynb]]
+## Part 3: Programming
+**Submitted separately**
+
+### Part 1: ChatGPT
+##### What is the most used evaluation metrics for classification?
+![[Pasted image 20251028130734.png]]
+##### What is the most used evaluation metrics for regression?
