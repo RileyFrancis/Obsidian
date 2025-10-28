@@ -14,3 +14,5 @@ The partial derivative of the Lagrangian from *part a.* with respect to $w$, $b$
 #### c.
 
 ## Part 3: Programming
+
+Let me make some more changes
