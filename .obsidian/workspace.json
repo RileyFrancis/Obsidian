@@ -181,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523.5,
-    "collapsed": true
+    "width": 523.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,10 +200,11 @@
   },
   "active": "66f386b9cd71af63",
   "lastOpenFiles": [
-    "Untitled.md",
-    "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
-    "README.md",
     "COURSES/CSE 5819/Assignment_6.pdf",
+    "COURSES/CSE 5819/assignment_6.ipynb",
+    "README.md",
+    "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
+    "Untitled.md",
     "COURSES",
     "COURSES/CSE 5819",
     "This is a test.md",

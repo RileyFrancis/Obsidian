@@ -15,4 +15,4 @@ The partial derivative of the Lagrangian from *part a.* with respect to $w$, $b$
 
 ## Part 3: Programming
 
-Let me make some more changes
+![[assignment_6.ipynb]]
