@@ -1,1 +1,1 @@
-This is a test
+This is my personal repository of notes.
