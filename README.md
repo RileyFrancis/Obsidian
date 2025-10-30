@@ -1,1 +1,1 @@
-This is my personal repository of notes.
+This is my personal repository of notes written in Obsidian. It is updated automatically each time I open and close the app. This is made possible using the GitHub integration community extension and the shell script community extension.

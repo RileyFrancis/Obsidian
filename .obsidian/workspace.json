@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ab6dc0f7e8a019b7",
+        "id": "56117e30355fd5da",
         "type": "tabs",
         "children": [
           {
-            "id": "66f386b9cd71af63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CSE 5819 - Assignment 6"
-            }
-          },
-          {
-            "id": "5676ad453650b54f",
+            "id": "540e27f94bc3c711",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,15 +22,13 @@
             }
           },
           {
-            "id": "540e27f94bc3c711",
+            "id": "bbfb77b687606d33",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COURSES/CSE 5819/Assignment_6.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Assignment_6"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -104,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -217,11 +202,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "66f386b9cd71af63",
+  "active": "540e27f94bc3c711",
   "lastOpenFiles": [
-    "COURSES/CSE 5819/Assignment_6.pdf",
-    "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
     "Other Stuff/Card Game.md",
+    "Excalidraw/CSE5819_assignment6_decision_tree.md",
+    "COURSES/CSE 5819/Assignment_6.pdf",
+    "PDFs/CSE 5819 - Assignment 6.pdf",
+    "COURSES/CSE 5819/assignment_6.ipynb",
+    "COURSES/CSE 5819/svm_decisiontree_experiments.ipynb",
+    "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
+    "Excalidraw",
+    "README.md",
     "Images/Pasted image 20251028164819.png",
     "Images/Pasted image 20251028164708.png",
     "Images/Pasted image 20251028164630.png",
@@ -233,14 +224,9 @@
     "Untitled",
     "Other Stuff",
     "Other Stuff/D&D",
-    "PDFs/CSE 5819 - Assignment 6.pdf",
     "PDFs",
     "Images",
     "Images/Pasted image 20251028130734.png",
-    "COURSES/CSE 5819/assignment_6.ipynb",
-    "README.md",
-    "COURSES",
-    "COURSES/CSE 5819",
     "This is a test.md",
     "Welcome.md"
   ]
