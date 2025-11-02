@@ -6,6 +6,7 @@
       {
         "id": "56117e30355fd5da",
         "type": "tabs",
+        "dimension": 37.80323450134771,
         "children": [
           {
             "id": "540e27f94bc3c711",
@@ -34,6 +35,7 @@
       {
         "id": "5c76b4b68e4211a5",
         "type": "tabs",
+        "dimension": 62.1967654986523,
         "children": [
           {
             "id": "9f520e3bd12c2e3f",
@@ -47,6 +49,30 @@
               },
               "icon": "lucide-file",
               "title": "CSE 5819 - Assignment 7"
+            }
+          },
+          {
+            "id": "0466c2770aeb229a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-11-02 14.19.01.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-11-02 14.19.01.excalidraw"
+            }
+          },
+          {
+            "id": "6a530fd32f5c9bcf",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-11-02 13.26.17.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-11-02 13.26.17.excalidraw"
             }
           }
         ]
@@ -106,7 +132,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -221,8 +248,16 @@
   },
   "active": "9f520e3bd12c2e3f",
   "lastOpenFiles": [
-    "COURSES/CSE 5819/Assignment_7.pdf",
+    "Images/Pasted Image 20251102141905_369.png",
+    "Images/Pasted Image 20251102133132_403.png",
+    "Images/Pasted Image 20251102132629_021.png",
+    "Excalidraw/Drawing 2025-11-02 14.19.01.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-02 13.26.17.excalidraw.md",
+    "Pasted Image 20251102141905_369.png",
     "CSE 5819 - Assignment 7.md",
+    "Pasted Image 20251102133132_403.png",
+    "Pasted Image 20251102132629_021.png",
+    "COURSES/CSE 5819/Assignment_7.pdf",
     "COURSES/CSE 5819/Assignment_6.pdf",
     "Other Stuff/Card Game.md",
     "COURSES/CSE 5819/lu358774xx03.tmp",
@@ -242,10 +277,6 @@
     "Images/Pasted image 20251028164630.png",
     "Images/Pasted image 20251028164239.png",
     "Images/Pasted image 20251028164444.png",
-    "Images/Pasted image 20251028163831.png",
-    "Images/Pasted image 20251028163642.png",
-    "Images/Pasted image 20251028163559.png",
-    "Images/Pasted image 20251028130734.png",
     "This is a test.md",
     "Welcome.md"
   ]
