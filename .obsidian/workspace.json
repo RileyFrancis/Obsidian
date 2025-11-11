@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "CSE 4701 - Homework 3"
             }
+          },
+          {
+            "id": "5763571724c50d85",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,7 +204,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "78a60046cd749609",
+  "active": "5763571724c50d85",
   "lastOpenFiles": [
     "COURSES/CSE 4701/CSE 4701 - Homework 3.md",
     "COURSES/CSE 4701/CSE_4701_HW_3.pdf",
