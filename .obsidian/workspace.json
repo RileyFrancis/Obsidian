@@ -25,12 +25,12 @@
             "id": "5763571724c50d85",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "pdf",
               "state": {
-                "currentVersion": "1.10.3"
+                "file": "COURSES/CSE 4701/CSE_4701_HW_3.pdf"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "icon": "lucide-file-text",
+              "title": "CSE_4701_HW_3"
             }
           }
         ],
