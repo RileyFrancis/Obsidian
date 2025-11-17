@@ -32,9 +32,20 @@
               "icon": "lucide-file-text",
               "title": "CSE_4701_HW_3"
             }
+          },
+          {
+            "id": "6adde97aa08cadd7",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "COURSES/CSE 4701/CSE_4701_HW_3.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CSE_4701_HW_3"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -204,10 +216,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5763571724c50d85",
+  "active": "973dcbc9bf6355be",
   "lastOpenFiles": [
-    "COURSES/CSE 4701/CSE 4701 - Homework 3.md",
     "COURSES/CSE 4701/CSE_4701_HW_3.pdf",
+    "COURSES/CSE 4701/CSE 4701 - Homework 3.md",
+    "Images/CSE 4701 - HW3 - Q1-img.png",
     "COURSES/CSE 4701",
     "COURSES/CSE 5819/Assignment_7.pdf",
     "Excalidraw/Drawing 2025-11-02 13.26.17.excalidraw.md",
@@ -234,7 +247,6 @@
     "Images/Pasted image 20251028164819.png",
     "Images/Pasted image 20251028164708.png",
     "Images/Pasted image 20251028164630.png",
-    "Images/Pasted image 20251028164239.png",
     "This is a test.md",
     "Welcome.md"
   ]
