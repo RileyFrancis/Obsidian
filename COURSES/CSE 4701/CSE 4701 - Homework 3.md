@@ -2,6 +2,8 @@
 - - -
 ### Question 1
 ![[CSE 4701 - HW3 - Q1-img.png]]
+
+Due to the limitations of the program that I was using to make this, I could not use double outlined shapes. Weak entity sets are the purple boxes with dashed outline and the pink diamonds are the identifying relationships for weak entity sets.
 ### Question 2
 Assume that all attribute types are `int`.
 ##### 1. Translate strong entities and un-nest composite attributes 
@@ -148,3 +150,33 @@ create table Z (
     foreign key (c2) references C(c2)
 );
 ```
+
+### Question 3
+##### 1.
+C->B and B->D gives C->BD. When combined with A->BD, we get $AC^+=\{A,B,C,D\}$ which is a minimal candidate key.
+
+$R$ is in 1NF ($R$ violates 2NF because of the partial dependency C->B)
+##### 2.
+Using each of the FD's, we can get A->BCD. We can then add E to get the candidate key $AE^+=\{A,B,C,D,E\}$.
+
+$R$ is in 1NF ($R$ violates 2NF because B, C, and D all depend on A alone and A is a subset of the key).
+##### 3.
+A->BC, A->BCD, A->BCDE. So $A^+=\{A,B,C,D,E\}$ is a candidate key.
+
+$R$ is in 2NF ($R$ violates 3NF because D is not a key and E is not prime, but D->E)
+##### 4.
+B->C, B->ACD, B->ACDE. So $B^+=\{A,B,C,D,E\}$ is a candidate key.
+
+$R$ is in 2NF ($R$ violates 3NF because A is not a key and C is not prime, but A->C)
+##### 5.
+AC->BE, AC->BDE. So $AC^+=\{A,B,C,D,E\}$ is a candidate key.
+BC->AD, BC->ADE. So $BC^+=\{A,B,C,D,E\}$ is a candidate key.
+
+$R$ is in 1NF ($R$ violates 2NF because of the partial dependency A->D)
+##### 6.
+A->BD, A->BCD. So $A^+=\{A,B,C,D\}$ is a candidate key.
+B->AC, B->ACD. So $B^+=\{A,B,C,D\}$ is a candidate key.
+C->B, C->AB, C->ABD. So $C^+=\{A,B,C,D\}$ is a candidate key.
+
+$R$ is in BCNF (all keys are single-attribute and all FD's have superkeys on the left side.)
+
