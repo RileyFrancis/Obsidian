@@ -25,12 +25,14 @@
             "id": "c45cfae07fbf458d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "COURSES/CSE 5819/Assignment_8.pdf"
+                "file": "COURSES/CSE 5819/CSE 5819 - Assignment 8.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Assignment_8"
+              "icon": "lucide-file",
+              "title": "CSE 5819 - Assignment 8"
             }
           }
         ],
@@ -206,8 +208,10 @@
   },
   "active": "c45cfae07fbf458d",
   "lastOpenFiles": [
-    "COURSES/CSE 5819/CSE 5819 - Assignment 8.md",
+    "COURSES/CSE 5819/CSE5819_assignment8.ipynb",
+    "PDFs/CSE 5819 - Assignment 8.pdf",
     "COURSES/CSE 5819/Assignment_8.pdf",
+    "COURSES/CSE 5819/CSE 5819 - Assignment 8.md",
     "COURSES/CSE 5819/ASL Letter Classifier.md",
     "COURSES/SDP/Habitat-Lab Installation and Run Output.md",
     "COURSES/CSE 4701/CSE_4701_HW_3.pdf",
@@ -234,7 +238,6 @@
     "COURSES/CSE 5819/assignment_7.ipynb",
     "COURSES/CSE 5819/Assignment_6.pdf",
     "Other Stuff/Card Game.md",
-    "COURSES/CSE 5819/lu358774xx03.tmp",
     "_TOC_.md",
     "Excalidraw/CSE5819_assignment6_decision_tree.md",
     "COURSES/CSE 5819/CSE 5819 - Assignment 6.md",
