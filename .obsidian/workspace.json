@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "CSE 5819 - Assignment 8"
             }
+          },
+          {
+            "id": "120879eb68e441cd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -206,7 +218,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c45cfae07fbf458d",
+  "active": "120879eb68e441cd",
   "lastOpenFiles": [
     "COURSES/CSE 5819/CSE5819_assignment8.ipynb",
     "PDFs/CSE 5819 - Assignment 8.pdf",
