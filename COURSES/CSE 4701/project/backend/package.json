@@ -1,0 +1,23 @@
+{
+    "name": "electronic-vendor-backend",
+    "version": "1.0.0",
+    "description": "Backend API for the Electronic Vendor app (Oracle + Express)",
+    "main": "src/server.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/server.js",
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.6.1",
+        "express": "^4.22.1",
+        "oracledb": "^6.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.3"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
