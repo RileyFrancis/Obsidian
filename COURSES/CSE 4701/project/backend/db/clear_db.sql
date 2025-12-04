@@ -1,0 +1,14 @@
+drop table if exists Account;
+drop table if exists Category;
+drop table if exists Customer;
+drop table if exists Inventory;
+drop table if exists Location;
+drop table if exists Manufacturer;
+drop table if exists OrderItems;
+drop table if exists Orders;
+drop table if exists PaymentInfo;
+drop table if exists Product;
+drop table if exists ProductCategory;
+drop table if exists Reorder;
+drop table if exists ReorderDelivery;
+drop table if exists Shipping;
