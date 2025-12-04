@@ -1,0 +1,14 @@
+drop table Account;
+drop table Category;
+drop table Customer;
+drop table Inventory;
+drop table Location;
+drop table Manufacturer;
+drop table OrderItems;
+drop table Orders;
+drop table PaymentInfo;
+drop table Product;
+drop table ProductCategory;
+drop table Reorder;
+drop table ReorderDelivery;
+drop table Shipping;
