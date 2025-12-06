@@ -88,7 +88,7 @@ Below you can see an example of a processed image for the 'A' class that's ready
 #### Training Results
 I used a 20/80 split using `train_test_split` for the test/train data splits. 
 
-Below is a confusion matrix after training for 10 epochs. Note that because of the logarithmic scale, to avoid $\log(0)$, I've added 1 to each of the cells.
+Below is a confusion matrix after training for 10 epochs. Note that because of the logarithmic scale, to avoid $\log(0)$, I've added 1 to each of the cells. As you can see, the model fits extremely well to the training data. The biggest sources of error in this model is confusion between G and H, K and R, and M and N, which is understandable because these hand shapes are visually similar to each other.
 ![[Pasted image 20251119202228.png]]
 
 Below is the training report after 10 epochs:

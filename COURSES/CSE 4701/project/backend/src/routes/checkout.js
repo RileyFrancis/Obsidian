@@ -1,71 +1,94 @@
+// checkout.js
 import express from "express";
-const router = express.Router();
 import db from "../db.js";
 
-router.post("/", (req, res) => {
-  const { cart } = req.body;
+const router = express.Router();
 
-  if (!cart || cart.length === 0) {
-    return res.status(400).json({ error: "Cart is empty" });
-  }
+// Online store location
+const ONLINE_LOCATION_ID = 1;
 
-  const orderDate = new Date().toISOString().split("T")[0];
-  const orderType = "online";   // fixed for now
-  const customerID = null;      // anonymous checkout
-  const accountID = null;
-  const paymentID = null;
+router.post("/", async (req, res) => {
+  const { cart, user, guest, payment } = req.body;
 
   try {
-    db.serialize(() => {
-      db.run("BEGIN TRANSACTION");
+    //--------------------------------------------------------
+    // 0. VALIDATE PAYMENT INPUT
+    //--------------------------------------------------------
+    if (!payment || !payment.cardNumber || !payment.exp || !payment.cardType) {
+      return res.status(400).json({ error: "Payment information required." });
+    }
 
-      // 1. Insert into Orders
-      const insertOrderSQL = `
-        INSERT INTO Orders (customerID, orderDate, orderType, locationID, accountID, paymentID)
-        VALUES (?, ?, ?, ?, ?, ?)
-      `;
-      
-      // online orders may not be tied to a store location
-      db.run(
-        insertOrderSQL,
-        [customerID, orderDate, orderType, null, accountID, paymentID],
-        function (err) {
-          if (err) {
-            db.run("ROLLBACK");
-            return res.status(500).json({ error: "Order creation failed", details: err.message });
-          }
+    const last4 = payment.cardNumber.slice(-4); // extract last 4 digits
+    const exp = payment.exp;
 
-          const orderID = this.lastID;
+    //--------------------------------------------------------
+    // 1. DETERMINE CUSTOMER
+    //--------------------------------------------------------
+    let customerID = null;
 
-          // 2. Insert line items
-          const insertItemSQL = `
-            INSERT INTO OrderItems (orderID, productID, quantity, salePrice)
-            VALUES (?, ?, ?, ?)
-          `;
+    // Logged-in user → use attached customerID
+    if (user && user.customerID) {
+      customerID = user.customerID;
+    }
 
-          const stmt = db.prepare(insertItemSQL);
-
-          for (const item of cart) {
-            stmt.run(orderID, item.productID, item.quantity, item.price);
-            // Inventory will auto-update and reorder triggers will fire
-          }
-
-          stmt.finalize();
-
-          db.run("COMMIT", (err) => {
-            if (err) {
-              return res.status(500).json({ error: "Failed to finalize order" });
-            }
-            res.json({
-              message: "Order placed successfully",
-              orderID,
-            });
-          });
-        }
+    // Guest checkout → create a Customer row
+    if (!customerID && guest) {
+      const result = await db.run(
+        `INSERT INTO Customer (userID, customerName, email, phone)
+         VALUES (NULL, ?, ?, ?)`,
+        [guest.name, guest.email, guest.phone]
       );
+      customerID = result.lastID;
+    }
+
+    //--------------------------------------------------------
+    // 2. INSERT PAYMENT INFO
+    //--------------------------------------------------------
+    let paymentUserID = user ? user.userID : null;
+
+    const paymentResult = await db.run(
+      `INSERT INTO PaymentInfo (userID, card_last4, card_type, expiration_date)
+       VALUES (?, ?, ?, ?)`,
+      [paymentUserID, last4, payment.cardType, exp]
+    );
+
+    const paymentID = paymentResult.lastID;
+
+    //--------------------------------------------------------
+    // 3. CREATE ORDER
+    //--------------------------------------------------------
+    const orderResult = await db.run(
+      `INSERT INTO Orders (orderDate, orderType, customerID, locationID, paymentID)
+       VALUES (DATE('now'), 'online', ?, ?, ?)`,
+      [customerID, ONLINE_LOCATION_ID, paymentID]
+    );
+
+    const orderID = orderResult.lastID;
+
+    //--------------------------------------------------------
+    // 4. INSERT ORDER ITEMS
+    //--------------------------------------------------------
+    for (const item of cart) {
+      await db.run(
+        `INSERT INTO OrderItems (orderID, productID, quantity, salePrice)
+         VALUES (?, ?, ?, ?)`,
+        [orderID, item.productID, item.quantity, item.price]
+      );
+    }
+
+    //--------------------------------------------------------
+    // 5. DONE
+    //--------------------------------------------------------
+    res.json({
+      status: "success",
+      orderID,
+      paymentID,
+      message: "Order placed successfully!",
     });
-  } catch (e) {
-    res.status(500).json({ error: e.message });
+
+  } catch (err) {
+    console.error("Checkout error:", err);
+    res.status(500).json({ error: err.message });
   }
 });
 
