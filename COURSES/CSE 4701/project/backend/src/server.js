@@ -7,6 +7,10 @@ import express from "express";
 import cors from "cors";
 import sqlite3 from "sqlite3";
 import { open } from "sqlite";
+import authRoutes from "./routes/auth.js";
+import adminRoutes from "./routes/admin.js";
+import checkoutRoutes from "./routes/checkout.js";
+
 
 // Must create `app` BEFORE using it
 const app = express();
@@ -14,6 +18,24 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+app.use("/auth", (req, res, next) => {
+  req.dbPromise = dbPromise;
+  next();
+}, authRoutes);
+
+app.use("/api/admin", (req, res, next) => {
+  req.dbPromise = dbPromise;
+  next();
+}, adminRoutes);
+
+app.use("/api/checkout", (req, res, next) => {
+  req.dbPromise = dbPromise;
+  next();
+}, checkoutRoutes);
+
+
+
 
 // ----------------------------------------
 //  OPEN SQLITE DATABASE (shared instance)

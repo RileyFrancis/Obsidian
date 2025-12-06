@@ -25,10 +25,10 @@ export default function Home() {
           <div
             key={p.productID}
             style={{
-              background: "#fff",
+              background: "#b2f6dbff",
               padding: "15px",
               borderRadius: "8px",
-              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+              boxShadow: "0 3px 6px rgba(0,0,0,0.5)",
             }}
           >
             <h3>{p.name}</h3>

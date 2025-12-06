@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fMRI Explanations Meeting 12-2-25.md",
+                "file": "COURSES/CSE 5819/ASL Letter Classifier.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fMRI Explanations Meeting 12-2-25"
+              "title": "ASL Letter Classifier"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 294.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -208,6 +209,8 @@
   },
   "active": "29b5d43bf23c47eb",
   "lastOpenFiles": [
+    "Other Stuff/fMRI Explanations Meeting 12-2-25.md",
+    "COURSES/CSE 4701/project/backend/SCHEMA_NOTES.md",
     "COURSES/CSE 4701/project/backend/db/database.sqlite-journal",
     "COURSES/CSE 4701/project/backend/db/test_db.sql",
     "COURSES/CSE 4701/project/backend/db/schema.sql",
@@ -218,7 +221,6 @@
     "COURSES/CSE 4701/project/backend/db",
     "COURSES/CSE 4701/project/backend/src/routes/checkout.js",
     "COURSES/CSE 4701/project/frontend/src/pages/CartPage.jsx",
-    "COURSES/CSE 4701/project/frontend/src/api/cartContext.jsx",
     "COURSES/CSE 4701/project/frontend/node_modules/caniuse-lite/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/@esbuild/linux-x64/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/eslint/README.md",
@@ -243,7 +245,6 @@
     "COURSES/CSE 4701/project/frontend/node_modules/@babel/helper-module-imports/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/@babel/helper-module-transforms/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/@babel/helper-plugin-utils/README.md",
-    "COURSES/CSE 4701/project/frontend/node_modules/@babel/plugin-transform-react-jsx-self/README.md",
     "COURSES/CSE 4701/project/backend/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "COURSES/CSE 4701/project/backend/node_modules/retry/equation.gif",
     "COURSES/CSE 4701/project/frontend/src/assets/react.svg",

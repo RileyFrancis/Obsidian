@@ -1,47 +1,71 @@
 // frontend/src/pages/CartPage.jsx
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../api/cartContext";
+import { useAuth } from "../api/AuthContext";
 
 export default function CartPage() {
   const { cart, removeFromCart, clearCart } = useCart();
+  const { user } = useAuth();
 
-  const total = cart.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+  // Payment state (required for ALL checkouts)
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardType, setCardType] = useState("Visa");
+  const [exp, setExp] = useState("");
 
-  // ---------------------------
-  // CHECKOUT FUNCTION
-  // ---------------------------
+  // Guest info (only required for NOT logged in)
+  const [guestName, setGuestName] = useState("");
+  const [guestEmail, setGuestEmail] = useState("");
+  const [guestPhone, setGuestPhone] = useState("");
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
   async function handleCheckout() {
-    try {
-      const res = await fetch("http://localhost:3001/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cart })
-      });
+    if (!cardNumber || !exp) {
+      alert("Please enter payment details.");
+      return;
+    }
 
-      const data = await res.json();
+    const payment = {
+      cardNumber,
+      cardType,
+      exp
+    };
 
-      if (data.error) {
-        alert("Checkout failed: " + data.error);
-        return;
-      }
+    const guest = !user
+      ? {
+          name: guestName,
+          email: guestEmail,
+          phone: guestPhone
+        }
+      : null;
 
+    if (!user && (!guestName || !guestEmail)) {
+      alert("Guest checkout requires name and email.");
+      return;
+    }
+
+    const res = await fetch("http://localhost:3001/api/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        cart,
+        user,
+        guest,
+        payment
+      })
+    });
+
+    const data = await res.json();
+
+    if (data.error) {
+      alert(data.error);
+    } else {
       alert("Order placed! Order ID: " + data.orderID);
-
-      // Clear cart after a successful purchase
       clearCart();
-
-    } catch (err) {
-      alert("Checkout error: " + err.message);
     }
   }
 
-  // ---------------------------
-  // MAIN COMPONENT RENDER
-  // ---------------------------
   return (
     <div style={{ padding: 20 }}>
       <h1>Your Cart</h1>
@@ -64,27 +88,82 @@ export default function CartPage() {
         <>
           <h2>Total: ${total.toFixed(2)}</h2>
 
-          {/* CHECKOUT BUTTON */}
+          {/* Guest fields */}
+          {!user && (
+            <div style={{ marginTop: 20 }}>
+              <h3>Guest Information</h3>
+              <input
+                placeholder="Full Name"
+                value={guestName}
+                onChange={(e) => setGuestName(e.target.value)}
+                style={{ width: "100%", marginBottom: 10 }}
+              />
+              <input
+                placeholder="Email"
+                value={guestEmail}
+                onChange={(e) => setGuestEmail(e.target.value)}
+                style={{ width: "100%", marginBottom: 10 }}
+              />
+              <input
+                placeholder="Phone (optional)"
+                value={guestPhone}
+                onChange={(e) => setGuestPhone(e.target.value)}
+                style={{ width: "100%", marginBottom: 10 }}
+              />
+            </div>
+          )}
+
+          {/* Payment section */}
+          <div style={{ marginTop: 20 }}>
+            <h3>Payment Information</h3>
+
+            <input
+              type="text"
+              placeholder="Card Number"
+              value={cardNumber}
+              onChange={(e) => setCardNumber(e.target.value)}
+              style={{ width: "100%", marginBottom: 10 }}
+            />
+
+            <select
+              value={cardType}
+              onChange={(e) => setCardType(e.target.value)}
+              style={{ width: "100%", marginBottom: 10 }}
+            >
+              <option>Visa</option>
+              <option>MasterCard</option>
+              <option>Discover</option>
+              <option>AmEx</option>
+            </select>
+
+            <input
+              type="date"
+              value={exp}
+              onChange={(e) => setExp(e.target.value)}
+              style={{ width: "100%", marginBottom: 10 }}
+            />
+          </div>
+
           <button
             style={{
               padding: "10px 20px",
               background: "green",
               color: "white",
-              borderRadius: 6,
-              marginRight: 10,
+              marginTop: 20,
+              borderRadius: 6
             }}
             onClick={handleCheckout}
           >
             Checkout
           </button>
 
-          {/* CLEAR CART BUTTON */}
-          <button onClick={clearCart}>Clear Cart</button>
+          <button onClick={clearCart} style={{ marginLeft: 10 }}>
+            Clear Cart
+          </button>
         </>
       )}
 
-      <br />
-      <br />
+      <br /><br />
       <Link to="/">← Back to Store</Link>
     </div>
   );
