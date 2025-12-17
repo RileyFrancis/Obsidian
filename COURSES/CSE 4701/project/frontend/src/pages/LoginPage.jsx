@@ -12,15 +12,26 @@ export default function LoginPage() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const res = await loginUser({ email, password });
-
-    if (res.error) {
-      alert(res.error);
+    
+    if (!email || !password) {
+      alert("Please enter both email and password");
       return;
     }
+    
+    try {
+      const res = await loginUser({ email, password });
 
-    login(res.token, res);
-    navigate("/");
+      if (res.error) {
+        alert(res.error);
+        return;
+      }
+
+      login(res.token, res);
+      navigate("/");
+    } catch (error) {
+      console.error("Login failed:", error);
+      alert(error.message || "Login failed. Please check your credentials.");
+    }
   }
 
   return (

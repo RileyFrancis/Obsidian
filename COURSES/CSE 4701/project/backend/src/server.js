@@ -19,6 +19,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Health check endpoint
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok", timestamp: new Date().toISOString() });
+});
+
 app.use("/auth", (req, res, next) => {
   req.dbPromise = dbPromise;
   next();
@@ -69,7 +74,7 @@ app.get("/api/products", async (req, res) => {
     FROM Product p
     LEFT JOIN Inventory i
       ON i.productID = p.productID
-     AND i.locationID = 2  -- online store location
+     AND i.locationID = 1  -- online store location
   `);
 
   res.json(products);
@@ -86,7 +91,7 @@ app.get("/api/products/:id", async (req, res) => {
     FROM Product p
     LEFT JOIN Inventory i
       ON i.productID = p.productID
-     AND i.locationID = 2
+     AND i.locationID = 1  -- online store location
     WHERE p.productID = ?
   `, [req.params.id]);
 
@@ -116,7 +121,7 @@ app.post("/api/checkout", async (req, res) => {
     // Insert each cart item
     for (const item of cart) {
       await db.run(`
-        INSERT INTO OrderItems (orderID, productID, quantity, salePrice)
+        INSERT INTO OrderItems (orderID, productID, quantity, priceAtPurchase)
         VALUES (?, ?, ?, ?)
       `, [orderID, item.productID, item.quantity, item.price]);
     }

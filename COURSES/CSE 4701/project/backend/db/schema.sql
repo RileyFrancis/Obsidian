@@ -122,7 +122,7 @@ CREATE TABLE Account (
 ------------------------------------------------------------
 CREATE TABLE PaymentInfo (
     paymentID INTEGER PRIMARY KEY,
-    userID INTEGER NOT NULL,
+    userID INTEGER DEFAULT NULL,
     card_last4 CHAR(4) NOT NULL,
     card_type VARCHAR(20) NOT NULL,
     expiration_date DATE NOT NULL,
@@ -172,12 +172,11 @@ CREATE TABLE Orders (
 -- ORDER ITEMS
 ------------------------------------------------------------
 CREATE TABLE OrderItems (
+    orderItemID INTEGER PRIMARY KEY,
     orderID INTEGER NOT NULL,
     productID INTEGER NOT NULL,
     quantity INTEGER NOT NULL CHECK (quantity > 0),
-    salePrice DECIMAL(10,2) NOT NULL,
-
-    PRIMARY KEY (orderID, productID),
+    priceAtPurchase DECIMAL(10,2) NOT NULL,
 
     CONSTRAINT FK_OI_Order
         FOREIGN KEY (orderID)

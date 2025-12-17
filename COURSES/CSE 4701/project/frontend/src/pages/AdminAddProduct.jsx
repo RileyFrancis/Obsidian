@@ -1,9 +1,19 @@
 // frontend/src/pages/AdminAddProduct.jsx
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../api/AuthContext";
+import { useNavigate, useParams } from "react-router-dom";
+import {
+  fetchManufacturers,
+  fetchCategories,
+  addProduct,
+  updateProduct,
+  fetchProduct,
+} from "../api/admin";
 
 export default function AdminAddProduct() {
   const { user, loading } = useAuth();
+  const navigate = useNavigate();
+  const { productID } = useParams();
 
   const [manufacturers, setManufacturers] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -14,161 +24,219 @@ export default function AdminAddProduct() {
   const [manufacturerID, setManufacturerID] = useState("");
   const [newManufacturer, setNewManufacturer] = useState("");
   const [categoryIDs, setCategoryIDs] = useState([]);
+  const [submitting, setSubmitting] = useState(false);
 
-  // While auth is loading
-  if (loading) {
-    return <div style={{ padding: 20 }}>Loading user...</div>;
-  }
-
-  // Not logged in
-  if (!user) {
-    return (
-      <div style={{ padding: 20 }}>
-        <h1>Access Denied</h1>
-        <p>You must be logged in as an admin to use this page.</p>
-      </div>
-    );
-  }
-
-  // Logged in but not admin
-  const isAdmin =
-    user.isAdmin === true || user.email === "admin@store.com";
-
-  if (!isAdmin) {
-    return (
-      <div style={{ padding: 20 }}>
-        <h1>Access Denied</h1>
-        <p>You must be an admin to use this page.</p>
-      </div>
-    );
-  }
-
+  // Check auth
   useEffect(() => {
-    async function loadAdminData() {
-      const token = localStorage.getItem("token");
+    if (!loading && (!user || !user.isAdmin)) {
+      navigate("/login");
+    }
+  }, [user, loading, navigate]);
 
-      const headers = {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      };
+  // Load dropdowns and product data
+  useEffect(() => {
+    if (!user || !user.isAdmin) return;
 
-      const res1 = await fetch("http://localhost:3001/api/admin/manufacturers", { headers });
-      const res2 = await fetch("http://localhost:3001/api/admin/categories", { headers });
+    async function loadData() {
+      try {
+        const mfg = await fetchManufacturers();
+        const cat = await fetchCategories();
+        setManufacturers(Array.isArray(mfg) ? mfg : []);
+        setCategories(Array.isArray(cat) ? cat : []);
 
-      const m = await res1.json();
-      const c = await res2.json();
-
-      setManufacturers(Array.isArray(m) ? m : []);
-      setCategories(Array.isArray(c) ? c : []);
+        // If editing, load product data
+        if (productID) {
+          const product = await fetchProduct(productID);
+          setName(product.name);
+          setDescription(product.description || "");
+          setPrice(product.price);
+          setManufacturerID(product.manufacturerID);
+          setCategoryIDs(product.categories?.map((c) => c.categoryID) || []);
+        }
+      } catch (err) {
+        alert("Failed to load data: " + err.message);
+      }
     }
 
-    loadAdminData();
-  }, []);
-
+    loadData();
+  }, [user, productID]);
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setSubmitting(true);
 
-    const body = {
-      name,
-      description,
-      price,
-      manufacturerID,
-      newManufacturer,
-      categories: categoryIDs,
-    };
+    try {
+      const finalManufacturerID = manufacturerID || null;
 
-    const res = await fetch(
-      "http://localhost:3001/api/admin/add-product",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
+      const body = {
+        name,
+        description,
+        price: parseFloat(price),
+        manufacturerID: finalManufacturerID,
+        newManufacturer,
+        categories: categoryIDs,
+      };
+
+      let result;
+      if (productID) {
+        result = await updateProduct(productID, body);
+      } else {
+        result = await addProduct(body);
       }
-    );
 
-    const data = await res.json();
-    alert(data.message || "Product added!");
+      if (result.status === "success" || result.message) {
+        alert(result.message || "Product saved successfully!");
+        navigate("/admin/products");
+      } else {
+        alert("Error: " + (result.error || "Unknown error"));
+      }
+    } catch (err) {
+      alert("Failed to save product: " + err.message);
+    } finally {
+      setSubmitting(false);
+    }
   }
 
+  if (loading) return <div style={{ padding: 20 }}>Loading...</div>;
+
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Add New Product</h1>
+    <div style={{ padding: 20, maxWidth: 600 }}>
+      <h1>{productID ? "Edit Product" : "Add New Product"}</h1>
 
-      <form onSubmit={handleSubmit} style={{ maxWidth: 500 }}>
-        <label>Name:</label>
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-          style={{ width: "100%", marginBottom: 10 }}
-        />
-
-        <label>Description:</label>
-        <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          style={{ width: "100%", marginBottom: 10 }}
-        />
-
-        <label>Price:</label>
-        <input
-          type="number"
-          step="0.01"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          required
-          style={{ width: "100%", marginBottom: 10 }}
-        />
-
-        <label>Manufacturer:</label>
-        <select
-          value={manufacturerID}
-          onChange={(e) => setManufacturerID(e.target.value)}
-          style={{ width: "100%", marginBottom: 10 }}
-        >
-          <option value="">Select Existing</option>
-          {manufacturers.map((m) => (
-            <option key={m.manufacturerID} value={m.manufacturerID}>
-              {m.manufacturerName}
-            </option>
-          ))}
-        </select>
-
-        <label>Or add new manufacturer:</label>
-        <input
-          value={newManufacturer}
-          onChange={(e) => setNewManufacturer(e.target.value)}
-          placeholder="New Manufacturer Name"
-          style={{ width: "100%", marginBottom: 10 }}
-        />
-
-        <label>Categories:</label>
-        <div style={{ marginBottom: 10 }}>
-          {categories.map((cat) => (
-            <label key={cat.categoryID} style={{ display: "block" }}>
-              <input
-                type="checkbox"
-                value={cat.categoryID}
-                onChange={(e) => {
-                  const id = parseInt(e.target.value, 10);
-                  setCategoryIDs((prev) =>
-                    prev.includes(id)
-                      ? prev.filter((x) => x !== id)
-                      : [...prev, id]
-                  );
-                }}
-              />
-              {cat.categoryName}
-            </label>
-          ))}
+      <form onSubmit={handleSubmit}>
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Product Name:
+          </label>
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            style={{ width: "100%", padding: 8, boxSizing: "border-box" }}
+          />
         </div>
 
-        <button type="submit" style={{ padding: 10, marginTop: 10 }}>
-          Add Product
-        </button>
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Description:
+          </label>
+          <textarea
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            rows="4"
+            style={{ width: "100%", padding: 8, boxSizing: "border-box" }}
+          />
+        </div>
+
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Price:
+          </label>
+          <input
+            type="number"
+            step="0.01"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            required
+            style={{ width: "100%", padding: 8, boxSizing: "border-box" }}
+          />
+        </div>
+
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Manufacturer:
+          </label>
+          <select
+            value={manufacturerID}
+            onChange={(e) => setManufacturerID(e.target.value)}
+            style={{ width: "100%", padding: 8, boxSizing: "border-box" }}
+          >
+            <option value="">Select Existing Manufacturer</option>
+            {manufacturers.map((m) => (
+              <option key={m.manufacturerID} value={m.manufacturerID}>
+                {m.manufacturerName}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Or Create New Manufacturer:
+          </label>
+          <input
+            value={newManufacturer}
+            onChange={(e) => setNewManufacturer(e.target.value)}
+            placeholder="New Manufacturer Name"
+            style={{ width: "100%", padding: 8, boxSizing: "border-box" }}
+          />
+        </div>
+
+        <div style={{ marginBottom: 15 }}>
+          <label style={{ display: "block", fontWeight: "bold", marginBottom: 5 }}>
+            Categories:
+          </label>
+          <div style={{ border: "1px solid #ddd", padding: 10, borderRadius: 4 }}>
+            {categories.length === 0 ? (
+              <p>No categories available</p>
+            ) : (
+              categories.map((cat) => (
+                <label
+                  key={cat.categoryID}
+                  style={{ display: "block", marginBottom: 8 }}
+                >
+                  <input
+                    type="checkbox"
+                    checked={categoryIDs.includes(cat.categoryID)}
+                    onChange={(e) => {
+                      const id = cat.categoryID;
+                      if (e.target.checked) {
+                        setCategoryIDs([...categoryIDs, id]);
+                      } else {
+                        setCategoryIDs(categoryIDs.filter((x) => x !== id));
+                      }
+                    }}
+                    style={{ marginRight: 8 }}
+                  />
+                  {cat.categoryName}
+                </label>
+              ))
+            )}
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: 10 }}>
+          <button
+            type="submit"
+            disabled={submitting}
+            style={{
+              padding: "10px 20px",
+              background: "#28a745",
+              color: "white",
+              border: "none",
+              borderRadius: 4,
+              cursor: submitting ? "not-allowed" : "pointer",
+              opacity: submitting ? 0.6 : 1,
+            }}
+          >
+            {submitting ? "Saving..." : productID ? "Update Product" : "Add Product"}
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate("/admin/products")}
+            style={{
+              padding: "10px 20px",
+              background: "#6c757d",
+              color: "white",
+              border: "none",
+              borderRadius: 4,
+              cursor: "pointer",
+            }}
+          >
+            Cancel
+          </button>
+        </div>
       </form>
     </div>
   );
 }
-

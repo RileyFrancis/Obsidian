@@ -1,0 +1,42 @@
+# Frontend Dockerfile - React + Vite
+FROM node:20-alpine as build
+
+WORKDIR /app/frontend
+
+# Accept build argument for API URL
+ARG VITE_API_URL=http://localhost:3001
+ENV VITE_API_URL=$VITE_API_URL
+
+# Copy package files
+COPY frontend/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy source code
+COPY frontend/src ./src
+COPY frontend/public ./public
+COPY frontend/index.html ./
+COPY frontend/vite.config.js ./
+COPY frontend/eslint.config.js ./
+
+# Build application
+RUN npm run build
+
+# Serve with lightweight HTTP server
+FROM node:20-alpine
+
+RUN npm install -g serve && \
+    apk add --no-cache wget
+
+WORKDIR /app
+
+COPY --from=build /app/frontend/dist ./dist
+
+EXPOSE 5173
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://localhost:5173 || exit 1
+
+CMD ["serve", "-s", "dist", "-l", "5173"]

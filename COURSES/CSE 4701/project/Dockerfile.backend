@@ -1,0 +1,32 @@
+# Backend Dockerfile - Node.js Express Server
+FROM node:20-alpine
+
+WORKDIR /app/backend
+
+# Install Python, build tools, and sqlite3 (required for better-sqlite3 and DB management)
+RUN apk add --no-cache python3 make g++ sqlite
+
+# Copy package files
+COPY backend/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy application code
+COPY backend/src ./src
+COPY backend/db ./db
+COPY backend/create-admin.js ./
+COPY backend/entrypoint.sh ./
+
+# Make entrypoint executable
+RUN chmod +x ./entrypoint.sh
+
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD node -e "require('http').get('http://localhost:3000/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
+
+# Start application with entrypoint script
+CMD ["./entrypoint.sh"]

@@ -8,19 +8,26 @@ export function CartProvider({ children }) {
 
   function addToCart(item) {
     console.log("addToCart called with:", item); // DEBUG
-
+  
     setCart(prev => {
       const existing = prev.find(p => p.productID === item.productID);
+  
+      // If item already in cart → increase by selected amount
       if (existing) {
         return prev.map(p =>
           p.productID === item.productID
-            ? { ...p, quantity: p.quantity + 1 }
+            ? { ...p, quantity: p.quantity + item.quantity }
             : p
         );
       }
-      return [...prev, { ...item, quantity: 1 }];
+  
+      // If new item → store its selected quantity
+      return [...prev, { ...item, quantity: item.quantity }];
     });
   }
+  
+
+
 
   function removeFromCart(id) {
     setCart(prev => prev.filter(p => p.productID !== id));
