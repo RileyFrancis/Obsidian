@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "978a7853145f3230",
+        "id": "46163a1baa4776db",
         "type": "tabs",
         "children": [
           {
-            "id": "aa7fad347d5dbe62",
+            "id": "47e20951520db2d2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -187,8 +187,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "78a60046cd749609",
+  "active": "47e20951520db2d2",
   "lastOpenFiles": [
+    "README.md",
     "Other Stuff/Applications for 2026.md",
     "COURSES/CSE 5819/ASL Letter Classifier.md",
     "COURSES/CSE 4701/Exam Review.md",
@@ -224,7 +225,6 @@
     "COURSES/CSE 4701/project/frontend/node_modules/@babel/helper-globals/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/@eslint-community/eslint-utils/README.md",
     "COURSES/CSE 4701/project/frontend/node_modules/@eslint-community/regexpp/README.md",
-    "COURSES/CSE 4701/project/frontend/node_modules/@jridgewell/trace-mapping/README.md",
     "COURSES/CSE 4701/project/backend/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "COURSES/CSE 4701/project/backend/node_modules/retry/equation.gif",
     "COURSES/CSE 4701/project/frontend/src/assets/react.svg",
