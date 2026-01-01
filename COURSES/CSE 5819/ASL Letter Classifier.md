@@ -127,6 +127,6 @@ weighted avg      0.982     0.982     0.982      7860
 
 As you can see, the model is exceeding at classifying the training data. In fact the model is overfitting on the data, meaning that actual live classification accuracy suffers. This is because of the small size and low diversity of the dataset that I've created.
 ### Room for Improvements
-Currently my model struggles to correctly classify handshapes with backgrounds or lighting conditions (and probably on people other than me too, though I have not tested that) that it was not trained on. This is largely due to the fact that the dataset that I created is still relatively small, and not nearly diverse enough. This is somewhat fixed by random color and rotational jitters, however to really improve the dataset, it would be better to gather data from far more sources.
+	Currently my model struggles to correctly classify handshapes with backgrounds or lighting conditions (and probably on people other than me too, though I have not tested that) that it was not trained on. This is largely due to the fact that the dataset that I created is still relatively small, and not nearly diverse enough. This is somewhat fixed by random color and rotational jitters, however to really improve the dataset, it would be better to gather data from far more sources.
 
 Additionally, the data from the location of the mediapipe wireframe is lost when it is flattened onto the image. This data could instead help to train the model.
