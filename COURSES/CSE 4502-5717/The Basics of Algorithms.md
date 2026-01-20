@@ -9,3 +9,5 @@ For example, matrix multiplication takes two inputs being matrices $A$ and $B$, 
 ### How do we measure the performance of an algorithm?
 - **Time Complexity**: How much time it takes to run an algorithm. (Big-O notation). Time complexity is an integer function of the input size (the number of memory cells needed to describe the problem instance).
 - **Space Complexity:** How much physical storage an algorithm uses when it runs (also use Big-O)
+
+*Big-O*: We say that $f(n)=O(g(n))$ if $f(n)\le Cg(n)$ $\forall n\ge n_0$ where $C$ and $n_0$ are constants.
