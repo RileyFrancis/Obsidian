@@ -11,3 +11,8 @@ For example, matrix multiplication takes two inputs being matrices $A$ and $B$, 
 - **Space Complexity:** How much physical storage an algorithm uses when it runs (also use Big-O)
 
 *Big-O*: We say that $f(n)=O(g(n))$ if $f(n)\le Cg(n)$ $\forall n\ge n_0$ where $C$ and $n_0$ are constants.
+
+### Randomized Algorithm
+A **randomized algorithm** is one where certain decision are made based on the outcome of random events (coin flips)
+
+A **Monte Carlo algorithm** runs for a predetermined amount of time (so there is a chance that it may not find a solution to the problem in time)
