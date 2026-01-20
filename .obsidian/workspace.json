@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ECON 1201.md",
+                "file": "COURSES/ECON 1201/ECON 1201.md",
                 "mode": "source",
                 "source": false
               },
@@ -191,9 +191,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "437053432b2c99be",
+  "active": "78a60046cd749609",
   "lastOpenFiles": [
-    "ECON 1201.md",
+    "COURSES/ECON 1201",
+    "COURSES/ECON 1201/ECON 1201.md",
     "Other Stuff/COURSE ARCHIVE",
     "Other Stuff/COURSE ARCHIVE/CSE 5819/ASL Letter Classifier.md",
     "README.md",
@@ -228,7 +229,6 @@
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/node_modules/@babel/core/README.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/node_modules/@babel/helper-compilation-targets/README.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/node_modules/@babel/helper-globals/README.md",
-    "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/node_modules/@eslint-community/eslint-utils/README.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/node_modules/retry/equation.gif",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/src/assets/react.svg",
