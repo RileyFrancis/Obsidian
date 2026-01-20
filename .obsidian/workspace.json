@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++.md",
+                "file": "C++ Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C++"
+              "title": "C++ Fundamentals"
             }
           }
         ],
@@ -224,7 +224,7 @@
   "lastOpenFiles": [
     "Untitled",
     "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
-    "C++.md",
+    "C++ Fundamentals.md",
     "COURSES/CSE 4502-5717",
     "COURSES/ECON 1201/ECON 1201.md",
     "COURSES/ECON 1201",
