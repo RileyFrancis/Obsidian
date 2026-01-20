@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "46163a1baa4776db",
+        "id": "ff1fb649d03e9485",
         "type": "tabs",
         "children": [
           {
-            "id": "47e20951520db2d2",
+            "id": "437053432b2c99be",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COURSES/CSE 5819/ASL Letter Classifier.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ASL Letter Classifier"
+              "title": "New tab"
             }
           }
         ]
@@ -191,11 +187,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "47e20951520db2d2",
+  "active": "437053432b2c99be",
   "lastOpenFiles": [
+    "COURSES/CSE 5819/ASL Letter Classifier.md",
     "README.md",
     "Other Stuff/Applications for 2026.md",
-    "COURSES/CSE 5819/ASL Letter Classifier.md",
     "COURSES/CSE 4701/Exam Review.md",
     "Other Stuff/fMRI Explanations Meeting 12-2-25.md",
     "COURSES/CSE 4701/project/backend/SCHEMA_NOTES.md",
