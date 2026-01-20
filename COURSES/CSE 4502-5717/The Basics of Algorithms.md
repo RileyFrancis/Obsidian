@@ -16,3 +16,5 @@ For example, matrix multiplication takes two inputs being matrices $A$ and $B$, 
 A **randomized algorithm** is one where certain decision are made based on the outcome of random events (coin flips)
 
 A **Monte Carlo algorithm** runs for a predetermined amount of time (so there is a chance that it may not find a solution to the problem in time)
+
+A **Las Vegas algorithm** will always terminate with the correct answer. Its runtime is a random variable.
