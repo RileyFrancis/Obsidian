@@ -3,11 +3,10 @@
   "dataview",
   "obsidian-excalidraw-plugin",
   "table-editor-obsidian",
-  "execute-code",
-  "code-emitter",
   "obsidian-shellcommands",
   "better-export-pdf",
   "editing-toolbar",
   "settings-search",
-  "text-snippets-obsidian"
+  "text-snippets-obsidian",
+  "execute-code"
 ]
