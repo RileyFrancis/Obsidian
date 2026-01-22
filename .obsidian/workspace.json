@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COURSES/CSE 3150/C++ Fundamentals.md",
+                "file": "COURSES/ECON 1201/ECON 1201.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C++ Fundamentals"
+              "title": "ECON 1201"
             }
           }
         ],
@@ -208,6 +208,7 @@
   },
   "active": "9429a9a1c5e54c4f",
   "lastOpenFiles": [
+    "COURSES/CSE 3150/C++ Fundamentals.md",
     "COURSES/CSE 3150/my_hello_world",
     "COURSES/CSE 3150/my_hello_world.cpp",
     "projects/PDFs/CSE 5819 - Assignment 8.pdf",
@@ -220,9 +221,7 @@
     "COURSES/ECON 1201/ECON 1201.md",
     "COURSES/CSE 3150/helloworld",
     "COURSES/CSE 3150/a.out",
-    "COURSES/CSE 3150/helloworld.cpp",
     "C++ Fundamentals.md",
-    "COURSES/CSE 3150/C++ Fundamentals.md",
     "Other Stuff/COURSE ARCHIVE/CSE 5819/ASL Letter Classifier.md",
     "README.md",
     "Other Stuff/Applications for 2026.md",
