@@ -19,8 +19,7 @@ A **Monte Carlo algorithm** runs for a predetermined amount of time (so there is
 
 A **Las Vegas algorithm** will always terminate with the correct answer. Its runtime is a random variable.
 
-> [!info]
+- - -
+
+> [!problem]
 > 
-
-
-
