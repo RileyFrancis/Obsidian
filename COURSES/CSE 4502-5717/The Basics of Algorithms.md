@@ -18,3 +18,9 @@ A **randomized algorithm** is one where certain decision are made based on the o
 A **Monte Carlo algorithm** runs for a predetermined amount of time (so there is a low probability^[A low probability is one that is smaller than $n^{-\alpha}$, where $n$ is the input size and $\alpha$ is a probability parameter] that it may not find a solution to the problem in time)
 
 A **Las Vegas algorithm** will always terminate with the correct answer. Its runtime is a random variable.
+
+> [!info]
+> 
+
+
+
