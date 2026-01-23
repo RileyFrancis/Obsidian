@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
+                "file": "COURSES/CSE 3150/C++ Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Basics of Algorithms"
+              "title": "C++ Fundamentals"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "c25fa1ab46e06670",
   "lastOpenFiles": [
+    "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/db/database.sqlite-journal",
     "COURSES/ECON 1201/ECON 1201.md",
     "COURSES/CSE 3150/CPP FIles",
@@ -205,8 +206,6 @@
     "projects/PDFs/ASL Letter Classifier.pdf",
     "projects/PDFs",
     "projects",
-    "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
-    "COURSES/CSE 3150/helloworld",
     "C++ Fundamentals.md",
     "Other Stuff/COURSE ARCHIVE/CSE 5819/ASL Letter Classifier.md",
     "README.md",
