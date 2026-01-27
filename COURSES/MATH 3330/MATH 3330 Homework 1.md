@@ -34,10 +34,18 @@ This statement is false.
 
 What is true, however, is the subset $(A\times B)\cup (C\times D)\subseteq (A\cup C)\times(B\cup D)$.
 
-> [!question] **4.** True or False? $(A\times B)\cup (C\times D)=(A\cup C)\times(B\cup D)$
+> [!question] **5.** Consider the following statement:$$\text{If }x>15\text{ then }x^2-1<0$$
+
+1. **Converse:** If $x^2-1<0$, then $x>15$.
+2. **Contrapositive:** If $x^2-1\ge0$, then $x\le15$.
+3. **Inverse:** If $x\le 15$, then $x^2-1\ge0$.
+4. None of the above statements are true
 
 > [!question] **6.** What is the negation of the following statements?
 
-1. There exists some $n\in\mathbb Z$ such that $n^2+n$ is not composite.
-2. $\forall a\in A$, $a\in B$.
+5. There exists some $n\in\mathbb Z$ such that $n^2+n$ is not composite.
+6. $\forall a\in A$, $a\in B$.
 
+> [!question] **6.** Write $\mathbb R-\mathbb Z$ as a union of open intervals.
+
+$$\mathbb R-\mathbb Z=\bigcup_{x\in \mathbb Z}$$
