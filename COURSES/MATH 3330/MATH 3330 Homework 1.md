@@ -20,9 +20,9 @@ Let $x\in (A- B)\cup (A- C)$. Then $x\in A-B$ or $x\in A-C$. So, $x\in A$, and $
 
 Since we have shown that $A- (B\cap C) \subseteq (A- B)\cup (A- C)$ and that $(A- B)\cup (A- C) \subseteq A- (B\cap C)$, it must be true that $A- (B\cap C) = (A- B)\cup (A- C)$.
 
-> [!question] **2.** True or False? $(A\cap B)\cup(A-B)=A$
+> [!question] **3.** True or False? $(A\cap B)\cup(A-B)=A$
 
-This statement is true. It translates to "The set of things in both $A$ and $B$ combined with the things in just $A$ is $A$ itself."
+***Proof:*** Assume that $A-B=A\cap B^c$. Then 
 
 > [!question] **6.** What is the negation of the following statements?
 
