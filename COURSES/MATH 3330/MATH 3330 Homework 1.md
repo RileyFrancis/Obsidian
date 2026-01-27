@@ -48,4 +48,4 @@ What is true, however, is the subset $(A\times B)\cup (C\times D)\subseteq (A\cu
 
 > [!question] **6.** Write $\mathbb R-\mathbb Z$ as a union of open intervals.
 
-$$\mathbb R-\mathbb Z=\bigcup_{x\in \mathbb Z}$$
+$$\mathbb R-\mathbb Z=\bigcup_{x\in \mathbb Z}(x,x+1)$$
