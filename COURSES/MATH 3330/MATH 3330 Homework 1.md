@@ -22,7 +22,15 @@ Since we have shown that $A- (B\cap C) \subseteq (A- B)\cup (A- C)$ and that $(A
 
 > [!question] **3.** True or False? $(A\cap B)\cup(A-B)=A$
 
-***Proof:*** Assume that $A-B=A\cap B^c$. Then $(A\cap B)\cup(A-B)=(A\cap B)\cup(A\cap B^c)$. From **#1**, we've shown that $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$, letting $B^c=C$, we have $(A\cap B)\cup(A\cap B^c)=A\cap(B\cup B^c)$. Since $B\cup B^c=\emptyset$, $$
+This statement is true.
+
+***Proof:*** Assume that $A-B=A\cap B^c$. Then $(A\cap B)\cup(A-B)=(A\cap B)\cup(A\cap B^c)$. From **#1**, we've shown that $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$, letting $B^c=C$, we have $(A\cap B)\cup(A\cap B^c)=A\cap(B\cup B^c)$. Since $B\cup B^c=U$ (the universal set $U$), so $A\cap(B\cup B^c)=A\cap U=A$. Therefore, $(A\cap B)\cup(A-B)=A$ is true.
+
+> [!question] **4.** True or False? $(A\times B)\cup (C\times D)=(A\cup C)\times(B\cup D)$
+
+This statement is false.
+
+***Counterexample:*** Take $A=\set{1}$, $B=\set{1}$, $A=\set{2}$, $D=\set{2}$. Then the left hand side would be $\set{(1,1),(2,2)}$, while the right hand side would be 
 
 > [!question] **6.** What is the negation of the following statements?
 
