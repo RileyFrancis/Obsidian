@@ -22,7 +22,7 @@ Since we have shown that $A- (B\cap C) \subseteq (A- B)\cup (A- C)$ and that $(A
 
 > [!question] **3.** True or False? $(A\cap B)\cup(A-B)=A$
 
-***Proof:*** Assume that $A-B=A\cap B^c$. Then $(A\cap B)\cup(A-B)=(A\cap B)\cup(A\cap B^c)$. From **#1**, we've shown that $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$, letting $B^c=C$, we have $(A\cap B)\cup(A\cap B^c)=A\cap(B\cup )$
+***Proof:*** Assume that $A-B=A\cap B^c$. Then $(A\cap B)\cup(A-B)=(A\cap B)\cup(A\cap B^c)$. From **#1**, we've shown that $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$, letting $B^c=C$, we have $(A\cap B)\cup(A\cap B^c)=A\cap(B\cup B^c)$. Since $B\cup B^c=\emptyset$, $$
 
 > [!question] **6.** What is the negation of the following statements?
 
