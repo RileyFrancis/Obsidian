@@ -12,4 +12,6 @@ Since we have shown $A\cap (B\cup C) \subseteq (A\cap B)\cup (A\cap C)$ and $(A\
 
 > [!question] **2.** Show that $A- (B\cap C) = (A- B)\cup (A- C)$. 
 
-***Proof:*** We must show that $A- (B\cap C) = (A- B)\cup (A- C)$ by 
+***Proof:*** We must show that $A- (B\cap C) = (A- B)\cup (A- C)$ by proving that $A- (B\cap C) \subseteq (A- B)\cup (A- C)$ and that $(A- B)\cup (A- C) \subseteq A- (B\cap C)$.
+
+Let $x\in A-(B\cap C)$. That means that $x\in A$, but $x\not\in$
