@@ -30,7 +30,11 @@ This statement is true.
 
 This statement is false.
 
-***Counterexample:*** Take $A=\set{1}$, $B=\set{1}$, $A=\set{2}$, $D=\set{2}$. Then the left hand side would be $\set{(1,1),(2,2)}$, while the right hand side would be $\set{}$
+***Counterexample:*** Take $A=\set{1}$, $B=\set{1}$, $A=\set{2}$, $D=\set{2}$. Then the left hand side would be $\set{(1,1),(2,2)}$, while the right hand side would be $\set{(1,1),(1,2),(2,1),(2,2)}$. Since the left hand and right hand sides are not equivalent, the statement is false.
+
+What is true, however, is the subset $(A\times B)\cup (C\times D)\subseteq (A\cup C)\times(B\cup D)$.
+
+> [!question] **4.** True or False? $(A\times B)\cup (C\times D)=(A\cup C)\times(B\cup D)$
 
 > [!question] **6.** What is the negation of the following statements?
 
