@@ -14,7 +14,9 @@ Since we have shown $A\cap (B\cup C) \subseteq (A\cap B)\cup (A\cap C)$ and $(A\
 
 ***Proof:*** We must show that $A- (B\cap C) = (A- B)\cup (A- C)$ by proving that $A- (B\cap C) \subseteq (A- B)\cup (A- C)$ and that $(A- B)\cup (A- C) \subseteq A- (B\cap C)$.
 
-Let $x\in A-(B\cap C)$. That means that $x\in A$, but $x\not\in B\cap C$
+Let $x\in A-(B\cap C)$. That means that $x\in A$, but $x\not\in B\cap C$ (so $x\not\in B$ or $x\not\in C$). If $x\not\in B$, then $x\in A-B$. Similarly, if $x\not\in C$, then $x\in A-C$. Since one or both of the two previous statements must be true, $x\in (A- B)\cup (A- C)$. Therefore, $A- (B\cap C) = (A- B)\cup (A- C)$.
+
+Let $x\in (A- B)\cup (A- C)$. Then $x\in A-B$ or $x\in A-C$
 
 > [!question] **6.** What is the negation of the following statements?
 
