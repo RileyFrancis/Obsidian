@@ -16,7 +16,7 @@ Since we have shown $A\cap (B\cup C) \subseteq (A\cap B)\cup (A\cap C)$ and $(A\
 
 Let $x\in A-(B\cap C)$. That means that $x\in A$, but $x\not\in B\cap C$ (so $x\not\in B$ or $x\not\in C$). If $x\not\in B$, then $x\in A-B$. Similarly, if $x\not\in C$, then $x\in A-C$. Since one or both of the two previous statements must be true, $x\in (A- B)\cup (A- C)$. Therefore, $A- (B\cap C) = (A- B)\cup (A- C)$.
 
-Let $x\in (A- B)\cup (A- C)$. Then $x\in A-B$ or $x\in A-C$
+Let $x\in (A- B)\cup (A- C)$. Then $x\in A-B$ or $x\in A-C$. So, $x\in A$ and $x$
 
 > [!question] **6.** What is the negation of the following statements?
 
