@@ -1,2 +1,2 @@
 > [!info] Most important info
-> - Please arrive between 7:00am-7:30am
+> - Team check in and impound Please arrive between 7:00am-7:30am
