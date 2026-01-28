@@ -51,5 +51,5 @@ What is true, however, is the subset $(A\times B)\cup (C\times D)\subseteq (A\cu
 $$\mathbb R-\mathbb Z=\bigcup_{x\in \mathbb Z}(x,x+1)$$
 > [!question] **7.** Construct a collection of sets $A\in\mathcal A$ such that each $A$ is an open interval in $\mathbb R$ and $\bigcap_{A\in\mathcal A}A$ is a single point.
 
-We pick a real number $x\in\mathbb R$ and define a collection $\mathcal A=\{A_n\mid n\in\mathbb N^{\ge1}\}$ given $A_n=(x-\frac1n,x+\frac1n)$ the open interval in $\mathbb R$. We claim that $$\bigcap_{n\in\mathbb N^{\ge1}}A_n=\{x\}$$
-Firstly, $x\in A_n$ for every $n\in\mathbb N^{\ge1}$, since $x-\frac1n<x<x+\frac1n$, so $\{a\}\subseteq\bigcap_{n\in\mathbb N^{\ge1}}A_n$. Then, let $y\neq x$ such that $y>x$. 
+We choose a point $x\in \mathbb R$ and define $$\mathcal A=\{A_n\mid n\in \mathbb N^{\ge1}\} \text{ where } A_n=(x-n,x+n)\text{ an interval on }\mathbb R$$
+We claim that $\bigcap_{A\in\mathcal A}A=\{x\}$. Clearly $x\in A_n$ for all $n\in\mathbb N^{\ge1}$
