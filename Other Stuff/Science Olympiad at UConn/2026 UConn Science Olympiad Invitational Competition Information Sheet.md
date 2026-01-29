@@ -19,4 +19,8 @@ You can find an online version of this map at https://www.google.com/maps/d/u/0/
 ### Event Rooms
 All event rooms are shown on the schedule above. For the most part, all events are in the Gentry (GENT) and Information Technology Engineering building (ITE) buildings. All team rooms and some events are in Susan Herbst Hall (SHH). You will be assigned a team room during check in. Space-permitting, if you've registered two teams, we can give you two team rooms during check in on a first-come-first-serve basis (each team room has seating for approximately 25 people).
 ### Info For Volunteers
-ITE 336 is a reserved room for volunteers. If you have any questions at any point, please visit this room and see 
+ITE 336 is a reserved room for volunteers for the purpose of marking tests and as a meeting location. If you have any questions at any point, please visit this room to consult with other volunteers, or you can email uconn.scioly@gmail.com.
+
+We will be providing pizza for lunch free of charge to any volunteers at 12:00 in ITE 336. 
+
+Thank you very much for taking the time to volunteer at our competition! We could not do it without you!
