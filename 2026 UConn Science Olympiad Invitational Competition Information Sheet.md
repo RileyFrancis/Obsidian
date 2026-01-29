@@ -4,6 +4,7 @@
 > - As a reminder, **we require at least one volunteer to be provided by each team** (so if you are bringing two teams, please designate at least two people as volunteers).
 > - **Lunch will not be provided**, however there are many places to eat at either the Student Union and at downtown Storrs. (note that free pizza will be provided to any volunteers)
 > - Your team(s) will receive their **slot assignment** (either A, B, or C) during check in. Students in that team should attend their events during the time slot for their team. See the event schedule below for more info.  
+> - If you or your volunteers have any questions, they should **visit our test scoring room in ITE 336.**
 
 ### Event Schedule
 ![[Pasted image 20260128192100.png]]
