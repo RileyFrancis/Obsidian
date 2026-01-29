@@ -15,7 +15,7 @@ Should you have any questions, please reach out to us at uconn.scioly@gmail.com.
 <div style="page-break-after: always;"></div>
 
 ### Event Schedule
-We are following the nationals schedule at our competition. **Note that all lab events will be dry-lab only, as in we will only be running the test-portion of the event** (For example, this includes Circuit Lab, Crime Busters, Potions and Poisons, etc.).
+We are following the nationals schedule at our competition. **Note that all lab events will be dry-lab only, as in we will only be running the test-portion of the event** (To name a few, this includes Circuit Lab, Crime Busters, Potions and Poisons, etc.).
 
 ![[Pasted image 20260128192100.png]]
 ### Event Map
