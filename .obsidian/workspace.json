@@ -169,12 +169,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 523.5,
-    "collapsed": true
+    "width": 523.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,7 +190,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "78a60046cd749609",
+  "active": "63ce2dc885594313",
   "lastOpenFiles": [
     "COURSES/MATH 3330/MATH 3330 Homework 1.md",
     "2026 UConn Science Olympiad Invitational Competition Information Sheet.md",
