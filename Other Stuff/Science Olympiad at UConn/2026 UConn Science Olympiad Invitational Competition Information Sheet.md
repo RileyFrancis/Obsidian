@@ -15,3 +15,6 @@ You can find an online version of this map at https://www.google.com/maps/d/u/0/
 *Blue:* Parking locations. Note that there is a basketball game in the evening as well as a concert at Jorgensen on Feb. 14th, so there may be some traffic leaving our competition.
 *Red:* Competition buildings.
 *Orange:* Locations for food, including the Student Union and downtown Mansfield.
+
+### Event Rooms
+All event rooms are shown on the schedule above. For the most part, all events are in the Gentry (GENT) and Information Technology Engineering building (ITE) buildings. All team rooms are in Susan Herbst Hall (SHH). Space-permitting if you've registered two teams, we can give you two team rooms  
