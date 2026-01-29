@@ -60,4 +60,4 @@ We claim that $\bigcap_{A\in\mathcal A}A=\{x\}$. Clearly $x\in A_n$ for all $n\i
 
 **Complement of a union:**$$\left(\bigcup_{A\in\mathcal A}A\right)^c=\bigcap_{A\in\mathcal A}A^c$$Take any $x\in X$. Then, $$\begin{align}x\in \left(\bigcup_{A\in\mathcal A}A\right)^c &\iff x\notin\bigcup_{A\in\mathcal A}A \\ &\iff \forall A\in\mathcal A,x\notin A \\ &\iff \forall A\in\mathcal A, x\in A^c \\ &\iff x\in\bigcap_{A\in\mathcal A}A^c\end{align}$$Since this is true for all $x\in X$, the sets must be equal.
 
-****
+**Complement of an intersection:**$$\left(\bigcap_{A\in\mathcal A}A\right)^c=\bigcup_{A\in\mathcal A}A^c$$Take any $x\in X$. Then, $$\begin{align}x\in \left(\bigcup_{A\in\mathcal A}A\right)^c &\iff x\notin\bigcup_{A\in\mathcal A}A \\ &\iff \exists A\in\mathcal A,x\notin A \\ &\iff \exists A\in\mathcal A, x\in A^c \\ &\iff x\in\bigcup_{A\in\mathcal A}A^c\end{align}$$Since this is true for all $x\in X$, the sets must be equal.
