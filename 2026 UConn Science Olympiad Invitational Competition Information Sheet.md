@@ -5,4 +5,8 @@
 > - Lunch will not be provided, however there are many places to eat
 
 ### Event Schedule
-![[Pasted image 20260128191806.png]]
+![[Pasted image 20260128192100.png]]
+### Event Map
+![[Pasted image 20260128192208.png]]
+*Orange:* Locations for food, including the Student Union and downtown Mansfield.
+*Blue:* Parking locations. Note that there are 
