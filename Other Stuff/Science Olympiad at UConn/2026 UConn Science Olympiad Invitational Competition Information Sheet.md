@@ -1,5 +1,7 @@
 Hello coaches and Science Olympiad teams! We are so excited to have you at our
 Invitational Competition on February 14th, 2026!
+
+Should you have any questions, please reach out to us at uconn.scioly@gmail.com.
  - - -
 
 > [!info] **Most important info!**
@@ -10,12 +12,14 @@ Invitational Competition on February 14th, 2026!
 > - Your team(s) will receive their **slot assignment** (either A, B, or C) during check in. Students in that team should attend their events during the time slot for their team. See the event schedule below for more info.  
 > - If you or your volunteers have any questions, they should **visit our test scoring room in ITE 336.** If for some reason no one is currently in that room, they may email uconn.scioly@gmail.com.
 > - All tests will be provided by us.
+<div style="page-break-after: always;"></div>
 
 ### Event Schedule
+We are following the nationals schedule at our competition.
 ![[Pasted image 20260128192100.png]]
 ### Event Map
 ![[Pasted image 20260128192208.png]]
-You can find an online version of this map at https://www.google.com/maps/d/u/0/edit?mid=1JR0rTU4jN76koHLTJKxMmZOlJluPrjA&usp=sharing.
+You can find an online version of this map at [this link](https://www.google.com/maps/d/u/0/edit?mid=1JR0rTU4jN76koHLTJKxMmZOlJluPrjA&usp=sharing).
 
 *Blue:* Parking locations. Note that there is a basketball game in the evening as well as a concert at Jorgensen on Feb. 14th, so there may be some traffic leaving our competition.
 *Red:* Competition buildings.
