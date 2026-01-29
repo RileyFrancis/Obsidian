@@ -3,7 +3,7 @@
 > - An **event map** has been included in this information sheet. Please refer to it for locations for parking. You can also access the map online at https://www.google.com/maps/d/u/0/edit?mid=1JR0rTU4jN76koHLTJKxMmZOlJluPrjA&usp=sharing.
 > - As a reminder, **we require at least one volunteer to be provided by each team** (so if you are bringing two teams, please designate at least two people as volunteers).
 > - **Lunch will not be provided**, however there are many places to eat at either the Student Union and at downtown Storrs. (note that free pizza will be provided to any volunteers)
-> - Your team(s) will receive their slot assignment (either A, B, or C) during check in. Students in that team should attend their events during the time slot for their team. See the event schedule below. 
+> - Your team(s) will receive their **slot assignment** (either A, B, or C) during check in. Students in that team should attend their events during the time slot for their team. See the event schedule below for more info.  
 
 ### Event Schedule
 ![[Pasted image 20260128192100.png]]
