@@ -8,5 +8,6 @@
 ![[Pasted image 20260128192100.png]]
 ### Event Map
 ![[Pasted image 20260128192208.png]]
+*Blue:* Parking locations. Note that there is a basketball game in the evening as well as a concert at Jorgensen on Feb. 14th, so there may be some traffic leaving our competition.
+*Red:* Competition buildings.
 *Orange:* Locations for food, including the Student Union and downtown Mansfield.
-*Blue:* Parking locations. Note that there are 
