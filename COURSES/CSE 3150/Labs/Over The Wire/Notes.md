@@ -1,0 +1,1 @@
+SSH into the remote server using `ssh -p 2220 bandid{#}@bandit.labs.overthewire.org`
