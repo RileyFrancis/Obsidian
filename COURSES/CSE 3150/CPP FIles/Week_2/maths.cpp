@@ -7,6 +7,7 @@ using std::cout, std::endl;
 namespace MATHFUNCS {
     int add(int a, int b) {
         return a + b;
+    }
 }
 
 int main() {
