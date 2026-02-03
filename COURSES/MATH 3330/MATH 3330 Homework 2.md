@@ -33,7 +33,6 @@ Now we must show that $f(A-B)\neq f(A)-f(B)$. Suppose for example $A=\{1,2\}$ an
 
 Since the restriction of $C$ to $A_0$ is reflexive, symmetric, and transitive, it is an equivalence relation.
 
-
 ***Proof:*** In order to show that the restriction of $C$ to $A_0$ is an order relation, we must show that it is reflexive, non-symmetric, and transitive. $(x,y)\in C_0=C\cap(A_0\times A_0)$ means that $(x,y)\in C$, and that $x,y\in A_0$.
 
 *Reflexive:* Let $x\in A_0$. Since $A_0\subset A$, $x\in A$. Since $C$ is an order relation, it is reflexive on $A$, meaning $(x,x)\in C$. But also, $(x,x)\in (A_0\times A_0)$, so $(x,x)\in C\cap (A_0\times A_0)=C_0$. Therefore, the restriction of $C$ to $A_0$ is reflexive.
