@@ -25,4 +25,6 @@ Now we must show that $f(A-B)\neq f(A)-f(B)$. Suppose for example $A=\{1,2\}$ an
 
 ***Proof:*** In order to show that the restriction of $C$ to $A_0$ (we will define as $C_0:=C\cap(A_0\times A_0)$) is an equivalence relation, we must show that it is reflexive, symmetric, and transitive. $(x,y)\in C_0$ means that $(x,y)\in C$, and that $x,y\in A_0$.
 
-*Reflexive:* Let $a\in A_0$. Since $A_0\subset A$, $a\in A$.
+*Reflexive:* Let $x\in A_0$. Since $A_0\subset A$, $x\in A$. Since $C$ is an equivalence relation, it is reflexive on $A$, meaning $(x,x)\in C$. But also, $(x,x)\in (A_0\times A_0)$, so $(x,x)\in C\cap (A_0\times A_0)=C_0$. Therefore, the restriction of $C$ to $A_0$ is reflexive.
+
+*Symmetric:* Let $x,y\in A_0$ and suppose that $(x,y\in)$
