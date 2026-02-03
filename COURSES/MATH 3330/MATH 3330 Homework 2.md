@@ -78,6 +78,8 @@ No, not every nonempty subset of $\mathbb Z_+$ has a largest element because if 
 > 1. $\{x\mid x_i \text{ is an integer for all } i\}$
 > 2. $\{x\mid x_2=x_3\}$
 
+
+
 > [!problem] Question 9
 > Show that if $B$ is not finite and $B\subset A$, then $A$ must not be finite.
 
