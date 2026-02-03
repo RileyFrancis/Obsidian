@@ -16,4 +16,11 @@ Now consider $f$. Suppose for the sake of contradiction that $f$ must be surject
 
 ***Proof:*** We must show that $f^{-1}(A-B)=f^{-1}(A)-f^{-1}(B)$. Let $x\in f^{-1}(A-B)$. That means that $x\in A-B$. Thus, $x\in A$ and $x\notin B$. Since $x\in A$, $x\in f^{-1}(A)$, and since $x\notin B$, $x\notin f^{-1}(B)$. So, $x\in f^{-1}(A)-f^{-1}(B)$. Therefore, $f^{-1}$ preserves difference of sets.
 
-Now we must show that $f(A-B)\neq f(A)-f(B)$. We must find a $y\in f(A-B)$ where $y\notin f(A)-f(B)$. Let $A=\{1,2\}$ and $B=\{0\}$. We define $f:A\rightarrow B$ by $f(1)=0$ and $f(2)=0$. $f^{-1}(A-B)=f^{-1}(\{1,2\}-\{0\})=$
+Now we must show that $f(A-B)\neq f(A)-f(B)$. Suppose for example $A=\{1,2\}$ and $B=\{1\}$ such that $A,B\subseteq X$. We define $f:X\rightarrow Y$ by $f(1)=0$ and $f(2)=0$. On the left hand side, $f(A-B)=f(\{1,2\}-\{1\})=f(\{2\})=\{0\}$. On the right hand side, $f(A)-f(B)=f(\{1,2\})-f(\{1\})=\{0\}-\{0\}=\emptyset$. Since the left and right side are not equivalent, $f$ does not preserve difference of sets.
+
+> [!problem] 
+> Let $C$ be a relation on a set $A$. If $A_0\subset A$, define the restriction of $C$ to $A_0$ to be the relation $C\cap (A_0\times A_0)$.
+> 1. Show that the restriction of an equivalence relation is an equivalence relation.
+> 2. Show that the restriction of an order relation is an order relation.
+
+***Proof:*** In order to show that 
