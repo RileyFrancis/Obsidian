@@ -59,4 +59,17 @@ Since the restriction of $C$ to $A_0$ is reflexive, non-symmetric, and transitiv
 > Show that if $\mathcal A$ is a collection of inductive sets, then the intersection of the elements of $\mathcal A$ is also an inductive set (and thus $\mathbb Z_+$ is an inductive set).
 
 > [!problem] Question 7
-> Prove by induction that given $n\in\mathbb Z_+$, every nonempty subset of $\{1,\ldots,n\}$ has a largest element. Does this mean that every nonempty subset of $\mathbb Z_+$
+> Prove by induction that given $n\in\mathbb Z_+$, every nonempty subset of $\{1,\ldots,n\}$ has a largest element. Does this mean that every nonempty subset of $\mathbb Z_+$ has a largest element? Why or why not?
+
+***Proof:*** Let $n\in \mathbb Z_+$. We must show that every nonempty subset of $\{1,\ldots,n\}$ has a largest element. Take $n=1$. The set $\{1,\ldots,n\}$ has exactly one nonempty subset, being $\{1\}$, which trivially has the largest element of $1$. This completes the base case.
+
+Now take $k=n+1$. We must show that every nonempty subset of $\{1,\ldots, n, k\}$ has a largest element. Every subset of $\{1,\ldots, n, k\}$ must either contain $k$ or not,
+
+> [!problem] Question 8
+> Which of the following subsets of $\mathbb R^\omega$ can be written as the cartesian product of subsets of $\mathbb R$?
+> 1. $\{x\mid x_i \text{ is an integer for all } i\}$
+> 2. $\{x\mid x_2=x_3\}$
+
+> [!problem] Question 9
+> Show that if $B$ is not finite and $B\subset A$, then $A$ must not be finite.
+
