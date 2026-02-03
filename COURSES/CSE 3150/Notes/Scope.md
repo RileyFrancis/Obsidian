@@ -6,5 +6,3 @@ int func() {
 	return x;
 }
 ```
-
-The above 
