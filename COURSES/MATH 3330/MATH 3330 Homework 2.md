@@ -23,4 +23,4 @@ Now we must show that $f(A-B)\neq f(A)-f(B)$. Suppose for example $A=\{1,2\}$ an
 > 1. Show that the restriction of an equivalence relation is an equivalence relation.
 > 2. Show that the restriction of an order relation is an order relation.
 
-***Proof:*** In order to show that 
+***Proof:*** In order to show that the restriction of $C$ to $A_0$ is an equivalence relation, we must show that it is reflexive
