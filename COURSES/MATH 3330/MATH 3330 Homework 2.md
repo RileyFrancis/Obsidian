@@ -9,4 +9,4 @@
 **If $g\circ f$ is surjective, then $g$ must be surjective, but not necessarily $f$.**
 ***Proof:*** Let $f:A\rightarrow B$ and $g:B\rightarrow C$ be functions such that $g\circ f$ is surjective. Let $f(a)=b$ for $a\in A$ and $b\in B$. For every $c\in C$, there exists some $a\in A$ such that $(g\circ f)(a)=g(f(a))=g(b)=c$. Since $g(b)=c$ holds for all $c\in C$, $g$ must be surjective.
 
-Now consider $f$.
+Now consider $f$. Suppose for the sake of contradiction that $f$
