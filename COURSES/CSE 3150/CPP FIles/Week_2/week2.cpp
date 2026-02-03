@@ -1,6 +1,8 @@
 #include <iostream>
 // The pound include statement at the top here says "take the contents of this package and use it for linking"
 
+#include "funcs.hpp"
+
 // Functions must be declared before you call them. If you created this function after main(), it would error.
 void my_function(int x) {
     std::cout << x << std::endl;
