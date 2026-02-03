@@ -50,6 +50,8 @@ Since the restriction of $C$ to $A_0$ is reflexive, non-symmetric, and transitiv
 > 2. Show that given any collection of equivalence relations on a set $A$, their intersection is an equivalence relation on set $A$.
 > 3. Describe the equivalence relation $T$ on the real line that is the intersection of all equivalence relations on the real line that contain $S$. Describe the equivalence classes of $T$.
 
+1. We must show that $S'$ is reflexive, symmetric, and transitive. For all $x$
+
 > [!problem] Question 5
 > Prove the following statement: If an ordered set $A$ has the least upper bound property, then it has the greatest lower bound property.
 
