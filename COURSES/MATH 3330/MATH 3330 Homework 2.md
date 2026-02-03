@@ -9,4 +9,11 @@
 **If $g\circ f$ is surjective, then $g$ must be surjective, but not necessarily $f$.**
 ***Proof:*** Let $f:A\rightarrow B$ and $g:B\rightarrow C$ be functions such that $g\circ f$ is surjective. Let $f(a)=b$ for $a\in A$ and $b\in B$. For every $c\in C$, there exists some $a\in A$ such that $(g\circ f)(a)=g(f(a))=g(b)=c$. Since $g(b)=c$ holds for all $c\in C$, $g$ must be surjective.
 
-Now consider $f$. Suppose for the sake of contradiction that $f$
+Now consider $f$. Suppose for the sake of contradiction that $f$ must be surjective. Consider the example when $A=\{0\}$, $B=\{x,y\}$, and $C=\{\alpha\}$ and $f(0)=x$, $g(x)=\alpha$, and $g(y)=\alpha$. Then there exists a $b\in B$ (namely $y$) that $f$ does not map to, meaning that $f$ is not surjective.
+
+> [!problem] 
+> Show that $f^{-1}$ preserves difference of sets, but not $f$.
+
+***Proof:*** We must show that $f^{-1}(A-B)=f^{-1}(A)-f^{-1}(B)$. Let $x\in f^{-1}(A-B)$. That means that $x\in A-B$. Thus, $x\in A$ and $x\notin B$. Since $x\in A$, $x\in f^{-1}(A)$, and since $x\notin B$, $x\notin f^{-1}(B)$. So, $x\in f^{-1}(A)-f^{-1}(B)$. Therefore, $f^{-1}$ preserves difference of sets.
+
+Now we must show that $f(A-B)\neq f(A)-f(B)$. Let $x\in $
