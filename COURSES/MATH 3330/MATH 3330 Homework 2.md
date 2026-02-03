@@ -53,7 +53,7 @@ Since the restriction of $C$ to $A_0$ is reflexive, non-symmetric, and transitiv
 > [!problem] Question 5
 > Prove the following statement: If an ordered set $A$ has the least upper bound property, then it has the greatest lower bound property.
 
-***Proof:*** Let $A$ be a set that has the least upper bound property. We must show that it has the greatest lower bound property. Since $A$ has the least upper bound property, that means that every nonempty subset $S\subseteq A$ that is bounded above has a least upper bound.
+***Proof:*** Let $A$ be a set that has the least upper bound property. We must show that it has the greatest lower bound property (that there exists an infimum in $A$). Since $A$ has the least upper bound property, that means that every nonempty subset $S\subseteq A$ that is bounded above has a supremum in $A$.
 
 > [!problem] Question 6
 > Show that if $\mathcal A$ is a collection of inductive sets, then the intersection of the elements of $\mathcal A$ is also an inductive set (and thus $\mathbb Z_+$ is an inductive set).
