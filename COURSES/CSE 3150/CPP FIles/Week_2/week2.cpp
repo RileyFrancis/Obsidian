@@ -15,6 +15,7 @@ int main() {
     int y;
     y = 50;
     my_function(y);
+    example(y);
     return 0;
 }
 
