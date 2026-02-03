@@ -16,4 +16,4 @@ Now consider $f$. Suppose for the sake of contradiction that $f$ must be surject
 
 ***Proof:*** We must show that $f^{-1}(A-B)=f^{-1}(A)-f^{-1}(B)$. Let $x\in f^{-1}(A-B)$. That means that $x\in A-B$. Thus, $x\in A$ and $x\notin B$. Since $x\in A$, $x\in f^{-1}(A)$, and since $x\notin B$, $x\notin f^{-1}(B)$. So, $x\in f^{-1}(A)-f^{-1}(B)$. Therefore, $f^{-1}$ preserves difference of sets.
 
-Now we must show that $f(A-B)\neq f(A)-f(B)$. Let $x\in $
+Now we must show that $f(A-B)\neq f(A)-f(B)$. Let $x\in A-B$ and $y\in B$.
