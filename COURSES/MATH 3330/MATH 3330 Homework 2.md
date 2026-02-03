@@ -59,7 +59,7 @@ Since the restriction of $C$ to $A_0$ is reflexive, non-symmetric, and transitiv
 > [!problem] Question 6
 > Show that if $\mathcal A$ is a collection of inductive sets, then the intersection of the elements of $\mathcal A$ is also an inductive set (and thus $\mathbb Z_+$ is an inductive set).
 
-***Proof:***
+***Proof:*** A set $S$ is inductive if $1\in S$ and whenever $n\in S$, then $n+1\in S$. Let $\mathcal A$ be a collection of inductive sets and define$$I=\bigcap_{A\in\mathcal A}A$$as the intersection of the sets in $\mathcal A$. We must show that $I$ is also inductive. Since each $A\in\mathcal A$
 
 > [!problem] Question 7
 > Prove by induction that given $n\in\mathbb Z_+$, every nonempty subset of $\{1,\ldots,n\}$ has a largest element. Does this mean that every nonempty subset of $\mathbb Z_+$ has a largest element? Why or why not?
