@@ -15,6 +15,8 @@ int main() {
     int y;
     y = 50;
     my_function(y);
+
+    // This comes from funcs.cpp
     example(y);
     return 0;
 }
