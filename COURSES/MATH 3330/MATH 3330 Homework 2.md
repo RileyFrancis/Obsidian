@@ -1,4 +1,6 @@
 ***Riley Francis***
+
+I don't know why, but for whatever reason in my submission for Homework 1, my callout blocks for questions just displayed as empty (I write up these homework assignments in my note taking app Obsidian which works in markdown with LaTeX snippets). I think that this just might be a bug with how Gradescope renders the submitted PDFs since if you download it, you can see the question blocks perfectly clear. Anyways, I've changed a few settings from last time so they should hopefully appear now. 😄
 - - -
 > [!problem] Question 1
 > If $f$ and $g$ are surjective, what can you say about $g\circ f$? If $g\circ f$ is surjective, what can you say about $f$ and $g$? State and prove a theorem about surjectivity under composition.
@@ -57,15 +59,28 @@ The equivalence classes of $S'$ form sets of numbers that differ by whole intege
 ##### 2.
 Let $\{\sim_i\}_{i\in I}$ be a collection of equivalence relations on a set $A$. Define a new relation $\sim$ by $x \sim y$ if and only if $x \sim_i y$ for every $i\in I$. This relation is exactly the intersection $\sim = \bigcap_{i\in I} \sim_i$.
 
-We show that $\sim$ is an equivalence relation. First, $\sim$ is reflexive. For any $x \in A$, since each $\sim_i$ is an equivalence relation, we have $x \sim_i x$ for all $i\in I$. Therefore $x \sim x$, so $\sim$ is reflexive. Next, $\sim$ is symmetric. Suppose $x \sim y$. Then $x \sim_i y$ for every $i\in I$. Since each $\sim_i$ is symmetric, it follows that $y \sim_i x$ for every $i$, and hence $y \sim x$. Thus $\sim$ is symmetric. Finally, $\sim$ is transitive. Suppose $x \sim y$ and $y \sim z$. Then for every $i\in I$, we have $x \sim_i y$ and $y \sim_i z$. Because each $\sim_i$ is transitive, this implies $x \sim_i z$ for all $i$, and therefore $x \sim z$. Hence $\sim$ is transitive.
+For any $x \in A$, since each $\sim_i$ is an equivalence relation, we have $x \sim_i x$ for all $i\in I$. Therefore $x \sim x$, so $\sim$ is reflexive. 
+
+Suppose $x \sim y$. Then $x \sim_i y$ for every $i\in I$. Since each $\sim_i$ is symmetric, it follows that $y \sim_i x$ for every $i$, and thus $y \sim x$. Thus $\sim$ is symmetric. 
+
+Suppose $x \sim y$ and $y \sim z$. Then for every $i\in I$, we have $x \sim_i y$ and $y \sim_i z$. Because each $\sim_i$ is transitive, this implies $x \sim_i z$ for all $i$, and therefore $x \sim z$. Hence $\sim$ is transitive.
 
 Since $\sim$ is reflexive, symmetric, and transitive, the intersection of any collection of equivalence relations on $A$ is itself an equivalence relation.
+##### 3. 
+Let $T$ be the intersection of all equivalence relations on $\mathbb R$ that contain $S$. $T$ is itself an equivalence relation (from part 2), and by construction it is the smallest equivalence relation on $\mathbb R$ that contains $S$.
 
+Since $S \subset S'$, and $S'$ is an equivalence relation, $T \subset S'$. On the other hand, any equivalence relation that contains $S$ must also contain all pairs from $S$ by symmetry and transitivity. Because $(x, x+1)\in S$ for $0<x<2$, transitivity forces $(x, x+n)$ to be in the relation for all integers $n$, and symmetry gives $(x+n, x)$. Thus any equivalence relation containing $S$ must contain all pairs $(x,y)$ with $y-x \in \mathbb Z$.
+
+Therefore $S' \subset T$, and hence $T = S'$.
+
+The equivalence classes of $T$ are sets of real numbers that differ by exactly an integer.
 
 > [!problem] Question 5
 > Prove the following statement: If an ordered set $A$ has the least upper bound property, then it has the greatest lower bound property.
 
-***Proof:*** Let $A$ be a set that has the least upper bound property. We must show that it has the greatest lower bound property (that there exists an infimum in $A$). Since $A$ has the least upper bound property, that means that every nonempty subset $S\subseteq A$ that is bounded above has a supremum in $A$.
+***Proof:*** Assume $A$ is an ordered set with the least upper bound property. We show that $A$ also has the greatest lower bound property. Let $B \subset A$ be a nonempty set that is bounded below. Let $L$ be the set of all lower bounds of $B$. Since $B$ is bounded below, $L$ is nonempty. Pick any $b \in B$. Every element of $L$ is less than or equal to $b$, so $b$ is an upper bound of $L$, and thus $L$ is bounded above. By the least upper bound property, $L$ has a least upper bound; call it $u$. We claim that $u$ is the greatest lower bound of $B$. First, $u$ is a lower bound of $B$. Since every element of $L$ is less than or equal to every $b \in B$, each $b$ is an upper bound of $L$, and because $u$ is the least upper bound of $L$, we have $u \le b$ for all $b \in B$. Next, $u$ is the greatest such lower bound. If $m$ is any lower bound of $B$, then $m \in L$, and since $u$ is an upper bound of $L$, we have $m \le u$. Therefore $u$ is the greatest lower bound of $B$, and $A$ has the greatest lower bound property.
+
+
 
 > [!problem] Question 6
 > Show that if $\mathcal A$ is a collection of inductive sets, then the intersection of the elements of $\mathcal A$ is also an inductive set (and thus $\mathbb Z_+$ is an inductive set).
