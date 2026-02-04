@@ -48,8 +48,14 @@ Since the restriction of $C$ to $A_0$ is reflexive, non-symmetric, and transitiv
 > 1. Show that $S'$ is an equivalence relation on the real line and that $S\subset S'$. Describe the equivalence classes of $S'$.
 > 2. Show that given any collection of equivalence relations on a set $A$, their intersection is an equivalence relation on set $A$.
 > 3. Describe the equivalence relation $T$ on the real line that is the intersection of all equivalence relations on the real line that contain $S$. Describe the equivalence classes of $T$.
+##### 1.
+We must show that $S'$ is reflexive, symmetric, and transitive. For all $x$, $(x,x)=x-x=0\in S'$, so $S'$ is reflexive. For all $(x,y)$, $(x,y)=y-x=-(x-y)=(-y,-x)$. Since $\mathbb Z$ is closed under multiplication by $-1$, $(y,x)\in S'$, so $S'$ is symmetric. For all $(x,y)$ and $(y,z)$, we have $y-x\in\mathbb Z$ and $z-y\in\mathbb Z$. Then, $(y-x)+(z-y)=z-x$, so $x\sim z$ and thus $S'$ is transitive. Therefore, $S'$ is an equivalence relation. 
 
-1. We must show that $S'$ is reflexive, symmetric, and transitive. For all $x$, $(x,x)=x-x=0\in S'$, so $S'$ is reflexive. For all $(x,y)$, $(x,y)=y-x=-(x-y)=(-y,-x)$. Since $\mathbb Z$ is closed under multiplication by $-1$, $(y,x)\in S'$, so $S'$ is symmetric. For all $(x,y)$ and $(y,z)$, we have $y-x\in\mathbb Z$ and $z-y\in\mathbb Z$. Then, $(y-x)+(z-y)=z-x$, so $x\sim z$ and thus $S'$ is transitive. Therefore, $S'$ is an equivalence relation. Furthermore, if you pick some $(x,y)\in S$, by definition, 
+Furthermore, if you pick some $(x,y)\in S$, by definition, $y=x+1$ and $0<x<2$. Then, $y-x=1\in\mathbb Z$, so $(x,y)\in S'$. Therefore, $S\subset S'$.
+
+The equivalence classes of $S'$ form sets of numbers that differ by whole integer values (i.e. $\{1.5, 2.5, 8.5, \ldots\}$).
+##### 2.
+Let $A$ be a set and let $\{R_i\}_i\in$
 
 > [!problem] Question 5
 > Prove the following statement: If an ordered set $A$ has the least upper bound property, then it has the greatest lower bound property.
