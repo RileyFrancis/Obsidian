@@ -9,3 +9,5 @@ The above information can be found at [this link.](https://www.era.nih.gov/regis
 ### Logging In
 Once you have an eRA Commons account, you can log into the page at [this page.](https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login&login=NFL)
 
+### Requesting Access
+You will need to submit a DAR (Data Access Request). Here is a useful YouTube video I found from 
