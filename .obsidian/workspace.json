@@ -41,10 +41,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDFs/Instructions for Acquiring Access to dbGaP.pdf"
+                "file": "PDFs/2026 UConn Science Olympiad Invitational Competition Information Sheet.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Instructions for Acquiring Access to dbGaP"
+              "title": "2026 UConn Science Olympiad Invitational Competition Information Sheet"
             }
           }
         ],
@@ -219,8 +219,8 @@
   },
   "active": "c41551ac333bc992",
   "lastOpenFiles": [
-    "Instructions for Acquiring Access to dbGaP.md",
     "PDFs/Instructions for Acquiring Access to dbGaP.pdf",
+    "Instructions for Acquiring Access to dbGaP.md",
     "Images/Pasted image 20260204163429.png",
     "Images/Pasted image 20260204163233.png",
     "COURSES/MATH 3330/MATH 3330 Homework 2.md",
