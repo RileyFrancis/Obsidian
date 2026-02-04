@@ -55,7 +55,12 @@ Furthermore, if you pick some $(x,y)\in S$, by definition, $y=x+1$ and $0<x<2$. 
 
 The equivalence classes of $S'$ form sets of numbers that differ by whole integer values (i.e. $\{1.5, 2.5, 8.5, \ldots\}$).
 ##### 2.
-Let $A$ be a set and let $\{R_i\}_i\in$
+Let $\{\sim_i\}_{i\in I}$ be a collection of equivalence relations on a set $A$. Define a new relation $\sim$ by $x \sim y$ if and only if $x \sim_i y$ for every $i\in I$. This relation is exactly the intersection $\sim = \bigcap_{i\in I} \sim_i$.
+
+We show that $\sim$ is an equivalence relation. First, $\sim$ is reflexive. For any $x \in A$, since each $\sim_i$ is an equivalence relation, we have $x \sim_i x$ for all $i\in I$. Therefore $x \sim x$, so $\sim$ is reflexive. Next, $\sim$ is symmetric. Suppose $x \sim y$. Then $x \sim_i y$ for every $i\in I$. Since each $\sim_i$ is symmetric, it follows that $y \sim_i x$ for every $i$, and hence $y \sim x$. Thus $\sim$ is symmetric. Finally, $\sim$ is transitive. Suppose $x \sim y$ and $y \sim z$. Then for every $i\in I$, we have $x \sim_i y$ and $y \sim_i z$. Because each $\sim_i$ is transitive, this implies $x \sim_i z$ for all $i$, and therefore $x \sim z$. Hence $\sim$ is transitive.
+
+Since $\sim$ is reflexive, symmetric, and transitive, the intersection of any collection of equivalence relations on $A$ is itself an equivalence relation.
+
 
 > [!problem] Question 5
 > Prove the following statement: If an ordered set $A$ has the least upper bound property, then it has the greatest lower bound property.
