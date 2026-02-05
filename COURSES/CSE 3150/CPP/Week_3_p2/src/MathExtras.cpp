@@ -1,3 +1,5 @@
+#include "MathExtras.hpp"
+
 
 namespace MathExtras {
     int factorial(int n) {
