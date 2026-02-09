@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Notes"
             }
+          },
+          {
+            "id": "0d89a4f7535c0dc8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,7 +202,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e66a7eedfd310a7d",
+  "active": "0d89a4f7535c0dc8",
   "lastOpenFiles": [
     "COURSES/CSE 3150/CPP/Week_3_p2/include/MathExtras.hpp",
     "COURSES/CSE 3150/CPP/Week_3_p2/include/CheckUtils.hpp",
