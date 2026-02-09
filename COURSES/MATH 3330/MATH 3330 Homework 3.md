@@ -5,7 +5,7 @@
 
 1. For a collection $\mathcal A$ of nonempty subsets of $\mathbb Z_+$, we define a choice function $f:\mathcal A\rightarrow \mathbb Z_+$ by $f(A)=\min(A)$ for all $A\in\mathcal A$. This is a valid choice function because every $A\in\mathcal A$ is nonempty, each $f(A)$ has a well defined smallest element, and $f(A)\in A$. 
 
-2. For a collection $\mathcal B$ of nonempty subsets of $\mathbb Q$, we define a choice function $f:\mathcal B\rightarrow \mathbb Q$ by $f(B)=$
+2. For a collection $\mathcal B$ of nonempty subsets of $\mathbb Q$, we define a choice function $f:\mathcal B\rightarrow \mathbb Q$ by $f(B)=$ for all $B\in\mathcal B$.
 
 > [!problem] Question 2
 > here was a theorem in $\S 7$ whose proof involved an infinite number of arbitrary choices. Which one was it? Rewrite the proof making explicit use of the choice axiom. 
