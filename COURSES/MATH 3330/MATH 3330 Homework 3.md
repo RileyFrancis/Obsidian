@@ -14,10 +14,14 @@ Theorem $7.5$ in $\S7$ uses infinitely many arbitrarily choices.
 
 ***Proof:*** Let $\{A_n\}_{n\in J}$ be an indexed family of countable sets where the index set $J$ is either $\{1,\ldots, N\}$ or $\mathbb Z_+$. We must show that $\bigcup_{n\in J}A_n$ is countable. 
 
-Assume that each $A_n$ is nonempty. Then for each $n\in J$, define:$$S_n=\{f:\mathbb Z_+\rightarrow A_n \mid f \text{ is surjective}\}$$Since each $A_n$ is nonempty, there must exist a surjection $\mathbb Z_+\rightarrow A_n$, so $S_n\neq\emptyset$ for every $n\in J$
+Assume that each $A_n$ is nonempty. Then for each $n\in J$, define:$$S_n=\{f:\mathbb Z_+\rightarrow A_n \mid f \text{ is surjective}\}$$Since each $A_n$ is nonempty, there must exist a surjection $\mathbb Z_+\rightarrow A_n$, so $S_n\neq\emptyset$ for every $n\in J$. We then apply the axiom of choice to the family $\{S_n\}_{n\in J}$ to get $$F:J\rightarrow\bigcup_{n\in J} S_n$$such that $F(n)\in S_n$ for all $n\in J$. Then $F$ must be surjective.
+
+Then, choose a surjection $g:\mathbb Z_$
 
 > [!problem] Question 3 
 > Let $A$ and $B$ be two nonempty sets. If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we say that $A$ has greater cardinality than $B$. Show that if $A$ has greater cardinality than $B$ and $B$ has greater cardinality than $C$, then $A$ has greater cardinality than $C$.
 
 > [!problem] Question 4 
 > Describe a well ordering on $\mathbb Q_+$ (Hint: use a well ordering on $\mathbb Z_+ \times \mathbb Z_+$). Using your ordering, find the smallest element in $(0,1)$. 
+
+For $p,q\in\mathbb Z$, $q\neq0$, and $\gcd(p,q)=1$, we define the well ordering on $\mathbb Q_+$ as:$$\frac{p}{q}\prec \frac{p'}{q'}\iff \left\{ \begin{align} &|p|+q < |p'|+q' &\text{or} \\ &|p| +q = |p'|+q' \text{ and }q<q' &\text{or} \\ &|p|+q = |p'|+q' \text{ and } q=q' \text{ and } p <p'\end{align}\right.$$for
