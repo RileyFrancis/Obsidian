@@ -10,6 +10,9 @@
 > [!problem] Question 2
 > There was a theorem in $\S 7$ whose proof involved an infinite number of arbitrary choices. Which one was it? Rewrite the proof making explicit use of the choice axiom. 
 
+Theorem $7.5$ in $\S7$ uses infinitely many arbitrarily choices.
+
+***Proof:*** Let $\{A_n\}_{n\in J}$ be an indexed family of countable sets where the index set $$ $$
 
 > [!problem] Question 3 
 > Let $A$ and $B$ be two nonempty sets. If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we say that $A$ has greater cardinality than $B$. Show that if $A$ has greater cardinality than $B$ and $B$ has greater cardinality than $C$, then $A$ has greater cardinality than $C$.
