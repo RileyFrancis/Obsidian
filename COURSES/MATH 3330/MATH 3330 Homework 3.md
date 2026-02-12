@@ -12,7 +12,9 @@
 
 Theorem $7.5$ in $\S7$ uses infinitely many arbitrarily choices.
 
-***Proof:*** Let $\{A_n\}_{n\in J}$ be an indexed family of countable sets where the index set $$ $$
+***Proof:*** Let $\{A_n\}_{n\in J}$ be an indexed family of countable sets where the index set $J$ is either $\{1,\ldots, N\}$ or $\mathbb Z_+$. We must show that $\bigcup_{n\in J}A_n$ is countable. 
+
+Assume that each $A_n$ is nonempty. Then for each $n\in J$, define:$$S_n=\{f:\mathbb Z_+\rightarrow A_n \mid f \text{ is surjective}\}$$Since each $A_n$ is nonempty, there must exist a surjection $\mathbb Z_+\rightarrow A_n$, so $S_n\neq\emptyset$ for every $n\in J$
 
 > [!problem] Question 3 
 > Let $A$ and $B$ be two nonempty sets. If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we say that $A$ has greater cardinality than $B$. Show that if $A$ has greater cardinality than $B$ and $B$ has greater cardinality than $C$, then $A$ has greater cardinality than $C$.
