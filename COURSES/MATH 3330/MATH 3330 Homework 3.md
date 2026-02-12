@@ -21,7 +21,11 @@ Then, choose a surjection $g:\mathbb Z_$
 > [!problem] Question 3 
 > Let $A$ and $B$ be two nonempty sets. If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we say that $A$ has greater cardinality than $B$. Show that if $A$ has greater cardinality than $B$ and $B$ has greater cardinality than $C$, then $A$ has greater cardinality than $C$.
 
+***Proof:*** Let $A, B, C$ be nonempty sets. Let $A$ have a greater cardinality than $B$, meaning that there exists an injection $f:B\rightarrow A$, but there does not exist an injection $f:A\rightarrow B$. Assume that $A$ has a greater cardinality than $C$. Here we will denote a set h
+
 > [!problem] Question 4 
 > Describe a well ordering on $\mathbb Q_+$ (Hint: use a well ordering on $\mathbb Z_+ \times \mathbb Z_+$). Using your ordering, find the smallest element in $(0,1)$. 
 
-For $p,q\in\mathbb Z$, $q\neq0$, and $\gcd(p,q)=1$, we define the well ordering on $\mathbb Q_+$ as:$$\frac{p}{q}\prec \frac{p'}{q'}\iff \left\{ \begin{align} &|p|+q < |p'|+q' &\text{or} \\ &|p| +q = |p'|+q' \text{ and }q<q' &\text{or} \\ &|p|+q = |p'|+q' \text{ and } q=q' \text{ and } p <p'\end{align}\right.$$for
+For $p,q\in\mathbb Z$, $q\neq0$, and $\gcd(p,q)=1$, we define the well ordering on $\mathbb Q_+$ as:$$\frac{p}{q}\prec \frac{p'}{q'}\iff \left\{ \begin{align} &|p|+q < |p'|+q' &\text{or} \\ &|p| +q = |p'|+q' \text{ and }q<q' &\text{or} \\ &|p|+q = |p'|+q' \text{ and } q=q' \text{ and } p <p'\end{align}\right.$$for all $\frac{p}{q},\frac{p'}{q'}\in \mathbb Q_+$.
+
+The smallest element in $(0,1)$ under this ordering would be $\frac{1}{2}$.
