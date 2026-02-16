@@ -45,4 +45,8 @@ There are a total of 29 unique topologies on $X$.
 3. The intersection of elements of any finite subcollection of $\mathcal T$ is in $\mathcal T$.
 
 **1.** By the definition of $\mathcal T$, since $X=\mathbb R$, $X,\emptyset\in\mathcal T$.
-**2.** Let $\mathcal U\subseteq \mathcal T$. If $\mathbb R\in\mathcal U$, then $\bigcup\mathcal U=\mathbb R\in\mathcal T$. If $\mathcal U$ contains only $\emptyset$, then trivially $\bigcup\mathcal U=\emptyset\in\mathcal T$. Now consider the case when $\mathbb R\notin \mathcal U$ and $\mathcal U$ contains collections other than than $\emptyset$ ($\mathcal U$ contains at least one nonempty set in the form $(a,\infty)$ for $a\in\mathbb R$).
+
+**2.** Let $\mathcal U\subseteq \mathcal T$. If $\mathbb R\in\mathcal U$, then $\bigcup\mathcal U=\mathbb R\in\mathcal T$. If $\mathcal U$ contains only $\emptyset$, then trivially $\bigcup\mathcal U=\emptyset\in\mathcal T$. Now consider the case when $\mathbb R\notin \mathcal U$ and $\mathcal U$ contains collections other than than $\emptyset$ ($\mathcal U$ contains at least one nonempty set in the form $(a,\infty)$ for $a\in\mathbb R$). Let $A=\{a\in\mathbb R \mid (a,\infty)\in\mathcal U\}$. Since $\mathcal U$ contains at least one nonempty set, $A\neq\emptyset$. We will show that $\bigcup_{(a,\infty)\in\mathcal U}(a,\infty)=(\inf A, \infty)$ by double inclusion:
+
+- $\subseteq$ : If $x\in \bigcup_{(a,\infty)\in\mathcal U}(a,\infty)$, then $x>a$ for some $a\in A$, and since $\inf A\le a$, we get $\inf A\le a < x$. So, $x\gt\inf A$ by transitivity, so $x\in (\inf A,\infty)$.
+- $\supseteq$ : If $x\in (\inf A,\infty)$, then $\inf A < x$.
