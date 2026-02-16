@@ -53,4 +53,8 @@ There are a total of 29 unique topologies on $X$.
 
 Therefore, $\bigcup_{(a,\infty)\in\mathcal U}(a,\infty)=(\inf A, \infty)$, so the union of elements from any subcollection $\mathcal U$ of $\mathcal T$ is in $\mathcal T$.
 
-**3.** 
+**3.** If $\emptyset\in\mathcal U$, then trivially $\bigcap\mathcal U=\emptyset\in\mathcal T$. Now consider $(a_1,\infty),\ldots,(a_n,\infty)$ for $n\in\mathbb N$ and $a_1,\ldots, a_n\in\mathbb R$. A point $x$ is in the intersection of $(a_1,\infty),\ldots,(a_n,\infty)$ if $x>a_1,\ldots, x>a_n$. So, $x>\max\{a_1,\ldots a_n\}$, and thus $\bigcap_{i=1}^n(a_i,\infty)=(\max\{a_1,\ldots,a_n\},\infty)$. Since $\max\{a_1,\ldots,a_n\}\in\mathbb R$, $(\max\{a_1,\ldots,a_n\},\infty)\in\mathcal T$, so the intersection of elements of any finite subcollection of $\mathcal T$ is in $\mathcal T$.
+
+Therefore, $\mathcal T$ is a topology.
+
+**Restricting to $\mathbb Q$:** We will define $\mathcal T_{\mathbb Q}$ as $\{U\cap \mathbb Q \mid U\in\mathcal T\}$.
