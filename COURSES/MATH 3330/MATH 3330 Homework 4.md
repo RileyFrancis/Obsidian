@@ -1,7 +1,7 @@
 ***Riley Francis***
 - - -
 > [!problem] Question 1
-> Let $X=\{a,b,c\}$. How many topologies are on $X$.
+> Let $X=\{a,b,c\}$. How many topologies are on $X$?
 
 The following are unique topologies on $X$:
 1. $\{\emptyset, X\}$
@@ -35,3 +35,14 @@ The following are unique topologies on $X$:
 29. $\{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, X\}$
 
 There are a total of 29 unique topologies on $X$.
+
+> [!problem] Question 2
+> Let $\mathcal T$ consist of $\mathbb R, \emptyset$, and all infinite open intervals in the form of $(a,\infty)$, where $a$ is real. Show that $\mathcal T$ is a topology. What if we restrict $\mathcal T$ to $\mathbb Q$?
+
+***Proof:*** Let $\mathcal T$ consist of $\mathbb R, \emptyset$, and all infinite open intervals in the form of $(a,\infty)$, where $a$ is real. In order for $\mathcal T$ to be a topology, it must satisfy all of the following conditions:
+1. If $\mathcal T$ is a topology on a set $X$, then $X,\emptyset\in\mathcal T$.
+2. The union of elements for any subcollection of $\mathcal T$ is in $\mathcal T$.
+3. The intersection of elements of any finite subcollection of $\mathcal T$ is in $\mathcal T$.
+
+**1.** By the definition of $\mathcal T$, since $X=\mathbb R$, $X,\emptyset\in\mathcal T$.
+**2.** 
