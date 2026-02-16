@@ -45,4 +45,4 @@ There are a total of 29 unique topologies on $X$.
 3. The intersection of elements of any finite subcollection of $\mathcal T$ is in $\mathcal T$.
 
 **1.** By the definition of $\mathcal T$, since $X=\mathbb R$, $X,\emptyset\in\mathcal T$.
-**2.** 
+**2.** Let $\mathcal U\subseteq \mathcal T$. If $\mathbb R\in\mathcal U$, then $\bigcup\mathcal U=\mathbb R\in\mathcal T$. If $\mathcal U$ contains only $\emptyset$, then trivially $\bigcup\mathcal U=\emptyset\in\mathcal T$. Now consider the case when $\mathbb R\notin \mathcal U$ and $\mathcal U$ contains collections other than than $\emptyset$ ($\mathcal U$ contains at least one nonempty set in the form $(a,\infty)$ for $a\in\mathbb R$).
