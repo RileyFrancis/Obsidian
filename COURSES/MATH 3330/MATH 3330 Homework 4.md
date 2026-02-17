@@ -65,3 +65,8 @@ Therefore, $\mathcal T$ is a topology.
 **3.** Let $U_1, \dots, U_n \in \mathcal T$ for $n\in\mathbb N$. Then $\bigcap_{i=1}^n (U_i \cap \mathbb Q) = \left( \bigcap_{i=1}^n U_i \right) \cap \mathbb Q.$ Since $\bigcap_{i=1}^n U_i \in \mathcal T$ (because $\mathcal T$ is closed under finite intersections), it follows that $\left( \bigcap_{i=1}^n U_i \right) \cap \mathbb Q \in \mathcal T_{\mathbb Q}.$ Thus $\mathcal T_{\mathbb Q}$ is closed under finite intersections.
 
 Therefore $\mathcal T_{\mathbb Q}$ is also a topology.
+
+> [!problem] Question 3
+> Let $X$ be a topological space and $A$ be a subset of $X$. Suppose that for each $x\in A$ there is an open set $U$ containing $x$ such that $U\subseteq A$. Show that $A$ is open in $X$. 
+
+***Proof:*** Let $X$ be a topological space and $A\subseteq X$. Suppose that for each $x\in A$ there is an open set $U$ containing $x$ such that $U\subseteq A$. We must show that $A$ is open in $X$.
