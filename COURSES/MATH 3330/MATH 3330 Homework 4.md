@@ -102,7 +102,8 @@ Thus $\mathcal T_\mathcal A = \mathcal T$, and therefore the topology generated 
 > [!problem] Question 6
 > Show that the countable collection $$\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$$ is a basis for $\mathbb R^2$ with the standard topology.
 
-***Proof:*** In order for the collection $\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$ to be a basis for $\mathbb R^2$ with the standard topology, the
+***Proof:*** In order for the collection $X=\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$ to be a basis for $\mathbb R^2$ with the standard topology, the following must be true:
+1. 
 
 > [!problem] Question 7 
 > If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb R_l\times \mathbb R$ and as a subspace of $\mathbb R_l\times \mathbb R_l$.
