@@ -69,4 +69,6 @@ Therefore $\mathcal T_{\mathbb Q}$ is also a topology.
 > [!problem] Question 3
 > Let $X$ be a topological space and $A$ be a subset of $X$. Suppose that for each $x\in A$ there is an open set $U$ containing $x$ such that $U\subseteq A$. Show that $A$ is open in $X$. 
 
-***Proof:*** Let $X$ be a topological space and $A\subseteq X$. Suppose that for each $x\in A$ there is an open set $U$ containing $x$ such that $U\subseteq A$. We must show that $A$ is open in $X$.
+***Proof:*** Let $X$ be a topological space and $A\subseteq X$. Suppose that for each $x\in A$ there is an arbitrary open set $U_x$ containing $x$ such that $U_x\subseteq A$. We must show that $A$ is open in $X$. Consider the union $U=\bigcup_{x\in A}U_x$. $U$ must be open since the union of open sets is open. We will show that $U=A$. 
+
+First, if $y\in U$, then $y\in U_x$ for some $x\in A$, and since $U_x\subseteq A$, 
