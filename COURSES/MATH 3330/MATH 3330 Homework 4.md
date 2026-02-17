@@ -57,4 +57,11 @@ Therefore, $\bigcup_{(a,\infty)\in\mathcal U}(a,\infty)=(\inf A, \infty)$, so th
 
 Therefore, $\mathcal T$ is a topology.
 
-**Restricting to $\mathbb Q$:** We will define $\mathcal T_{\mathbb Q}$ as $\{U\cap \mathbb Q \mid U\in\mathcal T\}$.
+**Restricting to $\mathbb Q$:** We will define $\mathcal T_{\mathbb Q}$ as $\{U\cap \mathbb Q \mid U\in\mathcal T\}$. Then $\mathcal T_{\mathbb Q}$ becomes:$$\mathcal T_{\mathbb Q}=\{\emptyset,\mathbb Q\}\cup\{(a,\infty)\cap\mathbb Q\mid a\in\mathbb R\}$$
+**1.** $\emptyset=\emptyset\cap \mathbb Q\in\mathcal T_{\mathbb Q}$ and $\mathbb Q=\mathbb R\cap\mathbb Q\in\mathcal T_{\mathbb Q}$.
+
+**2.** Take any subcollection ${U_n \cap \mathbb Q}_{n \in \mathbb N} \subseteq \mathcal T_{\mathbb Q}$ with each $U_n \in \mathcal T$. Then $\bigcup_{n \in \mathbb N} (U_n \cap \mathbb Q) = \left( \bigcup_{n \in \mathbb N} U_n \right) \cap \mathbb Q.$ Since $\bigcup_{n \in \mathbb N} U_n \in \mathcal T$ (because $\mathcal T$ is a topology on $\mathbb R$), it follows that $\left( \bigcup_{n \in \mathbb N} U_n \right) \cap \mathbb Q \in \mathcal T_{\mathbb Q}.$ Therefore $\mathcal T_{\mathbb Q}$ is closed under arbitrary unions.
+
+**3.** Let $U_1, \dots, U_n \in \mathcal T$ for $n\in\mathbb N$. Then $\bigcap_{i=1}^n (U_i \cap \mathbb Q) = \left( \bigcap_{i=1}^n U_i \right) \cap \mathbb Q.$ Since $\bigcap_{i=1}^n U_i \in \mathcal T$ (because $\mathcal T$ is closed under finite intersections), it follows that $\left( \bigcap_{i=1}^n U_i \right) \cap \mathbb Q \in \mathcal T_{\mathbb Q}.$ Thus $\mathcal T_{\mathbb Q}$ is closed under finite intersections.
+
+Therefore $\mathcal T_{\mathbb Q}$ is also a topology.
