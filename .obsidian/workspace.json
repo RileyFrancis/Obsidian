@@ -53,14 +53,17 @@
             "id": "05fd77c670bf8b04",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "Other Stuff/Research/Feb. 20th Presentation.canvas",
+                "viewState": {
+                  "x": 110.87000000000018,
+                  "y": 194.10000000000014,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "icon": "lucide-layout-dashboard",
+              "title": "Feb. 20th Presentation"
             }
           }
         ],
@@ -234,7 +237,8 @@
   },
   "active": "05fd77c670bf8b04",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Other Stuff/Research/Presentation For Feb. 20th.md",
+    "Other Stuff/Research/Feb. 20th Presentation.canvas",
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
     "COURSES/MATH 3330/MATH 3330 Homework 3.md",
     "COURSES/CSE 3150/CPP/study.cpp~",
@@ -273,7 +277,6 @@
     "Other Stuff/Applications for 2026.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/Exam Review.md",
     "COURSES/CSE 4701/project/backend/SCHEMA_NOTES.md",
-    "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/node_modules/caniuse-lite/README.md",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/node_modules/retry/equation.gif",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/frontend/src/assets/react.svg",
