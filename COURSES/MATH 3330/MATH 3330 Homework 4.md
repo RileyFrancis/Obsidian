@@ -113,7 +113,11 @@ Since $B$ is open in $Y$, so is $\pi(V)$ since it is the union of open sets, so 
 
 **1.** Let $(x,y)\in \mathbb R^2$. Since $\mathbb Q$ is dense in $\mathbb R$, we can choose rationals $a,b,c,d$ such that $a<x<b$ and $c<y<d$. So, $(x,y)\in(a,b)\times(c,d)$, and thus is in $\mathcal B$, so each element in the collection has at least one basis element containing it.
 
-**2.** Let $B_1=(a_1,b_1)\times(c_1,d_1)$ and $B_2=(a_2,b_2)\times(c_2,d_2)$ be elements of $\mathcal B$, and suppose that $(x,y)\in B_1\cap B_2$. We must show that there exists some $B_3\in\mathcal B$ such that $(x,y)\in B_3\subseteq B_1\cap B_2$.$$B_1\cap B_2=(\max(a_1,a_2),\min(b_1,b_2))\times (\max(c_1,c_2),\min(d_1,d_2))$$Since $(x,y)\in B_1\cap B_2$, then $\max(a_1​,a_2​)<x<\min(b_1​,b_2​)$ and $\max(c_1​,c_2​)<y<\min(d_1​,d_2​)$. Because $\mathbb Q$ is dense, we want to choose $a',b',c',d'\in \mathbb Q$ such 
+**2.** Let $B_1=(a_1,b_1)\times(c_1,d_1)$ and $B_2=(a_2,b_2)\times(c_2,d_2)$ be elements of $\mathcal B$, and suppose that $(x,y)\in B_1\cap B_2$. We must show that there exists some $B_3\in\mathcal B$ such that $(x,y)\in B_3\subseteq B_1\cap B_2$.$$B_1\cap B_2=(\max(a_1,a_2),\min(b_1,b_2))\times (\max(c_1,c_2),\min(d_1,d_2))$$Since $(x,y)\in B_1\cap B_2$, then $\max(a_1​,a_2​)<x<\min(b_1​,b_2​)$ and $\max(c_1​,c_2​)<y<\min(d_1​,d_2​)$. Because $\mathbb Q$ is dense, we want to choose $a',b',c',d'\in \mathbb Q$ such that $$\begin{align}\max(a_1​,a_2​)<a'<x<b'<\min(b_1​,b_2​) \\ \max(c_1​,c_2​)<c'<y<d'<\min(d_1​,d_2​)\end{align}$$
+Then, by our construction, $B_3=(a',b')\times (c',d')\in\mathcal B$ and $(x,y)\in B_3\subseteq B_1\cap B_2$.
+
+
+Therefore, $\mathcal B$ is a basis for $\mathbb R^2$ with the standard topology.
 
 > [!problem] Question 7 
 > If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb R_l\times \mathbb R$ and as a subspace of $\mathbb R_l\times \mathbb R_l$.
