@@ -101,17 +101,17 @@ Thus $\mathcal T_\mathcal A = \mathcal T$, and therefore the topology generated 
 
 ***Proof:*** Let $f:X\rightarrow Y$ be an open map. That is, for every open set $U$ of $X$, the set $f(U)$ is open in $Y$. Let $V\subseteq X\times Y$ be open. We must show that for $\pi:X\times Y\rightarrow Y$, $\pi(V)$ is also open in $Y$.
 
-Fix some $y\in \pi(V)$. Then there exists some $(x,y)\in V$ (the preimage of $\pi$) that maps to $y$. Since $V$ is open, there must exist open subsets $A\subseteq X$ and $B\subseteq Y$ with $(x,y)\in X\times Y\subseteq V$. Now for any $y\in B$, we have $(x,y)\in A\times B\subseteq V$, hence $y=\pi(x_0,y)\in \pi(U)$. Therefore $B\subseteq \pi(U)$.
-
-Because $B$ is open in $Y$ and $y_0\in B\subseteq \pi(U)$, we have shown that every point $y_0\in \pi(U)$ has an open neighborhood contained in $\pi(U)$. Thus $\pi(U)$ is open in $Y$.
-
-Hence $\pi:X\times Y\to Y$ is an open map.
+Then, for all open subsets $A\subseteq X$ and $B\subseteq Y$, we have $$V=\bigcup A\times B$$Since $\pi(A\times B)=B$ for all subsets $A$ and $B$, and the projection distributes over unions, then for all subsets $A$ and $B$, we get$$\pi(V)=\pi\left(\bigcup A\times B\right)=\bigcup \pi(A\times B)=\bigcup B$$
+Since $B$ is open in $Y$, so is $\pi(V)$ since it is the union of open sets, so $\pi:X\times Y\rightarrow Y$ is an open map.
 
 > [!problem] Question 6
 > Show that the countable collection $$\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$$ is a basis for $\mathbb R^2$ with the standard topology.
 
-***Proof:*** In order for the collection $X=\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$ to be a basis for $\mathbb R^2$ with the standard topology, the following must be true:
-1. 
+***Proof:*** In order for the collection $X=\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$ to be a basis $\mathcal B$ for $\mathbb R^2$ with the standard topology, the following must be true:
+1. For each $x\in X$, there is at least one basis element in $\mathcal B$ containing it.
+2. If $B_1, B_2\in\mathcal B$ and $x\in B_1\cap B_2$, then $x\in B_3\subseteq B_1\cap B_2$.
+
+
 
 > [!problem] Question 7 
 > If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb R_l\times \mathbb R$ and as a subspace of $\mathbb R_l\times \mathbb R_l$.
