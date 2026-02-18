@@ -99,6 +99,14 @@ Thus $\mathcal T_\mathcal A = \mathcal T$, and therefore the topology generated 
 > [!problem] Question 5
 > A map $f:X\rightarrow Y$ is said to be an open map if for every open set $U$ of $X$, the set $f(U)$ is open in $Y$. Show that $\pi : X\times Y \rightarrow Y$ is an open map.
 
+***Proof:*** Let $f:X\rightarrow Y$ be an open map. That is, for every open set $U$ of $X$, the set $f(U)$ is open in $Y$. Let $V\subseteq X\times Y$ be open. We must show that for $\pi:X\times Y\rightarrow Y$, $\pi(V)$ is also open in $Y$.
+
+Fix some $y\in \pi(V)$. Then there exists some $(x,y)\in V$ (the preimage of $\pi$) that maps to $y$. Since $V$ is open, there must exist open subsets $A\subseteq X$ and $B\subseteq Y$ with $(x,y)\in X\times Y\subseteq V$. Now for any $y\in B$, we have $(x,y)\in A\times B\subseteq V$, hence $y=\pi(x_0,y)\in \pi(U)$. Therefore $B\subseteq \pi(U)$.
+
+Because $B$ is open in $Y$ and $y_0\in B\subseteq \pi(U)$, we have shown that every point $y_0\in \pi(U)$ has an open neighborhood contained in $\pi(U)$. Thus $\pi(U)$ is open in $Y$.
+
+Hence $\pi:X\times Y\to Y$ is an open map.
+
 > [!problem] Question 6
 > Show that the countable collection $$\left\{(a,b)\times (c,d) \mid a<b, c<d, a,b,c,d\in\mathbb Q\right\}$$ is a basis for $\mathbb R^2$ with the standard topology.
 
