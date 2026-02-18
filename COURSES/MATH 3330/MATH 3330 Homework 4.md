@@ -116,7 +116,6 @@ Since $B$ is open in $Y$, so is $\pi(V)$ since it is the union of open sets, so 
 **2.** Let $B_1=(a_1,b_1)\times(c_1,d_1)$ and $B_2=(a_2,b_2)\times(c_2,d_2)$ be elements of $\mathcal B$, and suppose that $(x,y)\in B_1\cap B_2$. We must show that there exists some $B_3\in\mathcal B$ such that $(x,y)\in B_3\subseteq B_1\cap B_2$.$$B_1\cap B_2=(\max(a_1,a_2),\min(b_1,b_2))\times (\max(c_1,c_2),\min(d_1,d_2))$$Since $(x,y)\in B_1\cap B_2$, then $\max(a_1​,a_2​)<x<\min(b_1​,b_2​)$ and $\max(c_1​,c_2​)<y<\min(d_1​,d_2​)$. Because $\mathbb Q$ is dense, we want to choose $a',b',c',d'\in \mathbb Q$ such that $$\begin{align}\max(a_1​,a_2​)<a'<x<b'<\min(b_1​,b_2​) \\ \max(c_1​,c_2​)<c'<y<d'<\min(d_1​,d_2​)\end{align}$$
 Then, by our construction, $B_3=(a',b')\times (c',d')\in\mathcal B$ and $(x,y)\in B_3\subseteq B_1\cap B_2$.
 
-
 Therefore, $\mathcal B$ is a basis for $\mathbb R^2$ with the standard topology.
 
 > [!problem] Question 7 
@@ -127,6 +126,14 @@ Note: there are three different cases for a line $L$:
 2. Horizontal : $L = \mathbb R \times \{y\}$
 3. Sloped: $L=\{(x,mx+b)\mid x,m,b\in\mathbb R,m\neq0\}$
 
-**For $\mathbb R_l\times \mathbb R$:** The basis for $\mathbb$
+**For $\mathbb R_l\times \mathbb R$:** 
+The basis for $\mathbb R_l\times \mathbb R$ consists of sets in the form $[a,b)\times(c,d)$.
+- Vertical Line: An open set intersects with $L$ in $\{x\}\times(c,d)$ only when $a\le x<b$. This gives the standard topology.
+- Horizontal Line: An open set intersects with $L$ in $[a,b)\times\{y\}$ when $c<y<d$. This gives the lower limit topology $\mathbb R_l$.
+- Sloped Line: Parametrize $L$ by $x \mapsto (x, mx+b)$. A basis element $[a,b)\times(c,d)$ intersects $L$ in the set of $x$ with $x \in [a, b)$ and $mx + b \in (c,d)$, i.e. $x \in \left(\frac{c-b}{m}, \frac{d-b}{m}\right)$ (reversing the inequality if $m < 0$). Thus the intersection corresponds to $x \in [a, b) \cap \left(\frac{c-b}{m}, \frac{d-b}{m}\right)$. If $m > 0$, such intersections generate half-open intervals $[\alpha, \beta)$, giving the lower limit topology $\mathbb{R}_l$. If $m < 0$, the interval from the $y$-constraint is reversed, and the intersections are open intervals $(\alpha, \beta)$, giving the standard topology.
 
-**For $\mathbb R_l\times \mathbb R_l$:**
+**For $\mathbb{R}_l \times \mathbb{R}_l$:** 
+The basis for $\mathbb{R}_l \times \mathbb{R}_l$ consists of sets in the form $[a, b) \times [c, d)$.
+- Vertical Line: An open set intersects $L$ in $\{x\} \times [c, d)$ only when $a \leq x < b$. This gives the *lower limit topology* $\mathbb{R}_l$. 
+- Horizontal Line: An open set intersects $L$ in $[a, b) \times \{y\}$ when $c \leq y < d$. This gives the *lower limit topology* $\mathbb{R}_l$. 
+- Sloped Line: Parametrize $L$ by $x \mapsto (x, mx+b)$. A basis element $[a,b)\times[c,d)$ intersects $L$ in the set of $x$ with $x \in [a,b)$ and $x \in \left[\frac{c-b}{m}, \frac{d-b}{m}\right)$ when $m > 0$. This intersection of two half-open intervals of the same type is again of the form $[\alpha, \beta)$, giving the lower limit topology $\mathbb{R}_l$. If $m < 0$, the constraint from $y$ reverses to $x \in \left(\frac{d-b}{m}, \frac{c-b}{m}\right]$, so intersections with $[a,b)$ yield intervals of the form $(\alpha, \beta]$, giving the *upper limit topology* $\mathbb{R}_u$.
