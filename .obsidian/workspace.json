@@ -43,8 +43,8 @@
               "state": {
                 "file": "Other Stuff/Research/Untitled.canvas",
                 "viewState": {
-                  "x": 252.14999999999955,
-                  "y": -3.719999999999601,
+                  "x": 241.5,
+                  "y": 897,
                   "zoom": 0
                 }
               },
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 263.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -224,6 +225,7 @@
   },
   "active": "28b4869e7f377ecc",
   "lastOpenFiles": [
+    "all_classes_mean_trajectories.png",
     "Untitled.md",
     "Other Stuff/Research/Untitled.canvas",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
