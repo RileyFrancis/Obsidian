@@ -57,8 +57,8 @@
               "state": {
                 "file": "Other Stuff/Research/Feb. 20th Presentation.canvas",
                 "viewState": {
-                  "x": 110.87000000000018,
-                  "y": 194.10000000000014,
+                  "x": 378.11000000000035,
+                  "y": 156.5,
                   "zoom": 0
                 }
               },
@@ -67,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -210,8 +210,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -219,7 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 403.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,10 +235,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "28b4869e7f377ecc",
+  "active": "05fd77c670bf8b04",
   "lastOpenFiles": [
-    "Other Stuff/Research/Feb. 20th Presentation.canvas",
+    "Images/Pasted image 20260218171850.png",
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
+    "Other Stuff/Research/Feb. 20th Presentation.canvas",
     "Other Stuff/Research/Presentation For Feb. 20th.md",
     "COURSES/MATH 3330/MATH 3330 Homework 3.md",
     "COURSES/CSE 3150/CPP/study.cpp~",
