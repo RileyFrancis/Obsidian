@@ -122,6 +122,11 @@ Therefore, $\mathcal B$ is a basis for $\mathbb R^2$ with the standard topology.
 > [!problem] Question 7 
 > If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb R_l\times \mathbb R$ and as a subspace of $\mathbb R_l\times \mathbb R_l$.
 
-For $\mathbb R_l\times \mathbb R$: 
+Note: there are three different cases for a line $L$:
+1. Vertical: $L=\{x\}\times \mathbb R$
+2. Horizontal : $L = \mathbb R \times \{y\}$
+3. Sloped: $L=\{(x,mx+b)\mid x,m,b\in\mathbb R,m\neq0\}$
 
-For $\mathbb R_l\times \mathbb R_l$:
+**For $\mathbb R_l\times \mathbb R$:** The basis for $\mathbb$
+
+**For $\mathbb R_l\times \mathbb R_l$:**
