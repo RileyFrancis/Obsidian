@@ -39,23 +39,6 @@
             "id": "28b4869e7f377ecc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Other Stuff/Research/Untitled.canvas",
-                "viewState": {
-                  "x": 333.99,
-                  "y": 557.0700000000006,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "5b5aa6cb8b347a80",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "2026 Invitational Reflection.md",
@@ -67,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -237,9 +220,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b5aa6cb8b347a80",
+  "active": "28b4869e7f377ecc",
   "lastOpenFiles": [
     "Other Stuff/Research/Untitled.canvas",
+    "README.md",
     "2026 Invitational Reflection.md",
     "all_classes_mean_trajectories.png",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
@@ -251,7 +235,6 @@
     "COURSES/CSE 3150/CPP/program.out",
     "COURSES/CSE 3150/CPP/study.cpp",
     "PDFs/MATH 3330 Homework 3.pdf",
-    "README.md",
     "COURSES/CSE 3150/Homework/day_6_hw/test_program.py~",
     "COURSES/CSE 3150/Homework/day_6_hw/hw1.zip",
     "COURSES/CSE 3150/Homework/day_6_hw/zi7lciGH",
