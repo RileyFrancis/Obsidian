@@ -1,16 +1,27 @@
 {
 	"nodes":[
 		{"id":"2ab2e4df92902d48","type":"group","ratio":1.7777777777777777,"x":-500,"y":-460,"width":1483,"height":834,"label":"KSADS ABCD"},
-		{"id":"6ec8e3939c7ff5b7","type":"group","ratio":1.7777777777777777,"x":-500,"y":480,"width":1483,"height":834,"label":"Trajectory Analysis"},
+		{"id":"6ec8e3939c7ff5b7","type":"group","ratio":1.7777777777777777,"x":-500,"y":1440,"width":1483,"height":834,"label":"Trajectory Analysis"},
+		{"id":"5016cb52a20291ad","type":"group","ratio":1.7777777777777777,"x":-500,"y":480,"width":1483,"height":834,"label":"KSADS Modules"},
+		{
+			"id":"88844f8b1dfa53d2",
+			"type":"group",
+			"styleAttributes":{"border":"dashed"},
+			"x":-388,
+			"y":580,
+			"width":1260,
+			"height":180,
+			"label":"Modules associated with irritability"
+		},
 		{"id":"6c1d9c3ef52cdf3e","type":"file","file":"Images/KSADS_ABCD.png","x":-424,"y":-400,"width":1332,"height":714},
-		{"id":"5a1555c189556c8b","type":"file","file":"all_classes_mean_trajectories.png","x":-460,"y":519,"width":1080,"height":756},
+		{"id":"5a1555c189556c8b","type":"file","file":"all_classes_mean_trajectories.png","x":-460,"y":1479,"width":1080,"height":756},
 		{
 			"id":"da214b5f3541e45b",
 			"type":"text",
 			"text":"class\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
 			"styleAttributes":{},
 			"x":660,
-			"y":519,
+			"y":1479,
 			"width":280,
 			"height":240,
 			"color":"4"
@@ -21,18 +32,81 @@
 			"text":"11511 total trajectories",
 			"styleAttributes":{},
 			"x":660,
-			"y":800,
+			"y":1760,
 			"width":280,
 			"height":60,
 			"color":"5"
+		},
+		{
+			"id":"4c966a12a19a96c4",
+			"type":"text",
+			"text":"Depressive Disorders",
+			"styleAttributes":{"textAlign":"center"},
+			"x":272,
+			"y":600,
+			"width":260,
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"6ff9a2597b8f84e3",
+			"type":"text",
+			"text":"Bipolar Disorders",
+			"styleAttributes":{"textAlign":"center"},
+			"x":592,
+			"y":600,
+			"width":260,
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"56daba4da4e420fe",
+			"type":"text",
+			"text":"Oppositional Defiant Disorder (ODD)",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-48,
+			"y":600,
+			"width":260,
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"a734bded380234d3",
+			"type":"text",
+			"text":"Disruptive Mood Dysregulation Disorder (DMDD)",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-368,
+			"y":600,
+			"width":260,
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"134af34da1ff5ebe",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-368,
+			"y":800,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
 		{
-			"id":"8628eef8485dfce3",
+			"id":"6f7e1622b8de4345",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"2ab2e4df92902d48",
+			"fromSide":"bottom",
+			"toNode":"5016cb52a20291ad",
+			"toSide":"top"
+		},
+		{
+			"id":"b1f2838ee8457abe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5016cb52a20291ad",
 			"fromSide":"bottom",
 			"toNode":"6ec8e3939c7ff5b7",
 			"toSide":"top"
