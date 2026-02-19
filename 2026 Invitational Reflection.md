@@ -19,4 +19,4 @@
 
 ***We NEED more club members!!!*** Target the sophomores and scioly alum. maybe the daily digest.
 
-We could collaborate with other clubs. Open to suggestions
+We could collaborate with other clubs. Open to suggestions.
