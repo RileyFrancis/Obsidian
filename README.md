@@ -1,1 +1,6 @@
-This is my personal repository of notes written in Obsidian. It is updated automatically each time I open and close the app. This is made possible using the GitHub integration community extension and the shell script community extension.
+This is my personal repository of notes from my note-taking app Obsidian. The primary purpose of this repository is for cloud backup of my notes. Using the Git plugin for Obsidian, my notes are synced across devices periodically.
+
+### Note
+These are my personal notes, so please use appropriately. If you have any questions, feel free to reach out to me at rileyfrancis01@gmail.com. Thanks!
+
+~ Riley
