@@ -1,8 +1,9 @@
 {
 	"nodes":[
 		{"id":"2ab2e4df92902d48","type":"group","ratio":1.7777777777777777,"x":-500,"y":-460,"width":1483,"height":834,"label":"KSADS ABCD"},
-		{"id":"6ec8e3939c7ff5b7","type":"group","ratio":1.7777777777777777,"x":-500,"y":1440,"width":1483,"height":834,"label":"Trajectory Analysis"},
+		{"id":"6ec8e3939c7ff5b7","type":"group","ratio":1.7777777777777777,"x":-500,"y":2360,"width":1483,"height":834,"label":"Trajectory Analysis"},
 		{"id":"5016cb52a20291ad","type":"group","ratio":1.7777777777777777,"x":-500,"y":480,"width":1483,"height":834,"label":"KSADS Modules"},
+		{"id":"7cef5093130a6630","type":"group","ratio":1.7777777777777777,"x":-500,"y":1420,"width":1483,"height":834,"label":"Practitioner Review: Definition, recognition, and treatment challenges of irritability in young people"},
 		{
 			"id":"88844f8b1dfa53d2",
 			"type":"group",
@@ -14,29 +15,6 @@
 			"label":"Modules associated with irritability"
 		},
 		{"id":"6c1d9c3ef52cdf3e","type":"file","file":"Images/KSADS_ABCD.png","x":-424,"y":-400,"width":1332,"height":714},
-		{"id":"5a1555c189556c8b","type":"file","file":"all_classes_mean_trajectories.png","x":-460,"y":1479,"width":1080,"height":756},
-		{
-			"id":"da214b5f3541e45b",
-			"type":"text",
-			"text":"class\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
-			"styleAttributes":{},
-			"x":660,
-			"y":1479,
-			"width":280,
-			"height":240,
-			"color":"4"
-		},
-		{
-			"id":"1836f931c2c82f8d",
-			"type":"text",
-			"text":"11511 total trajectories",
-			"styleAttributes":{},
-			"x":660,
-			"y":1760,
-			"width":280,
-			"height":60,
-			"color":"5"
-		},
 		{
 			"id":"4c966a12a19a96c4",
 			"type":"text",
@@ -124,6 +102,93 @@
 			"width":260,
 			"height":80,
 			"color":"1"
+		},
+		{
+			"id":"9b1817418f55d161",
+			"type":"text",
+			"text":"Parent & Child",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-368,
+			"y":900,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"0f43521626b9bb48",
+			"type":"text",
+			"text":"Parent only",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-48,
+			"y":900,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"bd56ab8f4c07ae9b",
+			"type":"text",
+			"text":"Parent & Child",
+			"styleAttributes":{"textAlign":"center"},
+			"x":272,
+			"y":900,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"80d596777327a93f",
+			"type":"text",
+			"text":"Parent & Child",
+			"styleAttributes":{"textAlign":"center"},
+			"x":592,
+			"y":900,
+			"width":260,
+			"height":60,
+			"color":"2"
+		},
+		{
+			"id":"8981089558ae23c5",
+			"type":"file",
+			"file":"Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
+			"styleAttributes":{"border":"dashed"},
+			"x":-460,
+			"y":1460,
+			"width":879,
+			"height":760
+		},
+		{"id":"5a1555c189556c8b","type":"file","file":"Images/all_classes_mean_trajectories.png","x":-460,"y":2399,"width":1080,"height":756},
+		{
+			"id":"da214b5f3541e45b",
+			"type":"text",
+			"text":"class\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
+			"styleAttributes":{},
+			"x":660,
+			"y":2399,
+			"width":280,
+			"height":240,
+			"color":"4"
+		},
+		{
+			"id":"1836f931c2c82f8d",
+			"type":"text",
+			"text":"11511 total trajectories",
+			"styleAttributes":{},
+			"x":660,
+			"y":2680,
+			"width":280,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"e68d5296dfd9818f",
+			"type":"text",
+			"text":"Published in The Journal of Child Psychology and Psychiatry",
+			"styleAttributes":{},
+			"x":480,
+			"y":1460,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -137,10 +202,19 @@
 			"toSide":"top"
 		},
 		{
-			"id":"b1f2838ee8457abe",
+			"id":"73df71c11dbc09be",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"5016cb52a20291ad",
+			"fromSide":"bottom",
+			"toNode":"7cef5093130a6630",
+			"toSide":"top"
+		},
+		{
+			"id":"b84393b5d5ae8434",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7cef5093130a6630",
 			"fromSide":"bottom",
 			"toNode":"6ec8e3939c7ff5b7",
 			"toSide":"top"
