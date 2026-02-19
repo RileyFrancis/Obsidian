@@ -27,15 +27,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Other Stuff/Research/Untitled.canvas",
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
                 "viewState": {
-                  "x": 241.5,
-                  "y": 897,
-                  "zoom": 0
+                  "x": 395.1855738684655,
+                  "y": 1039.530229578935,
+                  "zoom": -0.6406148626075806
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "Feb.20th Presentation"
             }
           },
           {
@@ -205,8 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5,
-    "collapsed": true
+    "width": 403.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,7 +224,7 @@
   "active": "5b854590b4218d99",
   "lastOpenFiles": [
     "Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
-    "Other Stuff/Research/Untitled.canvas",
+    "Other Stuff/Research/Feb.20th Presentation.canvas",
     "PDFs/EBSCO-FullText-02_19_2026.pdf",
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
     "2026 Invitational Reflection.md",
