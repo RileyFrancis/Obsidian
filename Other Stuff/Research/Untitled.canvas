@@ -161,7 +161,7 @@
 		{
 			"id":"da214b5f3541e45b",
 			"type":"text",
-			"text":"class\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
+			"text":"Class count\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
 			"styleAttributes":{},
 			"x":660,
 			"y":2399,
@@ -183,12 +183,13 @@
 		{
 			"id":"e68d5296dfd9818f",
 			"type":"text",
-			"text":"Published in The Journal of Child Psychology and Psychiatry",
+			"text":"Published in The Journal of Child Psychology and Psychiatry\n\nPublished in 2018\n\n257 citations in Google Scholar",
 			"styleAttributes":{},
 			"x":480,
 			"y":1460,
-			"width":260,
-			"height":60
+			"width":440,
+			"height":160,
+			"color":"5"
 		}
 	],
 	"edges":[
