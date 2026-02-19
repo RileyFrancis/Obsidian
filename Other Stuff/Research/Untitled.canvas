@@ -51,7 +51,7 @@
 		{
 			"id":"6ff9a2597b8f84e3",
 			"type":"text",
-			"text":"Bipolar Disorders",
+			"text":"Generalized Anxiety Disorder",
 			"styleAttributes":{"textAlign":"center"},
 			"x":592,
 			"y":600,
@@ -84,12 +84,46 @@
 		{
 			"id":"134af34da1ff5ebe",
 			"type":"text",
-			"text":"",
-			"styleAttributes":{},
+			"text":"`mh_y_ksads__dmdd`\n`mh_p_ksads__dmdd`",
+			"styleAttributes":{"textAlign":"center"},
 			"x":-368,
 			"y":800,
 			"width":260,
-			"height":60
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"11db05596792ce16",
+			"type":"text",
+			"text":"`mh_p_ksads__odd`",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-48,
+			"y":800,
+			"width":260,
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"5a79067bdaaa1c71",
+			"type":"text",
+			"text":"`mh_y_ksads__dep`\n`mh_p_ksads__dep`",
+			"styleAttributes":{"textAlign":"center"},
+			"x":272,
+			"y":800,
+			"width":260,
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"a64cf1be6aa9206e",
+			"type":"text",
+			"text":"`mh_y_ksads__gad`\n`mh_p_ksads__gad`",
+			"styleAttributes":{"textAlign":"center"},
+			"x":592,
+			"y":800,
+			"width":260,
+			"height":80,
+			"color":"1"
 		}
 	],
 	"edges":[
