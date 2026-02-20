@@ -5,39 +5,15 @@
 		{"id":"5016cb52a20291ad","type":"group","ratio":1.7777777777777777,"x":-500,"y":480,"width":1483,"height":834,"label":"KSADS Modules"},
 		{"id":"7cef5093130a6630","type":"group","ratio":1.7777777777777777,"x":-500,"y":1420,"width":1483,"height":834,"label":"Practitioner Review: Definition, recognition, and treatment challenges of irritability in young people"},
 		{"id":"50b396a4b5377a22","type":"group","x":-444,"y":540,"width":1372,"height":180,"color":"5","label":"Modules Related to Irritability"},
-		{"id":"6c1d9c3ef52cdf3e","type":"file","file":"Images/KSADS_ABCD.png","x":-424,"y":-400,"width":1332,"height":714},
 		{
 			"id":"8981089558ae23c5",
 			"type":"file",
-			"file":"Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
+			"file":"Other Stuff/Research/Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
 			"styleAttributes":{"border":"dashed"},
 			"x":-460,
 			"y":1460,
 			"width":879,
 			"height":760
-		},
-		{"id":"5a1555c189556c8b","type":"file","file":"Images/all_classes_mean_trajectories.png","x":-460,"y":2399,"width":1080,"height":756},
-		{
-			"id":"da214b5f3541e45b",
-			"type":"text",
-			"text":"Class count\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
-			"styleAttributes":{},
-			"x":660,
-			"y":2399,
-			"width":280,
-			"height":240,
-			"color":"4"
-		},
-		{
-			"id":"1836f931c2c82f8d",
-			"type":"text",
-			"text":"11511 total trajectories",
-			"styleAttributes":{},
-			"x":660,
-			"y":2680,
-			"width":280,
-			"height":60,
-			"color":"5"
 		},
 		{
 			"id":"e68d5296dfd9818f",
@@ -60,6 +36,93 @@
 			"width":440,
 			"height":550,
 			"color":"4"
+		},
+		{
+			"id":"b4db60e8ff229804",
+			"type":"text",
+			"text":"### **Tonic Irritability**\n\n- Persistent, baseline irritable or angry mood\n    \n- Present most of the day, most days\n    \n- Not dependent on a specific trigger\n    \n- Reflects a mood state between outbursts\n    \n\n**For Example:** “Always on edge” or chronically grouchy.",
+			"styleAttributes":{},
+			"x":-428,
+			"y":1040,
+			"width":628,
+			"height":240
+		},
+		{
+			"id":"7dcfc54889b7cb55",
+			"type":"text",
+			"text":"### **Phasic Irritability**\n\n- Brief, intense temper outbursts or rage episodes\n    \n- Triggered by frustration, blocked goals, or perceived threat\n    \n- Disproportionate to the situation\n    \n- Followed by a return toward baseline mood\n    \n\n**For Example:** Explosive reactions when something goes wrong.",
+			"styleAttributes":{},
+			"x":280,
+			"y":1040,
+			"width":624,
+			"height":240
+		},
+		{"id":"5a1555c189556c8b","type":"file","file":"Images/all_classes_mean_trajectories.png","x":-460,"y":2399,"width":1080,"height":756},
+		{
+			"id":"da214b5f3541e45b",
+			"type":"text",
+			"text":"Class count\n1    3687\n3    2727\n2    1506\n6    1363\n0    1288\n4     752\n5     188",
+			"styleAttributes":{},
+			"x":660,
+			"y":2399,
+			"width":280,
+			"height":240,
+			"color":"4"
+		},
+		{
+			"id":"5973beeb0f489a8a",
+			"type":"text",
+			"text":"Tonic",
+			"styleAttributes":{"textAlign":"center"},
+			"x":126,
+			"y":923,
+			"width":237,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"ae5130a0020ed0e6",
+			"type":"text",
+			"text":"Phasic & Tonic",
+			"styleAttributes":{"textAlign":"center"},
+			"x":398,
+			"y":923,
+			"width":237,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"bebe75d84426936e",
+			"type":"text",
+			"text":"Tonic",
+			"styleAttributes":{"textAlign":"center"},
+			"x":667,
+			"y":923,
+			"width":237,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"c5d9b1be1432ba7f",
+			"type":"text",
+			"text":"Core Phenotype\nPhasic & Tonic",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-428,
+			"y":923,
+			"width":237,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"8d1d037b0526f012",
+			"type":"text",
+			"text":"Phasic",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-152,
+			"y":923,
+			"width":237,
+			"height":80,
+			"color":"3"
 		},
 		{
 			"id":"4c966a12a19a96c4",
@@ -128,17 +191,6 @@
 			"color":"2"
 		},
 		{
-			"id":"11db05596792ce16",
-			"type":"text",
-			"text":"`mh_p_ksads__odd`",
-			"styleAttributes":{"textAlign":"center"},
-			"x":-152,
-			"y":740,
-			"width":237,
-			"height":80,
-			"color":"1"
-		},
-		{
 			"id":"174ede0a9ce45a0b",
 			"type":"text",
 			"text":"`mh_y_ksads__gad`\n`mh_p_ksads__gad`",
@@ -172,28 +224,6 @@
 			"color":"2"
 		},
 		{
-			"id":"5973beeb0f489a8a",
-			"type":"text",
-			"text":"Tonic",
-			"styleAttributes":{"textAlign":"center"},
-			"x":126,
-			"y":923,
-			"width":237,
-			"height":80,
-			"color":"3"
-		},
-		{
-			"id":"ae5130a0020ed0e6",
-			"type":"text",
-			"text":"Phasic & Tonic",
-			"styleAttributes":{"textAlign":"center"},
-			"x":398,
-			"y":923,
-			"width":237,
-			"height":80,
-			"color":"3"
-		},
-		{
 			"id":"28e9533aee8c8e19",
 			"type":"text",
 			"text":"Generalized Anxiety Disorder (GAD)",
@@ -204,16 +234,28 @@
 			"height":140,
 			"color":"6"
 		},
+		{"id":"6c1d9c3ef52cdf3e","type":"file","file":"Images/KSADS_ABCD.png","x":-424,"y":-400,"width":1332,"height":714},
 		{
-			"id":"bebe75d84426936e",
+			"id":"1836f931c2c82f8d",
 			"type":"text",
-			"text":"Tonic",
+			"text":"11511 total trajectories",
+			"styleAttributes":{},
+			"x":660,
+			"y":2680,
+			"width":280,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"11db05596792ce16",
+			"type":"text",
+			"text":"`mh_p_ksads__odd`",
 			"styleAttributes":{"textAlign":"center"},
-			"x":667,
-			"y":923,
+			"x":-152,
+			"y":740,
 			"width":237,
 			"height":80,
-			"color":"3"
+			"color":"1"
 		},
 		{
 			"id":"a734bded380234d3",
@@ -249,17 +291,6 @@
 			"color":"2"
 		},
 		{
-			"id":"c5d9b1be1432ba7f",
-			"type":"text",
-			"text":"Core Phenotype\nPhasic & Tonic",
-			"styleAttributes":{"textAlign":"center"},
-			"x":-428,
-			"y":923,
-			"width":237,
-			"height":80,
-			"color":"3"
-		},
-		{
 			"id":"56daba4da4e420fe",
 			"type":"text",
 			"text":"Oppositional Defiant Disorder (ODD)",
@@ -269,37 +300,6 @@
 			"width":237,
 			"height":140,
 			"color":"6"
-		},
-		{
-			"id":"8d1d037b0526f012",
-			"type":"text",
-			"text":"Phasic",
-			"styleAttributes":{"textAlign":"center"},
-			"x":-152,
-			"y":923,
-			"width":237,
-			"height":80,
-			"color":"3"
-		},
-		{
-			"id":"b4db60e8ff229804",
-			"type":"text",
-			"text":"### **Tonic Irritability**\n\n- Persistent, baseline irritable or angry mood\n    \n- Present most of the day, most days\n    \n- Not dependent on a specific trigger\n    \n- Reflects a mood state between outbursts\n    \n\n**For Example:** “Always on edge” or chronically grouchy.",
-			"styleAttributes":{},
-			"x":-428,
-			"y":1040,
-			"width":628,
-			"height":240
-		},
-		{
-			"id":"7dcfc54889b7cb55",
-			"type":"text",
-			"text":"### **Phasic Irritability**\n\n- Brief, intense temper outbursts or rage episodes\n    \n- Triggered by frustration, blocked goals, or perceived threat\n    \n- Disproportionate to the situation\n    \n- Followed by a return toward baseline mood\n    \n\n**For Example:** Explosive reactions when something goes wrong.",
-			"styleAttributes":{},
-			"x":280,
-			"y":1040,
-			"width":624,
-			"height":240
 		}
 	],
 	"edges":[

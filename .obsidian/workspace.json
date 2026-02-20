@@ -11,10 +11,17 @@
             "id": "140cc14faf56370e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
+                "viewState": {
+                  "x": 241.49999999999994,
+                  "y": 897,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Feb.20th Presentation"
             }
           }
         ]
@@ -90,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Feb.20th Presentation"
             }
           },
           {
@@ -108,11 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Feb.20th Presentation"
             }
           },
           {
@@ -169,7 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 403.5
+    "width": 201.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,8 +194,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "63ce2dc885594313",
+  "active": "140cc14faf56370e",
   "lastOpenFiles": [
+    "Other Stuff/Research/Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
+    "Other Stuff/Research/Feb.20th Presentation.canvas",
+    "PDFs/EBSCO-FullText-02_19_2026.pdf",
     "COURSES/CSE 3150/Homework/day_8_hw/src/main.cpp~",
     "COURSES/CSE 3150/Homework/day_8_hw/src/add_mode.cpp~",
     "COURSES/CSE 3150/Homework/day_8_hw/include/add_mode.h~",
@@ -196,15 +208,11 @@
     "COURSES/CSE 3150/Homework/day_8_hw/src/text_mode.cpp",
     "COURSES/CSE 3150/Homework/day_8_hw/src/main.cpp",
     "COURSES/CSE 3150/Homework/day_8_hw/include/stats_mode.h",
-    "COURSES/CSE 3150/Homework/day_8_hw/include/add_mode.h",
-    "COURSES/CSE 3150/Homework/day_8_hw/include/text_mode.h",
     "COURSES/CSE 3150/Homework/day_8_hw/README.md",
     "README.md",
-    "Practitioner Review - Definition, recognition, and treatment challenges of irritability in young people.md",
     "Excalidraw/Drawing 2025-11-02 13.26.17.excalidraw.md",
-    "Other Stuff/Research/Feb.20th Presentation.canvas",
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
-    "2026 Invitational Reflection.md",
+    "Other Stuff/Science Olympiad at UConn/2026 Invitational Reflection.md",
     "COURSES/MATH 3330/MATH 3330 Homework 3.md",
     "Images/all_classes_mean_trajectories.png",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
