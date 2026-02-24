@@ -23,3 +23,14 @@
 
 > [!problem] Question 8
 > Let $F:\mathbb R\times\mathbb R\rightarrow \mathbb R$ be defined by the equation $$F(x\times y)=\left\{\begin{align}&\frac{xy}{x^2+y^2} & \text{if } x\times y\neq 0\times0 \\ &0 & \text{if } x\times y = 0\times 0\end{align}\right.$$
+> 1. Show that $F$ is continuous in each variable separately.
+> 2. Compute the function $g:\mathbb R\rightarrow \mathbb R$ defined by $g(x)=F(x\times x)$.
+> 3. Show that $F$ is not continuous (using techniques of this class).
+
+> [!problem] Question 9
+> Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
+
+> [!problem] Question 10
+> Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
+
+
