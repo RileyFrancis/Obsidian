@@ -23,7 +23,7 @@ Therefore, $\overline{(a,b)}=[a,b]$ when $a$ has no immediate successor and $b$ 
 
 The equivalency is not true, and $\overline{\cap A_\alpha} \subseteq \cap\overline{A_\alpha}$.
 
-***Proof:*** Let $x\in\overline{\cap A_\alpha}$. Then every open neighborhood of $x$ intersects with $\cap A_\alpha$. Then, each of those neighborhoods must also intersect all individual $A_\alpha$ since those neighborhoods interse
+***Proof:*** Let $x\in\overline{\cap A_\alpha}$. Then every open neighborhood of $x$ intersects with $\cap A_\alpha$. Then, each of those neighborhoods must also intersect all individual $A_\alpha$ since those neighborhoods intersect with the intersection of each $A_\alpha$.
 
 > [!problem] Question 3
 > In the finite complement topology on $\mathbb R$, to what point or points does the sequence $x_n=\frac1n$ converge?
