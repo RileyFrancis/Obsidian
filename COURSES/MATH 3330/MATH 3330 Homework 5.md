@@ -23,10 +23,16 @@ Therefore, $\overline{(a,b)}=[a,b]$ when $a$ has no immediate successor and $b$ 
 
 The equivalency is not true, and $\overline{\cap A_\alpha} \subseteq \cap\overline{A_\alpha}$.
 
-***Proof:*** Let $x\in\overline{\cap A_\alpha}$. Then every open neighborhood of $x$ intersects with $\cap A_\alpha$. Then, each of those neighborhoods must also intersect all individual $A_\alpha$ since those neighborhoods intersect with the intersection of each $A_\alpha$.
+***Proof:*** Let $x\in\overline{\cap A_\alpha}$. Then every open neighborhood of $x$ intersects with $\cap A_\alpha$. Then, each of those neighborhoods must also intersect all individual $A_\alpha$ since those neighborhoods intersect with the intersection of each $A_\alpha$. So, $x\in \overline{A_\alpha}$ for all $\alpha$, and then $x\in\cap\overline{A_\alpha}$. Therefore, $\overline{\cap A_\alpha} \subseteq \cap\overline{A_\alpha}$.
+
+Now for $\cap\overline{A_\alpha} \subseteq \overline{\cap A_\alpha}$, consider the counterexample for when $A_1=(0,1)$ and $A_2=(1,2)$. Then, $\overline{(0,1)}\cap\overline{(1,2)}=\{1\}$ and $\overline{(0,1)\cap(1,2)}=\emptyset$. Since $\{1\}\not\subseteq\emptyset$, $\cap\overline{A_\alpha} \not\subseteq \overline{\cap A_\alpha}$.
+
+Therefore, $\overline{\cap A_\alpha} \neq \cap\overline{A_\alpha}$, however $\overline{\cap A_\alpha} \subseteq \cap\overline{A_\alpha}$.
 
 > [!problem] Question 3
 > In the finite complement topology on $\mathbb R$, to what point or points does the sequence $x_n=\frac1n$ converge?
+
+A sequence $x_n$ converges to $x$ if for every open set $U$ containing $x$   
 
 > [!problem] Question 4
 > Show that the $T_1$ axiom is equivalent to the condition for each pair of points of $X$, each has a neighborhood not containing the other.
