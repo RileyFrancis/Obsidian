@@ -5,9 +5,9 @@
 
 ***Proof:*** Let $X$ be an ordered set in the order topology and let $X=(a,b)$. Let $x\in\overline{(a,b)}$, so every open neighborhood of $x$ must intersect $(a,b)$. Then consider the following:
 
-If $x<a$, then we can choose some $m,n$ such that $m<x<n<a$. Then, $x\in(m,n)$, but $(m,n)\cap(a,b)=\emptyset$ since $m<n<a$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $x\not<a$.
+If $x<a$, then we can choose some $m,n$ such that $m<x<n<a$. Then, $x\in\overline{(m,n)}$, but $(m,n)\cap(a,b)=\emptyset$ since $m<n<a$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $x\not<a$, so $a\le x$.
 
-Similarly, if $x>b$, then we can choose some $m,n$ such that $b<m<x<n$. Then, $x\in(m,n)$, but $(m,n)\cap(a,b)=\emptyset$ since $m<n<a$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $x\not>a$.
+Similarly, if $b<x$, then we can choose some $m,n$ such that $b<m<x<n$. Then, $x\in\overline{(m,n)}$, but $(m,n)\cap(a,b)=\emptyset$ since $b<m<n$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $b\not<x$, so $x\le b$.
 
 So, $a\le x\le b$, or equivalently, $x\in[a,b]$. Therefore, $\overline{(a,b)}\subseteq[a,b]$.
 
