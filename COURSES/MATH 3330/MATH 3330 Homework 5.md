@@ -39,7 +39,7 @@ Since $F$ is finite and the sequence $x_n$ takes in distinct values that are eac
 > [!problem] Question 4
 > Show that the $T_1$ axiom is equivalent to the condition for each pair of points of $X$, each has a neighborhood not containing the other.
 
-
+The $T_1$ axiom states that a space $X$ is $T_1$ if for each pair $x\neq y$, there exists an open set containing $x$ but not $y$, and an open set containing $y$ but not $x$.
 
 > [!problem] Question 5
 > Prove that for functions $f:\mathbb R\rightarrow \mathbb R$, the $\epsilon-\delta$ definition of continuity implies the open set definition.
