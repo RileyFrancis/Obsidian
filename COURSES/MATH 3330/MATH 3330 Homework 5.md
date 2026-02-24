@@ -32,12 +32,14 @@ Therefore, $\overline{\cap A_\alpha} \neq \cap\overline{A_\alpha}$, however $\ov
 > [!problem] Question 3
 > In the finite complement topology on $\mathbb R$, to what point or points does the sequence $x_n=\frac1n$ converge?
 
-A sequence $x_n$ converges to $x$ if for every open set $U\in\mathbb R$ containing $x$, all finitely many $x_n$ are in $U$. Let $U\subseteq\mathbb R$ be an open set containing $x\in\mathbb R$. In the complement topology $U$ is open if $U=\emptyset$ or $U=X-F$ where $F$ is a finite set in $\mathbb R$. $U\neq \emptyset$ since $U$ contains $x$, so then $x\in X$, but $x\notin F$.
+A sequence $x_n$ converges to $x$ if for every open set $U\in\mathbb R$ containing $x$, all but finitely many $x_n$ are in $U$. Let $U\subseteq\mathbb R$ be an open set containing $x\in\mathbb R$. In the complement topology $U$ is open if $U=\emptyset$ or $U=X-F$ where $F$ is a finite set in $\mathbb R$. $U\neq \emptyset$ since $U$ contains $x$, so then $x\in X$, but $x\notin F$.
 
-Since $F$ is finite and the sequence $x_n$ takes in 
+Since $F$ is finite and the sequence $x_n$ takes in distinct values that are each assigned to unique values in $\{\frac{1}{n}\}$, there are only finitely many indices that $x_n\in F$. Therefore, there must exist some $N$ such that for all $n>N$, $x_n\notin F$, and since $U=X-F$, $x_n\in U$. Then, all but finitely many terms of $x_n$ converge to $x$. Since $x$ was arbitrary, the sequence converges to every $x\in \mathbb R$.
 
 > [!problem] Question 4
 > Show that the $T_1$ axiom is equivalent to the condition for each pair of points of $X$, each has a neighborhood not containing the other.
+
+
 
 > [!problem] Question 5
 > Prove that for functions $f:\mathbb R\rightarrow \mathbb R$, the $\epsilon-\delta$ definition of continuity implies the open set definition.
