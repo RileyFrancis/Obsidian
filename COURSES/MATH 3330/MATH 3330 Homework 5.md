@@ -3,13 +3,16 @@
 > [!problem] Question 1
 > Let $X$ be an ordered set in the order topology. Show that $\overline{(a, b)}\subseteq[a, b]$. Under what conditions does the equality hold?
 
-***Proof:*** Let $X$ be an ordered set in the order topology and let $X=(a,b)$. Let $x\in\overline{(a,b)}$, so every open neighborhood of $x$ must intersect $(a,b)$. Then consider the following:
+***Proof:*** Let $X$ be an ordered set in the order topology. Let $x\in\overline{(a,b)}$, so every open neighborhood of $x$ must intersect $(a,b)$. Then consider the following:
 
 If $x<a$, then we can choose some $m,n$ such that $m<x<n<a$. Then, $x\in\overline{(m,n)}$, but $(m,n)\cap(a,b)=\emptyset$ since $m<n<a$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $x\not<a$, so $a\le x$.
 
 Similarly, if $b<x$, then we can choose some $m,n$ such that $b<m<x<n$. Then, $x\in\overline{(m,n)}$, but $(m,n)\cap(a,b)=\emptyset$ since $b<m<n$, contradicting the fact that $(m,n)$ must intersect $(a,b)$ if $x\in\overline{(a,b)}$. Thus $b\not<x$, so $x\le b$.
 
 So, $a\le x\le b$, or equivalently, $x\in[a,b]$. Therefore, $\overline{(a,b)}\subseteq[a,b]$.
+
+**Under what conditions does the equality hold?**
+Equality will hold when $[a,b]\subseteq \overline{(a,b)}$. This means that both $a,b\in\overline{(a,b)}$, so every neighborhood of $a$ and every neighborhood of $b$ contains a point in $(a,b)$.
 
 > [!problem] Question 2
 > Let $A_\alpha$ be a subset of a space $X$. Decide if $\overline{\cap A_\alpha} = \cap\overline{A_\alpha}$. If not, is one a subset of the other?
