@@ -12,7 +12,7 @@ Similarly, if $b<x$, then we can choose some $m,n$ such that $b<m<x<n$. Then, $x
 So, $a\le x\le b$, or equivalently, $x\in[a,b]$. Therefore, $\overline{(a,b)}\subseteq[a,b]$.
 
 **Under what conditions does the equality hold?**
-Equality will hold when $[a,b]\subseteq \overline{(a,b)}$. This means that both $a,b\in\overline{(a,b)}$, so every neighborhood of $a$ and every neighborhood of $b$ contains a point in $(a,b)$.
+Equality will hold when $[a,b]\subseteq \overline{(a,b)}$. This means that both $a,b\in\overline{(a,b)}$, so every neighborhood of $a$ and every neighborhood of $b$ contains a point in $(a,b)$. If there were a 
 
 > [!problem] Question 2
 > Let $A_\alpha$ be a subset of a space $X$. Decide if $\overline{\cap A_\alpha} = \cap\overline{A_\alpha}$. If not, is one a subset of the other?
