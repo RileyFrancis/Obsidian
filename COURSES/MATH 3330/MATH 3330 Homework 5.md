@@ -39,10 +39,16 @@ Since $F$ is finite and the sequence $x_n$ takes in distinct values that are eac
 > [!problem] Question 4
 > Show that the $T_1$ axiom is equivalent to the condition for each pair of points of $X$, each has a neighborhood not containing the other.
 
-The $T_1$ axiom states that a space $X$ is $T_1$ if for each pair $x\neq y$, there exists an open set containing $x$ but not $y$, and an open set containing $y$ but not $x$.
+The $T_1$ axiom states that a space $X$ is $T_1$ if for each pair $x\neq y$, there exists an open set containing $x$ but not $y$, and an open set containing $y$ but not $x$. Additionally, a neighborhood of $x$ is a set $U$ that contains an open set containing $x$.
+
+***Proof:*** Let $X$ be $T_1$ and $x,y\in X$ such that $x\neq Y$. By the definition of a $T_1$ space, there must exist an open set $U$ containing $x$ that does not contain $y$, as well as an open set $V$ containing $y$ that does not contain $x$. Thus $U$ is a neighborhood of $x$ that doesn't contain $y$, and $V$ is a neighborhood of $y$ that doesn't contain $x$. Therefore, each pair of points $x$ and $y$ have some neighborhood not containing the other.
+
+Now assume that each pair of non-equal points $x$ and $y$ have a neighborhood not containing the other. Then by the definition of a neighborhood, $x\in U\subseteq X$ and $y\in V\subseteq Y$. Therefore, there is an open set containing $x$ but not $y$ and another open set containing $y$ but not $x$, so $X$ is $T_1$.
 
 > [!problem] Question 5
 > Prove that for functions $f:\mathbb R\rightarrow \mathbb R$, the $\epsilon-\delta$ definition of continuity implies the open set definition.
+
+
 
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
