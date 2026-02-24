@@ -32,7 +32,9 @@ Therefore, $\overline{\cap A_\alpha} \neq \cap\overline{A_\alpha}$, however $\ov
 > [!problem] Question 3
 > In the finite complement topology on $\mathbb R$, to what point or points does the sequence $x_n=\frac1n$ converge?
 
-A sequence $x_n$ converges to $x$ if for every open set $U$ containing $x$   
+A sequence $x_n$ converges to $x$ if for every open set $U\in\mathbb R$ containing $x$, all finitely many $x_n$ are in $U$. Let $U\subseteq\mathbb R$ be an open set containing $x\in\mathbb R$. In the complement topology $U$ is open if $U=\emptyset$ or $U=X-F$ where $F$ is a finite set in $\mathbb R$. $U\neq \emptyset$ since $U$ contains $x$, so then $x\in X$, but $x\notin F$.
+
+Since $F$ is finite and the sequence $x_n$ takes in 
 
 > [!problem] Question 4
 > Show that the $T_1$ axiom is equivalent to the condition for each pair of points of $X$, each has a neighborhood not containing the other.
