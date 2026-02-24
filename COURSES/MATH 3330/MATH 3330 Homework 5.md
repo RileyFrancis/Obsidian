@@ -12,7 +12,9 @@ Similarly, if $b<x$, then we can choose some $m,n$ such that $b<m<x<n$. Then, $x
 So, $a\le x\le b$, or equivalently, $x\in[a,b]$. Therefore, $\overline{(a,b)}\subseteq[a,b]$.
 
 **Under what conditions does the equality hold?**
-Equality will hold when $[a,b]\subseteq \overline{(a,b)}$. This means that both $a,b\in\overline{(a,b)}$, so every neighborhood of $a$ and every neighborhood of $b$ contains a point in $(a,b)$. If there were a 
+Equality will hold when $[a,b]\subseteq \overline{(a,b)}$. This means that both $a,b\in\overline{(a,b)}$, so every neighborhood of $a$ and every neighborhood of $b$ contains a point in $(a,b)$. In the order topology, neighborhoods of $a$ contain intervals of the form $(u,v)$ with $u<a<v$. Thus $a\in\overline{(a,b)}$​ exactly when every interval contains a point $x$ with $a<x<b$. This holds precisely when there is no element of $X$ that is the immediate successor of $a$. Otherwise, if $c$ were the smallest element greater than $a$, we could choose an interval around $a$ that lies entirely below $c$ and it would not intersect $(a,b)$.
+
+Similarly, b∈(a,b)‾b\in\overline{(a,b)}b∈(a,b)​ exactly when there is no element of XXX that is the immediate predecessor of bbb.
 
 > [!problem] Question 2
 > Let $A_\alpha$ be a subset of a space $X$. Decide if $\overline{\cap A_\alpha} = \cap\overline{A_\alpha}$. If not, is one a subset of the other?
