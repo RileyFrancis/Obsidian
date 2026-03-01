@@ -48,7 +48,7 @@ Now assume that each pair of non-equal points $x$ and $y$ have a neighborhood no
 > [!problem] Question 5
 > Prove that for functions $f:\mathbb R\rightarrow \mathbb R$, the $\epsilon-\delta$ definition of continuity implies the open set definition.
 
-
+***Proof:*** Let $f:\mathbb R\rightarrow \mathbb R$ be a function and $\epsilon>0$. Then there exists some $\delta>0$ such that $0<|x-a|<\delta$ implies that $|f(x)$
 
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
