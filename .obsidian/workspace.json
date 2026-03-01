@@ -67,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +124,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 263.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -238,7 +239,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ce8eebfdc23d1f96",
+  "active": "431c83bacc738803",
   "lastOpenFiles": [
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
     "COURSES/CSE 3150/Notes/Pointers.md",
