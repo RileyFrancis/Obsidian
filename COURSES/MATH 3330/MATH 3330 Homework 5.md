@@ -89,7 +89,7 @@ When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ w
 
 In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\infty$. We will show that $\overline{\mathbb R^\infty}=\mathbb R^\infty$ by showing that its compliment is open. Let $x\notin \mathbb R^\infty$, so there are infinitely many nonzero coordinates in $x$. Consider the neighborhood $U=\prod_i U_i$, where we choose each $U_i$ by restricting $\mathbb R$ to be an open interval around $x_i$ that excludes $0$ whenever $x_i\neq 0$. So for some $\epsilon>$, $$U_i=\left\{\begin{align}&(x_i-\epsilon,x_i+\epsilon) & x_i\neq 0 \\ &\mathbb R & x_i=0\end{align}\right.$$Then each $y\in U$ has infinitely many nonzero coordinates, so $y\notin \mathbb R^\infty$. Therefore $U$ is an open neighborhood of $x$ disjoint from 
 
-In the product topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\omega$.
+In the product topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\omega$. Let $x\in\mathbb R^\omega$. We will show that every open set containing $x$ intersects $\mathbb R^\omega$. Consider the neighborhood $U=\prod_i U_i$, where $U_i=\mathbb R$ for all finitely many $i$
 
 > [!problem] Question 10
 > Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
