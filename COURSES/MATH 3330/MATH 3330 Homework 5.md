@@ -66,7 +66,8 @@ However, $f(x=6)=6$ is not a limit point of $f\big(A=(6,7)\big)=\{6\}$ because $
 
 ***Proof:*** Let $F:X\times Y\rightarrow Z$ be a continuous function. We must show that $F$ is continuous in each variable separately.
 
-Fix a point $y_0\in Y$ and define a new function $h:X\rightarrow Z$ as $h(x)=F(x,y_0)$.
+Fix a point $y_0\in Y$ and define a new function $h:X\rightarrow Z$ as $h(x)=F(x,y_0)$. Then consider the map $g:X\rightarrow X\times Y$ defined by $g(x)=(x,y_0)$. $g$ must be continuous since it maps $x\mapsto x$ and $y_0$ was fixed. Then,$$F\circ g=F(g(x))=F((x,y_0))=h(x)$$
+Similarly, fix a point $x_0\in X$ and define a new function $h':Y\rightarrow Z$ as $h'(y)=F(x_0,y)$. Then consider the map $g':Y\rightarrow X\times Y$ defined by $g'(y)=(x_0,y)$. $g'$ must be continuous since it maps $y\mapsto y$ and $x_0$ was fixed. Then,$$F\circ g=F(g(y))=F((x_0,y))=h(y)$$Since both $F$ and $g$ are continuous functions and $h$ is the composition of those functions, $h$ must also be continuous.
 
 > [!problem] Question 8
 > Let $F:\mathbb R\times\mathbb R\rightarrow \mathbb R$ be defined by the equation $$F(x\times y)=\left\{\begin{align}&\frac{xy}{x^2+y^2} & \text{if } x\times y\neq 0\times0 \\ &0 & \text{if } x\times y = 0\times 0\end{align}\right.$$
