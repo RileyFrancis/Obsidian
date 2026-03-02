@@ -48,11 +48,11 @@ Now assume that each pair of non-equal points $x$ and $y$ have a neighborhood no
 > [!problem] Question 5
 > Prove that for functions $f:\mathbb R\rightarrow \mathbb R$, the $\epsilon-\delta$ definition of continuity implies the open set definition.
 
-***Proof:*** Let $f:\mathbb R\rightarrow \mathbb R$ be a function. $f$ is continuous by the $\epsilon-\delta$ definition of continuity at a point $x$ if for every $\epsilon>0$, there exists some $\delta>0$ such that given another point $y$ that's close to $x$, $|x-y|<\epsilon\Rightarrow |f(x)-f(y)|<\delta$. We must show that given the $\epsilon-\delta$ definition of continuity, $f$ is continuous if for every open set $U\subseteq \mathbb R$, the inverse $f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$ is open in $\mathbb R$ (the open set definition).
+***Proof:*** Let $f:\mathbb R\rightarrow \mathbb R$ be a function. $f$ is continuous by the $\epsilon-\delta$ definition of continuity at a point $x$ if for every $\epsilon>0$, there exists some $\delta>0$ such that given another point $y$ that's close to $x$, $|x-y|<\delta\Rightarrow |f(x)-f(y)|<\epsilon$. We must show that given the $\epsilon-\delta$ definition of continuity, $f$ is continuous if for every open set $U\subseteq \mathbb R$, the inverse $f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$ is open in $\mathbb R$ (the open set definition).
 
-Assume that $f$ satisfies the $\epsilon-\delta$ definition of continuity. Then for $U\subseteq\mathbb R$, take any point $x\in f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$. Since $U$ is an open set, there must exist some $\epsilon>0$ such that an open ball ($B_\epsilon$) around $f(x)$ with radius $\epsilon$ is in $U$, so $B_\epsilon(f(x))\subseteq U$. That is, for some $y$ close to $f(x)$, $|y-f(x)|<\epsilon\Rightarrow y\in U$.
+Assume that $f$ satisfies the $\epsilon-\delta$ definition of continuity. Then for $U\subseteq\mathbb R$, take any point $x\in f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$. Since $U$ is an open set, there must exist some $\epsilon>0$ such that an open ball ($B_\epsilon$) around $f(x)$ with radius $\epsilon$ is in $U$, so $B_\epsilon(f(x))\subseteq U$. That is, $B_\epsilon=\{y\in\mathbb R\}$
 
-Now, using the ep
+Since $f$ is continuous with the $\epsilon-\delta$ definition of continuity, $|x-y|<\delta\Rightarrow|f(x)-f(y)|<\epsilon$. But $|f(x)-f(y)|<\epsilon$ means that x
 
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
