@@ -50,12 +50,16 @@ Now assume that each pair of non-equal points $x$ and $y$ have a neighborhood no
 
 ***Proof:*** Let $f:\mathbb R\rightarrow \mathbb R$ be a function. $f$ is continuous by the $\epsilon-\delta$ definition of continuity at a point $x$ if for every $\epsilon>0$, there exists some $\delta>0$ such that given another point $y$ that's close to $x$, $|x-y|<\delta\Rightarrow |f(x)-f(y)|<\epsilon$. We must show that given the $\epsilon-\delta$ definition of continuity, $f$ is continuous if for every open set $U\subseteq \mathbb R$, the inverse $f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$ is open in $\mathbb R$ (the open set definition).
 
-Assume that $f$ satisfies the $\epsilon-\delta$ definition of continuity. Then for $U\subseteq\mathbb R$, take any point $x\in f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$. Since $U$ is an open set, there must exist some $\epsilon>0$ such that an open ball ($B_\epsilon$) around $f(x)$ with radius $\epsilon$ is in $U$, so $B_\epsilon(f(x))\subseteq U$. That is, $B_\epsilon=\{y\in\mathbb R\}$
+Assume that $f$ satisfies the $\epsilon-\delta$ definition of continuity. Then for $U\subseteq\mathbb R$, take any point $x\in f^{-1}(U)=\{x\in\mathbb R\mid f(x)\in U\}$. Since $U$ is an open set, there must exist some $\epsilon>0$ such that an open ball ($B_\epsilon$) around $f(x)$ with radius $\epsilon$ is in $U$, that is, $B_\epsilon(f(x))=\{y\in\mathbb R \mid |y-f(x)|<\epsilon\}$. So $B_\epsilon(f(x))\subseteq U$.
 
-Since $f$ is continuous with the $\epsilon-\delta$ definition of continuity, $|x-y|<\delta\Rightarrow|f(x)-f(y)|<\epsilon$. But $|f(x)-f(y)|<\epsilon$ means that x
+Since $f$ is continuous with the $\epsilon-\delta$ definition of continuity, $|x-y|<\delta\Rightarrow|f(x)-f(y)|<\epsilon$. Since distance is symmetric, $|f(x)-f(y)|<\epsilon$ is the same as $|f(y)-f(x)|<\epsilon$. Then, $f(y)\in B_\epsilon(f(x))\subseteq U$, so $f(y)\in U$ and $y\in f^{-1}(U)$. Therefore, $|x-y|<\delta\Rightarrow y\in f^{-1}(U)$ and since every point in $f^{-1}(U)$ has some open ball around it contained in $f^{-1}(U)$, $f^{-1}(U)$ is open. And therefore, $f$ is continuous in the open-set definition of continuity.
 
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
+
+The statem
+
+***Proof:*** Let $f:X\rightarrow Y$ be a continuous function and $x$ be a limit point of $A\subseteq X$. We must show that $f(x)$
 
 > [!problem] Question 7
 > Let $F:X\times Y\rightarrow Z$. We say that $F$ is continuous in each variable separately if for each $y_0$ in $Y$, the map $h:X\rightarrow Z$ defined by $h(x)=F(x\times y_0)$ is continuous, and for each $x_0$ in $X$, the map $k:Y\rightarrow Z$ defined by $k(y)=F(x_0\times y)$ is continuous. Show that if $F$ is continuous, then $F$ is continuous in each variable separately.
