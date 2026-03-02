@@ -39,6 +39,18 @@
             }
           },
           {
+            "id": "2d9199fa4e583f8a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
+          },
+          {
             "id": "ebac76d623803f64",
             "type": "leaf",
             "state": {
@@ -67,7 +79,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -239,7 +251,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "431c83bacc738803",
+  "active": "2d9199fa4e583f8a",
   "lastOpenFiles": [
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
     "COURSES/CSE 3150/Notes/Pointers.md",
