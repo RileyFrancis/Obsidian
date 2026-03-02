@@ -57,9 +57,7 @@ Since $f$ is continuous with the $\epsilon-\delta$ definition of continuity, $|x
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
 
-The statem
-
-***Proof:*** Let $f:X\rightarrow Y$ be a continuous function and $x$ be a limit point of $A\subseteq X$. We must show that $f(x)$
+The statement is false. As a counterexample, choose $$
 
 > [!problem] Question 7
 > Let $F:X\times Y\rightarrow Z$. We say that $F$ is continuous in each variable separately if for each $y_0$ in $Y$, the map $h:X\rightarrow Z$ defined by $h(x)=F(x\times y_0)$ is continuous, and for each $x_0$ in $X$, the map $k:Y\rightarrow Z$ defined by $k(y)=F(x_0\times y)$ is continuous. Show that if $F$ is continuous, then $F$ is continuous in each variable separately.
