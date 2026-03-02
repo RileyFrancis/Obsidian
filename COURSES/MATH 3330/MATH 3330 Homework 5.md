@@ -82,12 +82,14 @@ We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $
 When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ when $x=0$.
 
 ***3.***
-***Proof:*** Consider the closed set $\{\frac{1}{2}\}$. If $F$ is continuous, then the preimage of $F$ should also be closed. $F^{-1}(\{\frac{1}{2}\})$ contains points in the form $(x,x)$. 
+***Proof:*** Consider the closed set $\{\frac{1}{2}\}$. If $F$ is continuous, then the preimage of $F$ should also be closed. $F^{-1}(\{\frac{1}{2}\})$ contains points in the form $(x,x)$. The point $(0,0)$ is a limit point of $F^{-1}(\{\frac12\})$ because it intersects at a point other than itself. $F(0,0)=0$ is not in the preimage, however, so the preimage is not closed as it does not contain all its limit points. 
 
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
 
-In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is
+In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\infty$. Consider the neighborhood $U=\prod_i U_i$, where we choose each $U_i$ to be an open interval around $x_i$ that excludes $0$ whenever $x_i\neq 0$
+
+In the product topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\omega$.
 
 > [!problem] Question 10
 > Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
