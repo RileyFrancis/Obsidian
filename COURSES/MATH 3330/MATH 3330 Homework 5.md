@@ -82,7 +82,7 @@ We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $
 When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ when $x=0$.
 
 ***3.***
-***Proof:*** Let $x=y$. We must show that $F$ is not continuous. From *2.*, we've shown that $$g(x)=F(x\times x)=\left\{\begin{align}&\frac{1}{2} & \text{when } x\neq0 \\ &0 & \text{when } x=0\end{align}\right.$$We will look at the point $(0,0)$, when $x=y=0$. If $F$ is continuous at $(0,0)$, then for every open ball $B_\epsilon$ with radius $\epsilon$, 
+***Proof:*** Consider the closed set $\{\frac{1}{2}\}$. If $F$ is continuous, then the preimage of $F$ should also be closed. $F^{-1}(\{\frac{1}{2}\})$ contains points in the form $(x,x)$. 
 
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
