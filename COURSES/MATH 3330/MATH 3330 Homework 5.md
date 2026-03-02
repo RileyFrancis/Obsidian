@@ -87,7 +87,7 @@ When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ w
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
 
-In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\infty$. Consider the neighborhood $U=\prod_i U_i$, where we choose each $U_i$ to be an open interval around $x_i$ that excludes $0$ whenever $x_i\neq 0$
+In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\infty$. We will show that $\overline{\mathbb R^\infty}=\mathbb R^\infty$ by showing that its compliment is open. Let $x\notin \mathbb R^\infty$, so there are infinitely many nonzero coordinates in $x$. Consider the neighborhood $U=\prod_i U_i$, where we choose each $U_i$ by restricting $\mathbb R$ to be an open interval around $x_i$ that excludes $0$ whenever $x_i\neq 0$. So for some $\epsilon>$, $$U_i=\left\{\begin{align}&(x_i-\epsilon,x_i+\epsilon) & x_i\neq 0 \\ &\mathbb R & x_i=0\end{align}\right.$$Then each $y\in U$ has infinitely many nonzero coordinates, so $y\notin \mathbb R^\infty$. Therefore $U$ is an open neighborhood of $x$ disjoint from 
 
 In the product topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\omega$.
 
