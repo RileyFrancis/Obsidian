@@ -75,8 +75,12 @@ Similarly, fix a point $x_0\in X$ and define a new function $h':Y\rightarrow Z$ 
 > 2. Compute the function $g:\mathbb R\rightarrow \mathbb R$ defined by $g(x)=F(x\times x)$.
 > 3. Show that $F$ is not continuous (using techniques of this class).
 
+1. We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $x$ so $F$ is continuous in this case. If $y_0\neq 0$, then $F(x,y_0)=\frac{xy_0}{x^2+y_0^2}$. Since $x^2+y_0^2>0$ for all $x,y_0$, the denominator is never zero, so $F$ is also continuous in this case. We can show the same is true for fixing a point $x_0$ to show that 
+
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
+
+In the box topology, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is
 
 > [!problem] Question 10
 > Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
