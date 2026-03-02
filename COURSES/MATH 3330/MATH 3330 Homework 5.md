@@ -57,10 +57,16 @@ Since $f$ is continuous with the $\epsilon-\delta$ definition of continuity, $|x
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
 
-The statement is false. As a counterexample, choose $$
+The statement is false. As a counterexample, choose $X=Y=\mathbb R$ with the standard topology. Let $f(x)=6$ (as an example) for all $x\in X$. Then we take the subset $A=(6,7) \subset\mathbb R$, $f(A)=\{6\}$ by our example with the limit point $x=6$. Obviously $f$ is continuous as it is a trivial function mapping $\mathbb R$ to $6$.
+
+However, $f(x=6)=6$ is not a limit point of $f\big(A=(6,7)\big)=\{6\}$ because $f(A)$ contains only a single point.
 
 > [!problem] Question 7
 > Let $F:X\times Y\rightarrow Z$. We say that $F$ is continuous in each variable separately if for each $y_0$ in $Y$, the map $h:X\rightarrow Z$ defined by $h(x)=F(x\times y_0)$ is continuous, and for each $x_0$ in $X$, the map $k:Y\rightarrow Z$ defined by $k(y)=F(x_0\times y)$ is continuous. Show that if $F$ is continuous, then $F$ is continuous in each variable separately.
+
+***Proof:*** Let $F:X\times Y\rightarrow Z$ be a continuous function. We must show that $F$ is continuous in each variable separately.
+
+Fix a point $y_0\in Y$ and define a new function $h:X\rightarrow Z$ as $h(x)=F(x,y_0)$.
 
 > [!problem] Question 8
 > Let $F:\mathbb R\times\mathbb R\rightarrow \mathbb R$ be defined by the equation $$F(x\times y)=\left\{\begin{align}&\frac{xy}{x^2+y^2} & \text{if } x\times y\neq 0\times0 \\ &0 & \text{if } x\times y = 0\times 0\end{align}\right.$$
