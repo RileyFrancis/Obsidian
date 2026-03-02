@@ -75,7 +75,14 @@ Similarly, fix a point $x_0\in X$ and define a new function $h':Y\rightarrow Z$ 
 > 2. Compute the function $g:\mathbb R\rightarrow \mathbb R$ defined by $g(x)=F(x\times x)$.
 > 3. Show that $F$ is not continuous (using techniques of this class).
 
-1. We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $x$ so $F$ is continuous in this case. If $y_0\neq 0$, then $F(x,y_0)=\frac{xy_0}{x^2+y_0^2}$. Since $x^2+y_0^2>0$ for all $x,y_0$, the denominator is never zero, so $F$ is also continuous in this case. We can show the same is true for fixing a point $x_0$ to show that 
+***1.***
+We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $x$ so $F$ is continuous in this case. If $y_0\neq 0$, then $F(x,y_0)=\frac{xy_0}{x^2+y_0^2}$. Since $x^2+y_0^2>0$ for all $x,y_0$, the denominator is never zero, so $F$ is also continuous in this case. We can show the same is true for fixing a point $x_0$ to show that $F$ is still continuous here, so $F$ must be continuous in each variable separately.
+
+***2.***
+When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ when $x=0$.
+
+***3.***
+***Proof:*** Let $x=y$. We must show that $F$ is not continuous. From *2.*, we've shown that $$g(x)=F(x\times x)=\left\{\begin{align}&\frac{1}{2} & \text{when } x\neq0 \\ &0 & \text{when } x=0\end{align}\right.$$We will look at the point $(0,0)$, when $x=y=0$. If $F$ is continuous at $(0,0)$, then for every open ball $B_\epsilon$ with radius $\epsilon$, 
 
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
