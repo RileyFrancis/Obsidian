@@ -52,6 +52,8 @@ Now assume that each pair of non-equal points $x$ and $y$ have a neighborhood no
 
 Assume that $f$ satisfies the $\epsilon-\delta$ definition of continuity. Then for $U\subseteq\mathbb R$, take any point $x\in f^{-1}(U)$. Then, $f(x)\in U$. Since $U$ is an open set, there must exist some $\epsilon>0$ such that an open ball ($B_\epsilon$) around $f(x)$ with radius $\epsilon$ is in $U$, so $B_\epsilon(f(x))\subseteq U$. That is, for some $y$ close to $f(x)$, $|y-f(x)|<\epsilon\Rightarrow y\in U$.
 
+Now, using the ep
+
 > [!problem] Question 6
 > Suppose $f:X\rightarrow Y$ is continuous. If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f(x)$ is a limit point of $f(A)$?
 
