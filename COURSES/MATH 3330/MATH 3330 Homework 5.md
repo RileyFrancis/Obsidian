@@ -75,12 +75,24 @@ Similarly, fix a point $x_0\in X$ and define a new function $h':Y\rightarrow Z$ 
 > 2. Compute the function $g:\mathbb R\rightarrow \mathbb R$ defined by $g(x)=F(x\times x)$.
 > 3. Show that $F$ is not continuous (using techniques of this class).
 
+***1.***
+We fix $y_0$ at some point in $\mathbb R$. If $y_0=0$, then $F(x,0)=0$ for all $x$ so $F$ is continuous in this case. If $y_0\neq 0$, then $F(x,y_0)=\frac{xy_0}{x^2+y_0^2}$. Since $x^2+y_0^2>0$ for all $x,y_0$, the denominator is never zero, so $F$ is also continuous in this case. We can show the same is true for fixing a point $x_0$ to show that $F$ is still continuous here, so $F$ must be continuous in each variable separately.
 
+***2.***
+When $x\neq 0$, $$g(x)=F(x\times x)=\frac{x^2}{2x^2}=\frac{1}{2}$$And $g(x)=0$ when $x=0$.
+
+***3.***
+***Proof:*** Consider the closed set $\{\frac{1}{2}\}$. If $F$ is continuous, then the preimage of $F$ should also be closed. $F^{-1}(\{\frac{1}{2}\})$ contains points in the form $(x,x)$. The point $(0,0)$ is a limit point of $F^{-1}(\{\frac12\})$ because it intersects at a point other than itself. $F(0,0)=0$ is not in the preimage, however, so the preimage is not closed as it does not contain all its limit points. 
 
 > [!problem] Question 9
 > Let $\mathbb R^\infty$ be the subset of $\mathbb R^\omega$ consisting of all sequences that are "eventually zero," that is, all sequences $(x_1,x_2,\ldots)$ such that $x_i\neq 0$ for only finitely many of i. values of $i$. What is the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ in the box and product topologies? Justify your answer.
 
+In the **box topology**, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\infty$. We will show that $\overline{\mathbb R^\infty}=\mathbb R^\infty$ by showing that its compliment is open. Let $x\notin \mathbb R^\infty$, so there are infinitely many nonzero coordinates in $x$. Consider the neighborhood $U=\prod_i U_i$, where we choose each $U_i$ by restricting $\mathbb R$ to be an open interval around $x_i$ that excludes $0$ whenever $x_i\neq 0$. So for some $\epsilon>$, $$U_i=\left\{\begin{align}&(x_i-\epsilon,x_i+\epsilon) & x_i\neq 0 \\ &\mathbb R & x_i=0\end{align}\right.$$Then each $y\in U$ has infinitely many nonzero coordinates, so $y\notin \mathbb R^\infty$. Thus $U$ is an open neighborhood of $x$ disjoint from $\mathbb R^\infty$, so $x$ is not a limit point. Therefore, $\overline{\mathbb R^\infty}=\mathbb R^\infty$ in the box topology.
+
+In the **product topology**, the closure of $\mathbb R^\infty$ in $\mathbb R^\omega$ is $\mathbb R^\omega$. Let $x\in\mathbb R^\omega$. We will show that every open set containing $x$ intersects $\mathbb R^\omega$. Consider the neighborhood $U=\prod_i U_i$, where $U_i=\mathbb R$ for all finitely many $i$. Then we define the sequence $y$ by $y_i=x$ for all $i$ smaller than some number $N$, and $y_i=0$ for all $i$ greater than $N$.
+
+$y\in \mathbb R^\infty$ since the sequence is eventually $0$. Also $y\in U$ since $y_i=x_i\in U_i$ for $i\le N$ and $y_i=0\in\mathbb R=U_i$ for $i>N$. Thus every open neighborhood of $x$ contains a point in $\mathbb R^\infty$, so $x$ is in $\overline{\mathbb R^\infty}$. Therefore, $\overline{\mathbb R^\infty}=\mathbb R^\omega$ in the product topology.
+
 > [!problem] Question 10
 > Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
-
 
