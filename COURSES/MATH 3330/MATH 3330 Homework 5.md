@@ -96,4 +96,4 @@ $y\in \mathbb R^\infty$ since the sequence is eventually $0$. Also $y\in U$ sinc
 > [!problem] Question 10
 > Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, define $h:\mathbb R^\omega \rightarrow \mathbb R^\omega$ by the equation $$h\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$Show that if $\mathbb R^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb R^\omega$ with itself. What happens if $\mathbb R^\omega$ is given the box topology?
 
-***Proof:*** Let $\mathbb R^\omega$ have the product topology. Given sequences 
+***Proof:*** Let $\mathbb R^\omega$ have the product topology. Given sequences $(a_1,a_2,\ldots)$ and $(b_1,b_2,\ldots)$ of real numbers with $a_i>0$ for all $i$, we define the function $h:\mathbb R^\omega\rightarrow \mathbb R^\omega$ by the equation $$\big((x_1,x_2,\ldots)\big)=(a_1x_1+b_1,a_2x_2+b_2,\ldots)$$
