@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523.5,
-    "collapsed": true
+    "width": 523.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,8 +185,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c7f2b1f1659c69d8",
+  "active": "78a60046cd749609",
   "lastOpenFiles": [
+    "COURSES/CSE 3150/Homework/day_10_hw",
     "COURSES/MATH 3330/MATH 3330 Homework 5.md",
     "PDFs/MATH 3330 Homework 5.pdf",
     "COURSES/MATH 3330/MATH 3330 Homework 2.md",
