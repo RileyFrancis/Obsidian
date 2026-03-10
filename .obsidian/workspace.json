@@ -45,7 +45,7 @@
               "type": "markdown",
               "state": {
                 "file": "COURSES/CSE 3150/Notes/Pointers.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -223,10 +223,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "78a60046cd749609",
+  "active": "ce8eebfdc23d1f96",
   "lastOpenFiles": [
-    "COURSES/MATH 3330/MATH 3330 Homework 5.md",
     "conflict-files-obsidian-git.md",
+    "COURSES/MATH 3330/MATH 3330 Homework 5.md",
     "PDFs/MATH 3330 Homework 5.pdf",
     "COURSES/CSE 3150/Notes/Pointers.md",
     "COURSES/MATH 3330/MATH 3330 Homework 4.md",
