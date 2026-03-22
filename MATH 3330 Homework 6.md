@@ -25,7 +25,7 @@ Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 ***Proof:*** Consider the sets $A=(0,1)$, $B=(0,1]$, and $C=[0,1]$. Let $f:A\rightarrow B$, $g:B\rightarrow C$, and $h:C\rightarrow A$ be functions. We will show that no two of $A$, $B$, or $C$ are homeomorphic by showing that $f$, $g$, and $h$ are not continuous bijective functions with continuous inverses.
 
 Consider $f:(0,1)\rightarrow (0,1]$.
-Let $p=f^{-1}(1)\in(0,1)$  If we restrict $f$ by removing the point $p$, then $f$ becomes $f|_{(0,1)\setminus\{p\}}:(0,1)\setminus \{p\}\rightarrow (0,1]\setminus \{p\}$. Then the domain $(0,1)\setminus \{p\}=(0,p)\cup (p,1)$ and must be disconnected, however $()$
+Let $p=f^{-1}(1)\in(0,1)$. If we restrict $f$ by removing the point $p$, then $f$ becomes $f|_{(0,1)\setminus\{p\}}:(0,1)\setminus \{p\}\rightarrow (0,1]\setminus \{p\}$. Then the domain $(0,1)\setminus \{p\}=(0,p)\cup (p,1)$ and must be disconnected, however $(0,1]$
 
 > [!problem] Question 5
 > Let $f:S^1\to \mathbb{R}$ be a continuous map. Show there exists a point $x$ of $S^1$ such that $f(x)=f(-x)$.
