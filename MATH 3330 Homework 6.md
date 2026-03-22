@@ -25,10 +25,20 @@ Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 ***Proof:*** Consider the sets $A=(0,1)$, $B=(0,1]$, and $C=[0,1]$. Let $f:A\rightarrow B$, $g:B\rightarrow C$, and $h:C\rightarrow A$ be functions. We will show that no two of $A$, $B$, or $C$ are homeomorphic by showing that $f$, $g$, and $h$ are not continuous bijective functions with continuous inverses.
 
 Consider $f:(0,1)\rightarrow (0,1]$.
-Let $p=f^{-1}(1)\in(0,1)$. If we restrict $f$ by removing the point $p$, then $f$ becomes $f|_{(0,1)\setminus\{p\}}:(0,1)\setminus \{p\}\rightarrow (0,1]\setminus \{p\}$. Then the domain $(0,1)\setminus \{p\}=(0,p)\cup (p,1)$ and must be disconnected, however $(0,1]$
+Let $p=f^{-1}(1)\in(0,1)$. If we restrict $f$ by removing the point $p$, then $f$ becomes $f|_{(0,1)\setminus\{p\}}:(0,1)\setminus \{p\}\rightarrow (0,1]\setminus \{1\}$. Then the domain $(0,1)\setminus \{p\}=(0,p)\cup (p,1)$ and must be disconnected, however $(0,1]\setminus\{1\}=(0,1)$ which is connected. $f$ can't be a homeomorphism because it does not preserve connectedness.
+
+Consider $g:(0,1]\rightarrow [0,1]$.
+Let $p=g^{-1}(0)\in(0,1]$. If we restrict $g$ by removing the point $p$, then $g$ becomes $f|_{(0,1]\setminus\{p\}}:(0,1]\setminus \{p\}\rightarrow [0,1]\setminus \{0\}$. Then the domain $(0,1]\setminus\{p\}=(0,p)\cup(p,1]$ and must be disconnected, however $[0,1]\setminus\{0\}=(0,1)$ which is connected. $g$ can't be a homeomorphism because it does not preserve connectedness.
+
+Consider $h:[0,1]\rightarrow (0,1)$
+Since $[0,1]$ is compact in $\mathbb R$ and $(0,1)$ is not compact in $\mathbb R$ and homeomorphisms must preserve compactness, $h:[0,1]\rightarrow (0,1)$ must not be a homeomorphism.
+
+Therefore, none of $f,g,h$ are homeomorphisms.
 
 > [!problem] Question 5
 > Let $f:S^1\to \mathbb{R}$ be a continuous map. Show there exists a point $x$ of $S^1$ such that $f(x)=f(-x)$.
+
+***Proof:*** Let $f:S^1\to \mathbb{R}$ be a continuous map. We must show that there exists a point $x\in S^1$ such that $f(x)=f(-x)$. Define a new continuous function $g:$
 
 > [!problem] Question 6
 > Show that if $X$ is a well ordered set, then $X \times [0,1)$ in the dictionary order is a linear continuum.
