@@ -8,7 +8,7 @@ On the other hand, if $\mathcal T \subset \mathcal T'$ and $\mathcal T$ is compa
 > [!problem] Question 2
 > Show that if $X$ is an infinite set, it is connected in the finite complement topology (sets are open if their complement is finite).
 
-***Proof:*** Let $X$ be an infinite set with the cofinite topology. 
+***Proof:*** Let $X$ be an infinite set with the cofinite topology, meaning sets in $X$ are open if their complement is finite. 
 
 > [!problem] Question 3
 > Determine whether or not $\mathbb{R}^{\omega}$ is connected in the uniform topology.
