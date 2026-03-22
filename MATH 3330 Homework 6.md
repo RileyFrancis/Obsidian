@@ -1,10 +1,14 @@
 > [!problem] Question 1
 > Let $\mathcal{T}$ and $\mathcal{T}'$ be two topologies on $X$. If $\mathcal{T} \subset \mathcal{T}'$, what does connectedness of $X$ in one imply about connectedness in the other? What does the compactness of $X$ under one of these topologies imply about compactness under the other?
 
-If $\mathcal T\subset \mathcal T'$ and $T'$ is 
+If $\mathcal T\subset \mathcal T'$ and $\mathcal T'$ is connected, then $\mathcal T$ must also be connected because it is a coarser topology.
+
+On the other hand, if $\mathcal T \subset \mathcal T'$ and $\mathcal T$ is compact, then $\mathcal T'$ must also be compact. This is because $\mathcal T$ has more sets and thus more possible open covers. 
 
 > [!problem] Question 2
 > Show that if $X$ is an infinite set, it is connected in the finite complement topology (sets are open if their complement is finite).
+
+***Proof:*** Let $X$ be an infinite set with the cofinite topology. 
 
 > [!problem] Question 3
 > Determine whether or not $\mathbb{R}^{\omega}$ is connected in the uniform topology.
