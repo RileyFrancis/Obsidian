@@ -38,7 +38,9 @@ Therefore, none of $f,g,h$ are homeomorphisms.
 > [!problem] Question 5
 > Let $f:S^1\to \mathbb{R}$ be a continuous map. Show there exists a point $x$ of $S^1$ such that $f(x)=f(-x)$.
 
-***Proof:*** Let $f:S^1\to \mathbb{R}$ be a continuous map. We must show that there exists a point $x\in S^1$ such that $f(x)=f(-x)$. Define a new continuous function $g:$
+***Proof:*** Let $f:S^1\to \mathbb{R}$ be a continuous map. We must show that there exists a point $x\in S^1$ such that $f(x)=f(-x)$. Define a new continuous function $g:S^1\rightarrow \mathbb R$ as $g(x)=f(x)-f(-x)$. We must show that $g(x)=0$.
+
+Fix a point $y\in S^1$. We have $$g(-y)=f(-y)-f(y)=-(f(y)-f(-y)=-g(y)$$If $y=0$, then $g(y)$
 
 > [!problem] Question 6
 > Show that if $X$ is a well ordered set, then $X \times [0,1)$ in the dictionary order is a linear continuum.
