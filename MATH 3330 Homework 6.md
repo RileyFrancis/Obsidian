@@ -22,10 +22,10 @@ Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 > [!problem] Question 4
 > Show that no two of $(0,1), (0,1]$ and $[0,1]$ are homeomorphic. (Hint: What happens if you remove a point from each of these spaces?)
 
-***Proof:*** Consider the sets $A=(0,1)$, $B=(0,1]$, and $C=[0,1]$. Let $f:A\rightarrow B$, $g:B\rightarrow C$, and $h:C\rightarrow A$ be functions. We will show that no two of $A$, $B$, or $C$ are homeomorphic by showing that $f$, $g$, and $h$ are not continuous biject.
+***Proof:*** Consider the sets $A=(0,1)$, $B=(0,1]$, and $C=[0,1]$. Let $f:A\rightarrow B$, $g:B\rightarrow C$, and $h:C\rightarrow A$ be functions. We will show that no two of $A$, $B$, or $C$ are homeomorphic by showing that $f$, $g$, and $h$ are not continuous bijective functions with continuous inverses.
 
 Consider $f:(0,1)\rightarrow (0,1]$.
-
+Let a point $p=1$ in the codomain of $f$ be mapped to by some point in $(0,1)$ the domain of $f$. So $p=f^{-1}(1)\in(0,1)$  Suppose for the sake of contradiction that $f$ is a homeomorphism
 
 > [!problem] Question 5
 > Let $f:S^1\to \mathbb{R}$ be a continuous map. Show there exists a point $x$ of $S^1$ such that $f(x)=f(-x)$.
