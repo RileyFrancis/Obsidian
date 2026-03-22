@@ -175,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.5
+    "width": 296.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,7 +191,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3ebf0cde679d589a",
+  "active": "63ce2dc885594313",
   "lastOpenFiles": [
     "MATH 3330 Homework 6.md",
     "Other Stuff/Research/Feb.20th Presentation.canvas",

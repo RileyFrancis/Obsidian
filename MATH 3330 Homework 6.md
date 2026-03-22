@@ -8,10 +8,16 @@ On the other hand, if $\mathcal T \subset \mathcal T'$ and $\mathcal T$ is compa
 > [!problem] Question 2
 > Show that if $X$ is an infinite set, it is connected in the finite complement topology (sets are open if their complement is finite).
 
-***Proof:*** Let $X$ be an infinite set with the cofinite topology, meaning sets in $X$ are open if their complement is finite. 
+***Proof:*** Let $X$ be an infinite set with the cofinite topology, meaning sets in $X$ are open if their complement is finite. We must show that $X$ is connected, so there should not exist nonempty open sets $U$ and $V$ such that $U\cap V=\varnothing$ and $U\cup V = X$. Assume for the sake of contradiction that $X$ is disconnected, so sets $U$ and $V$ should exist.
+
+If $U\subseteq X$ is nonempty, then $X\setminus U$ is finite because $U$ is infinite. Similarly if $V\subseteq X$ is nonempty, then $X\setminus V$ is finite because $V$ is finite. Since $U\cup V=X$, $X\setminus U=V$ and $X\setminus V=U$, however the union of two finite sets is finite, contradicting the fact that $X$ is infinite.
+
+Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 
 > [!problem] Question 3
 > Determine whether or not $\mathbb{R}^{\omega}$ is connected in the uniform topology.
+
+
 
 > [!problem] Question 4
 > Show that no two of $(0,1), (0,1]$ and $[0,1]$ are homeomorphic. (Hint: What happens if you remove a point from each of these spaces?)
