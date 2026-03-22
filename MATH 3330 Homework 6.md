@@ -47,17 +47,21 @@ Fix a point $y\in S^1$. We have $$g(-y)=f(-y)-f(y)=-(f(y)-f(-y)=-g(y)$$If $g(y)=
 
 ***Proof:*** Let $X$ be a well ordered set and $A=X\times [0,1)$ have the dictionary ordering. We must show that $A$ is a linear continuum. For $A$ to be a linear continuum, $A$ must have the least upper bound property and for each $x,y\in A$, if $x<y$, there must exist a $z\in A$ such that $x<z<y$.
 
-Since $X$ is well ordered, it has the l
+Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x_1=x_2$ and $y_1<y_2)$.
 
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
+
+***Proof:*** Let $A=\bigcup_i X_i$ be the union of finitely many compact spaces. We must show that $A$ is compact.
 
 > [!problem] Question 8
 > Show that if $f:X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (i.e. $f$ maps closed sets to closed sets.)
 
 > [!problem] Question 9
 > Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
-    
+
+***Proof:*** Let $X$ be an ordered set and let each closed interval in $X$ be compact. We must show that $X$ has the LUB property.
+
 > [!problem] Question 10
 > Let $\mathbb{R}_K$ denote $\mathbb{R}$ with the $K-$topology.
 > - Show that $[0,1]$ is not compact as a subspace of $\mathbb{R}_K$.
