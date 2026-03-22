@@ -45,6 +45,10 @@ Fix a point $y\in S^1$. We have $$g(-y)=f(-y)-f(y)=-(f(y)-f(-y)=-g(y)$$If $g(y)=
 > [!problem] Question 6
 > Show that if $X$ is a well ordered set, then $X \times [0,1)$ in the dictionary order is a linear continuum.
 
+***Proof:*** Let $X$ be a well ordered set and $A=X\times [0,1)$ have the dictionary ordering. We must show that $A$ is a linear continuum. For $A$ to be a linear continuum, $A$ must have the least upper bound property and for each $x,y\in A$, if $x<y$, there must exist a $z\in A$ such that $x<z<y$.
+
+Since $X$ is well ordered, it has the l
+
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
 
