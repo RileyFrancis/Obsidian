@@ -54,7 +54,7 @@ Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x
 
 ***Proof:*** Let $A$ and $B$ be compact spaces. Let $\{U_\alpha\}$ be an open cover for $A\cup B$. $\{U_\alpha\}$ covers $A$, and since $A$ is compact, there exist finitely many $U_{\alpha_i}$ such that $A\subseteq U_{\alpha_1}\cup\ldots\cup U_{\alpha_n}$. Similarly, $\{U_\alpha\}$ covers $B$, and since $B$ is compact, there exist finitely many $U_{\beta_i}$ such that $B\subseteq U_{\beta_1}\cup\ldots\cup U_{\beta_n}$. Then the collection $\{U_{\alpha_1}\cup\ldots\cup U_{\alpha_n}, U_{\beta_1}\cup\ldots\cup U_{\beta_n}\}$ forms a finite open cover of $A\cup B$, so $A\cup B$ is compact. (The union of any two sets is compact)
 
-By induction, 
+Then by induction, since the union of any two sets $A$ and $B$ is a compact set (call it $C$), then $C\cup D$ for a compact set $D$ is also compact because it is a union of two compact sets. Therefore the union of any finite number of compact sets is compact. :LiBookCheck:
 
 > [!problem] Question 8
 > Show that if $f:X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (i.e. $f$ maps closed sets to closed sets.)
