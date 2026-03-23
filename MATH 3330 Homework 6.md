@@ -57,6 +57,8 @@ Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x
 > [!problem] Question 8
 > Show that if $f:X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (i.e. $f$ maps closed sets to closed sets.)
 
+***Proof:*** Let $f:X\rightarrow Y$ be a continuous map where $X$ is compact and $Y$ is Hausdorff. We must show that $f$ is a closed map that maps closed sets in $X$ to closed sets in $Y$.
+
 > [!problem] Question 9
 > Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
 
