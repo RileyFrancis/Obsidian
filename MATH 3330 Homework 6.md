@@ -52,14 +52,18 @@ Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
 
-***Proof:*** Let $A=\bigcup_i X_i$ be the union of finitely many compact spaces. We must show that $A$ is compact.
+***Proof:*** Let $A$ and $B$ be compact spaces. Let $\{U_\alpha\}$ be an open cover for $A\cup B$. $\{U_\alpha\}$ covers $A$, and since $A$ is compact, there exist finitely many $U_{\alpha_i}$ such that $A\subseteq U_{\alpha_1}\cup\ldots\cup U_{\alpha_n}$. Similarly, $\{U_\alpha\}$ covers $B$, and since $B$ is compact, there exist finitely many $U_{\beta_i}$ such that $B\subseteq U_{\beta_1}\cup\ldots\cup U_{\beta_n}$. Then the collection $\{U_{\alpha_1}\cup\ldots\cup U_{\alpha_n}, U_{\beta_1}\cup\ldots\cup U_{\beta_n}\}$ forms a finite open cover of $A\cup B$, so $A\cup B$ is compact. (The union of any two sets is compact)
+
+By induction, 
 
 > [!problem] Question 8
 > Show that if $f:X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (i.e. $f$ maps closed sets to closed sets.)
 
 ***Proof:*** Let $f:X\rightarrow Y$ be a continuous map where $X$ is compact and $Y$ is Hausdorff. We must show that $f$ is a closed map that maps closed sets in $X$ to closed sets in $Y$.
 
-Let $C\subseteq X$ be a closed set, and since $X$ is compact, so is $C$. Since $f$ is continuous and $C$ is compact, then $f(C)$ must also be compact since continuous images of compact sets are compact. Since $Y$ is Hau
+Let $C\subseteq X$ be a closed set, and since $X$ is compact, so is $C$. Since $f$ is continuous and $C$ is compact, then $f(C)$ must also be compact since continuous images of compact sets are compact. Since $Y$ is Hausdorff, and $f(C)$ is compact and a subset of $Y$, $f(C)$ must be closed in $Y$.
+
+Therefore, since both $C$ and $f(C)$ are closed for all $C\subseteq X$, $f$ maps closed sets to closed sets.
 
 > [!problem] Question 9
 > Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
@@ -71,3 +75,4 @@ Let $C\subseteq X$ be a closed set, and since $X$ is compact, so is $C$. Since $
 > - Show that $[0,1]$ is not compact as a subspace of $\mathbb{R}_K$.
 > - Show that $\mathbb{R}_K$ is connected.
 > - Show that $\mathbb{R}_K$ is not path connected.
+
