@@ -17,7 +17,7 @@ Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 > [!problem] Question 3
 > Determine whether or not $\mathbb{R}^{\omega}$ is connected in the uniform topology.
 
-$\mathbb R^\omega$ is disconnected because we can find two sets $A=\{(x_n)\in\mathbb R^\omega \mid (x_n)\text{ is bounded}\}$ and $B=\{(x_n)\in\mathbb R^\omega\mid (x_n)\text{ is bounded}\}$.
+$\mathbb R^\omega$ is disconnected because we can find two sets $A=\{(x_n)\in\mathbb R^\omega \mid (x_n)\text{ is bounded}\}$ and $B=\{(x_n)\in\mathbb R^\omega\mid (x_n)\text{ is unbounded}\}$. $A\cup B=\mathbb R^\omega$ and $A\cap B=\emptyset$. Both sets are nonempty because we can find an element in each $A$ and $B$: $(0,0,0,\ldots)\in A$ and $(0,1,2,3,\ldots)\in B$. Since both $A$ and $B$ are open, disjoint, and partition $\mathbb R^\omega$, these sets form a separation and thus $\mathbb R^\omega$ is not connected.
 
 > [!problem] Question 4
 > Show that no two of $(0,1), (0,1]$ and $[0,1]$ are homeomorphic. (Hint: What happens if you remove a point from each of these spaces?)
