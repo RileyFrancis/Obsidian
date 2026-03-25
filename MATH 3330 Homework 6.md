@@ -52,7 +52,14 @@ Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x
 - If $x_1 < x_2$, let $z = \frac{y_1+1}{2} \in (y_1, 1)$. Then $(x_1, y_1) < (x_1, z)$ since $x_1 = x_1$ and $y_1 < z$, and $(x_1, z) < (x_2, y_2)$ since $x_1 < x_2$. Thus $(x_1, y_1) < (x_1, z) < (x_2, y_2)$.
 Therefore we can always find a point in $A$ that's between two other points in $A$.
 
+Now let $B \subseteq A$ be nonempty and bounded above. We want to show $\sup B$ exists in $A$. Let $B_X = \{x \in X : (x,y) \in B \text{ for some } y\}$ be the projection of $B$ onto $X$. Since $B$ is bounded above, $B_X$ is bounded above in $X$. As $X$ is well-ordered, $B_X$ has a least upper bound $x_0 \in X$.
 
+Now let $T = \{y \in [0,1) : (x_0, y) \in B\}$.
+- If $T$ is nonempty, then $T \subseteq [0,1)$ is bounded above, so it has a least upper bound $y_0 = \sup T$ in $[0,1)$. Then $(x_0, y_0) = \sup B$.
+- If $T$ is empty, then all elements of $B$ have first coordinate strictly less than $x_0$, so $(x_0, 0)$ is an upper bound for $B$. Moreover any $(x,y) < (x_0, 0)$ has $x < x_0$, so by minimality of $x_0$ it fails to be an upper bound. Thus $(x_0, 0) = \sup B$.
+In either case $\sup B$ exists in $A$, so $A$ has the least upper bound property.
+
+Therefore, $X\times[]
 
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
