@@ -47,7 +47,12 @@ Fix a point $y\in S^1$. We have $$g(-y)=f(-y)-f(y)=-(f(y)-f(-y)=-g(y)$$If $g(y)=
 
 ***Proof:*** Let $X$ be a well ordered set and $A=X\times [0,1)$ have the dictionary ordering. We must show that $A$ is a linear continuum. For $A$ to be a linear continuum, $A$ must have the least upper bound property and for each $x,y\in A$, if $x<y$, there must exist a $z\in A$ such that $x<z<y$.
 
-Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x_1=x_2$ and $y_1<y_2)$.
+Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x_1=x_2$ and $y_1<y_2)$. Take any two points $(x_1,y_1)<(x_2,y_2)$ in $A$ There are two cases: 
+- If $x_1=x_2$, then $y_1<y_2$ and since $[0,1)$ is dense, there must always exist some $z$ such that $y_1<z<y_2$. So then $(x_1,y_1)<(x_1,z)<(x_2,y_2)$.
+- If $x_1 < x_2$, let $z = \frac{y_1+1}{2} \in (y_1, 1)$. Then $(x_1, y_1) < (x_1, z)$ since $x_1 = x_1$ and $y_1 < z$, and $(x_1, z) < (x_2, y_2)$ since $x_1 < x_2$. Thus $(x_1, y_1) < (x_1, z) < (x_2, y_2)$.
+Therefore we can always find a point in $A$ that's between two other points in $A$.
+
+
 
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
