@@ -17,7 +17,7 @@ Therefore, sets $U$ and $V$ must not exist and $X$ must be connected.
 > [!problem] Question 3
 > Determine whether or not $\mathbb{R}^{\omega}$ is connected in the uniform topology.
 
-
+$\mathbb R^\omega$ is disconnected 
 
 > [!problem] Question 4
 > Show that no two of $(0,1), (0,1]$ and $[0,1]$ are homeomorphic. (Hint: What happens if you remove a point from each of these spaces?)
