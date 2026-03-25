@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "MATH 3330 Homework 6"
             }
+          },
+          {
+            "id": "7e2e1f2eef2b2109",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,7 +204,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "63ce2dc885594313",
+  "active": "7e2e1f2eef2b2109",
   "lastOpenFiles": [
     "MATH 3330 Homework 6.md",
     "Other Stuff/Research/Feb.20th Presentation.canvas",
