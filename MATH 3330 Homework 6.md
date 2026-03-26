@@ -1,3 +1,5 @@
+***Riley Francis***
+- - -
 > [!problem] Question 1
 > Let $\mathcal{T}$ and $\mathcal{T}'$ be two topologies on $X$. If $\mathcal{T} \subset \mathcal{T}'$, what does connectedness of $X$ in one imply about connectedness in the other? What does the compactness of $X$ under one of these topologies imply about compactness under the other?
 
@@ -89,7 +91,9 @@ Now pick any $a_0 \in A$ and $b_0 \in B$. Consider the closed interval $[a_0, b_
 - If $x \notin B$, then $x$ is not an upper bound for $A$, so there exists $a \in A$ with $a > x$. Then $x \in (-\infty, a)$, and we assign to $x$ the open set $(-\infty, a)$.
 This gives an open cover of $[a_0, b_0]$. 
 
-Since $[a_0, b_0]$ is compact, it has a finite subcover, consisting of finitely many sets of the form $(-\infty, a_i)$ and $(x_j', \infty)$. Let $a^* = \max\{a_1, \ldots, a_m\}$ among those appearing. Since the finite subcover covers all of $[a_0, b_0]$, and in particular covers $a^*$, the set $a^*$ must be covered by some $(x_j', \infty)$, meaning $x_j' < a^*$. But $x_j' \in B$ means $x_j'$ is an upper bound for $A$, yet $a^* \in A$ and $a^* > x_j'$, a contradiction. \end{proof}
+Since $[a_0, b_0]$ is compact, it has a finite subcover consisting of sets of the form $(-\infty, a_i)$ and $(x_j', \infty)$. Let $a^*$ be the largest $a_i$. Then $a^* \in A$ must be covered by some $(x', \infty)$, so $x' < a^*$. But $x' \in B$ is an upper bound for $A$ and $a^* \in A$ exceeds it forming a contradiction.
+
+Therefore, $X$ has the LUB property.
 
 > [!problem] Question 10
 > Let $\mathbb{R}_K$ denote $\mathbb{R}$ with the $K-$topology.
@@ -97,3 +101,11 @@ Since $[a_0, b_0]$ is compact, it has a finite subcover, consisting of finitely 
 > - Show that $\mathbb{R}_K$ is connected.
 > - Show that $\mathbb{R}_K$ is not path connected.
 
+**Show that $[0,1]$ is not compact as a subspace of $\mathbb{R}_K$**
+The $K$-topology has the standard open intervals $(a,b)$ together with sets of the form $(a,b) \setminus K$ as a basis, where $K = \{1/n : n \in \mathbb{Z}^+\}$. Consider the open cover of $[0,1]$, consisting of $(-1, 1) \setminus K$ together with the intervals $(1/n, 2)$ for each $n \in \mathbb{Z}^+$. Every point of $(0,1]$ outside $K$ is covered by $(-1,1)\setminus K$, each point $1/n \in K$ is covered by $(1/(n+1), 2)$, and $0$ is covered by $(-1,1)\setminus K$. This cover has no finite subcover, since removing any $(1/n, 2)$ leaves $1/n$ uncovered. Thus $[0,1]$ is not compact.
+
+**Show that $\mathbb{R}_K$ is connected.**
+Suppose for contradiction that $\mathbb{R}_K = U \cup V$ for some separation. Since the $K$-topology is finer than the standard topology, any separation of $\mathbb{R}_K$ would also be a separation of $\mathbb{R}$. But $\mathbb{R}$ is connected, so no separation exists. Thus $\mathbb{R}_K$ is connected.
+
+**Show that $\mathbb{R}_K$ is not path connected.**
+Suppose for the sake of contradiction that $f: [0,1] \to \mathbb{R}_K$ is a continuous path with $f(0) = 0$ and $f(1) = 1$. Since $[0,1]$ is compact and $f$ is continuous, $f([0,1])$ is a compact subspace of $\mathbb{R}_K$. But $f([0,1])$ is a connected compact subset of $\mathbb{R}_K$ containing $0$ and $1$, so it must contain $[0,1]$ (since $\mathbb{R}_K$ has the same connected subsets as $\mathbb{R}$). Thus $[0,1] \subseteq f([0,1])$, meaning $[0,1]$ is a compact subspace of $\mathbb{R}_K$, contradicting *Part 1*.
