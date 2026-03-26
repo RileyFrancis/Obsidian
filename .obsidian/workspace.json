@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MATH 3330 Homework 6.md",
+                "file": "COURSES/MATH 3330/MATH 3330 Homework 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "MATH 3330 Homework 6"
             }
+          },
+          {
+            "id": "a81221500e13058c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Amazon Robotics SDE Internship Inverview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Amazon Robotics SDE Internship Inverview"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,10 +206,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3ebf0cde679d589a",
+  "active": "78a60046cd749609",
   "lastOpenFiles": [
+    "PDFs/Final_Paper_REU.pdf",
+    "COURSES/MATH 3330/MATH 3330 Homework 6.md",
+    "Amazon Robotics SDE Internship Inverview.md",
     "PDFs/MATH 3330 Homework 6.pdf",
-    "MATH 3330 Homework 6.md",
     "Other Stuff/Research/Feb.20th Presentation.canvas",
     "COURSES/MATH 3330/MATH 3330 Homework 5.md",
     "COURSES/CSE 3150/Notes/Pointers.md",
@@ -210,7 +227,6 @@
     "COURSES/CSE 3150/Homework/day_8_hw/src/add_mode.cpp~",
     "COURSES/CSE 3150/Homework/day_8_hw/include/add_mode.h~",
     "COURSES/CSE 3150/Homework/day_8_hw/analyzer",
-    "COURSES/CSE 3150/Homework/day_8_hw/src/stats_mode.cpp",
     "COURSES/CSE 3150/Homework/day_8_hw/README.md",
     "README.md",
     "Excalidraw/Drawing 2025-11-02 13.26.17.excalidraw.md",
@@ -234,7 +250,6 @@
     "COURSES/CSE 3150/Notes/Scope.md",
     "COURSES/CSE 3150/Labs/Over The Wire/Passwords.md",
     "COURSES/CSE 3150/Labs/Over The Wire/Notes.md",
-    "VIM Notes.md",
     "Images/Pasted image 20260128192208.png",
     "Images/Pasted image 20260128192100.png",
     "Other Stuff/COURSE ARCHIVE/CSE 4701/project/backend/node_modules/unique-filename/coverage/sort-arrow-sprite.png",
