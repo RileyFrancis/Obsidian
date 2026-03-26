@@ -52,14 +52,14 @@ Since $A$ has the dictionary ordering, $(x_1,y_1)<(x_2,y_2)$ if $x_1<x_2$ or $(x
 - If $x_1 < x_2$, let $z = \frac{y_1+1}{2} \in (y_1, 1)$. Then $(x_1, y_1) < (x_1, z)$ since $x_1 = x_1$ and $y_1 < z$, and $(x_1, z) < (x_2, y_2)$ since $x_1 < x_2$. Thus $(x_1, y_1) < (x_1, z) < (x_2, y_2)$.
 Therefore we can always find a point in $A$ that's between two other points in $A$.
 
-Now let $B \subseteq A$ be nonempty and bounded above. We want to show $\sup B$ exists in $A$. Let $B_X = \{x \in X : (x,y) \in B \text{ for some } y\}$ be the projection of $B$ onto $X$. Since $B$ is bounded above, $B_X$ is bounded above in $X$. As $X$ is well-ordered, $B_X$ has a least upper bound $x_0 \in X$.
+Now let $B \subseteq A$ be nonempty and bounded above. We want to show $\sup(B)$ exists in $A$ ($A$ has the LUB property). Let $B_X = \{x \in X \mid (x,y) \in B \text{ for some } y\}$ be the projection of $B$ onto $X$. Since $B$ is bounded above, $B_X$ is bounded above in $X$. Because $X$ is well-ordered, $B_X$ has a least upper bound $x_0 \in X$.
 
-Now let $T = \{y \in [0,1) : (x_0, y) \in B\}$.
+Now let $T = \{y \in [0,1) \mid (x_0, y) \in B\}$.
 - If $T$ is nonempty, then $T \subseteq [0,1)$ is bounded above, so it has a least upper bound $y_0 = \sup T$ in $[0,1)$. Then $(x_0, y_0) = \sup B$.
-- If $T$ is empty, then all elements of $B$ have first coordinate strictly less than $x_0$, so $(x_0, 0)$ is an upper bound for $B$. Moreover any $(x,y) < (x_0, 0)$ has $x < x_0$, so by minimality of $x_0$ it fails to be an upper bound. Thus $(x_0, 0) = \sup B$.
-In either case $\sup B$ exists in $A$, so $A$ has the least upper bound property.
+- If $T$ is empty, then all elements of $B$ have first coordinate strictly less than $x_0$, so $(x_0, 0)$ is an upper bound for $B$. Thus $(x_0, 0) = \sup B$.
+In both cases $\sup B$ exists in $A$, so $A$ has the least upper bound property.
 
-Therefore, $X\times[]
+Therefore, $X$ is a linear continuum because it has the LUB property and always has a third point between two others in the set.
 
 > [!problem] Question 7
 > Show that the finite union of compact spaces in compact.
@@ -80,7 +80,16 @@ Therefore, since both $C$ and $f(C)$ are closed for all $C\subseteq X$, $f$ maps
 > [!problem] Question 9
 > Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
 
-***Proof:*** Let $X$ be an ordered set and let each closed interval in $X$ be compact. We must show that $X$ has the LUB property.
+***Proof:*** Let $X$ be an ordered set and let each closed interval in $X$ be compact. We must show that $X$ has the least upper bound (LUB) property.
+
+Suppose for the sake of contradiction that $X$ does not have the LUB property. Then there exists a nonempty set $A \subseteq X$ that is bounded above but has no least upper bound. Let $B$ be the set of all upper bounds of $A$. $B$ is nonempty, and since $A$ has no least upper bound, $B$ has no smallest element. 
+
+Now pick any $a_0 \in A$ and $b_0 \in B$. Consider the closed interval $[a_0, b_0]$. For each $x \in [a_0, b_0]$:
+- If $x \in B$, then since $B$ has no smallest element, there exists $x' \in B$ with $x' < x$. Then $x \in (x', \infty)$, and we assign to $x$ the open set $(x', \infty)$.
+- If $x \notin B$, then $x$ is not an upper bound for $A$, so there exists $a \in A$ with $a > x$. Then $x \in (-\infty, a)$, and we assign to $x$ the open set $(-\infty, a)$.
+This gives an open cover of $[a_0, b_0]$. 
+
+Since $[a_0, b_0]$ is compact, it has a finite subcover, consisting of finitely many sets of the form $(-\infty, a_i)$ and $(x_j', \infty)$. Let $a^* = \max\{a_1, \ldots, a_m\}$ among those appearing. Since the finite subcover covers all of $[a_0, b_0]$, and in particular covers $a^*$, the set $a^*$ must be covered by some $(x_j', \infty)$, meaning $x_j' < a^*$. But $x_j' \in B$ means $x_j'$ is an upper bound for $A$, yet $a^* \in A$ and $a^* > x_j'$, a contradiction. \end{proof}
 
 > [!problem] Question 10
 > Let $\mathbb{R}_K$ denote $\mathbb{R}$ with the $K-$topology.
