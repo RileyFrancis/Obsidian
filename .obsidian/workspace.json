@@ -221,19 +221,19 @@
           }
         ],
         "direction": "vertical",
-        "x": 3457,
-        "y": 1169,
-        "width": 965,
-        "height": 676,
+        "x": 704,
+        "y": 280,
+        "width": 1024,
+        "height": 800,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "3ebf0cde679d589a",
+  "active": "76bb166c60410fe7",
   "lastOpenFiles": [
-    "Untitled.md",
     "Other Stuff/Amazon Robotics SDE Internship Interview.md",
+    "Untitled.md",
     "Images/robot_obj_detection.mp4",
     "COURSES/MATH 3330/MATH 3330 Homework 6.md",
     "Images/Pasted image 20260326193725.png",
