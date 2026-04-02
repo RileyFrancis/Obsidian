@@ -33,7 +33,7 @@ Let $x,y\in A$. Since $A$ is star convex, there exists some $a_0\in A$ that is c
 > > To show abelian, let $f$ and $g$ be loops. Let $x_1=x_0$ and consider $\hat{f}(f)$ and $\hat{g}(f)$. To show $\hat{a}=\hat{b}$, use the isomorphism between $\pi_1(X,x_0)$ and $\pi_1(X,x_1)$ to get both are abelian and then compute $\hat{\alpha}(f)$ and $\hat{\alpha}(g)$. Use that $\beta \bar{\beta}=id$ and commutativity to get equality. 
 > 
 
-$(\Rightarrow)$ Suppose $\pi_1(X, x_0)$ is abelian. Let $\alpha, \beta$ be paths from $x_0$ to $x_1$ and $[f] \in \pi_1(X, x_0)$. Then $\beta\bar{\alpha}$ is a loop at $x_0$, so by commutativity: $$\hat{\alpha}([f]) = [\bar{\alpha} * f * \alpha] = [\bar{\beta} * (\beta\bar{\alpha}) * f * \alpha] = [\bar{\beta} * f * (\beta\bar{\alpha}) * \alpha] = [\bar{\beta} * f * \beta] = \hat{\beta}([f])$$ so $\hat{\alpha} = \hat{\beta}$. 
+$(\Rightarrow)$ Suppose $\pi_1(X, x_0)$ is abelian. We must show that $\hat\alpha=\hat\beta$. Let $\alpha, \beta$ be paths from $x_0$ to $x_1$ and $[f] \in \pi_1(X, x_0)$. Then $\beta\bar{\alpha}$ is a loop at $x_0$, so by commutativity: $$\begin{align}\hat{\alpha}([f]) &= [\bar{\alpha} * f * \alpha] \\&= [\bar{\beta} * (\beta\bar{\alpha}) * f * \alpha] \\&= [\bar{\beta} * f * (\beta\bar{\alpha}) * \alpha] \\&= [\bar{\beta} * f * \beta] \\&= \hat{\beta}([f])\end{align}$$ so $\hat{\alpha} = \hat{\beta}$. 
 
 $(\Leftarrow)$ Suppose $\hat{\alpha} = \hat{\beta}$ for all paths $\alpha, \beta$ from $x_0$ to $x_1$. Let $f, g$ be loops at $x_0$. Set $\alpha = e_{x_0}$ and $\beta = g$. Then: $$\hat{\alpha}([f]) = [f], \qquad \hat{\beta}([f]) = [\bar{g} * f * g]$$Since $\hat{\alpha} = \hat{\beta}$, we get $[f] = [\bar{g} * f * g]$, hence $[f * g] = [g * f]$. Since $f, g$ were arbitrary, $\pi_1(X, x_0)$ is abelian.
 
@@ -48,3 +48,8 @@ Pick a point $x_0 \in U \cap V$ and let $[f] \in \pi_1(X, x_0)$. We can subdivid
 
 > [!tip] Question 6 (optional) 
 > Come up of an example where we can see that $\pi_1(X,x_0)$ is not abelian since $\hat{\alpha}=\hat{\beta}$ and also show that the isomorphisms between $\pi_1(X,x_0)$ and $\pi_1(X,x_1)$ depend on the path. (I'll work on this too...)
+
+I wasn't able to come up with one myself, but I asked AI to see if it could find one and it did find one that works, being the figure eight $X=S^1\vee S^1$:
+
+![[Pasted image 20260401204901.png]]
+
