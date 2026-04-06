@@ -46,4 +46,11 @@ Since $h$ satisfies each of the above conditions, $B$ must be a deformation retr
 > [!problem] Question 4
 > Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction. ^[I think that this is supposed to be the other way, so I am going to solve this question as if it is asking about $\mathbb R^{n+1}-0$ onto $S^n$]
 
-The deformation retraction of $\mathbb R^{n+1}-0$ onto $S^n$ is a function that normalizes all of the vectors beginning at the origin in $\mathbb R^{n+1}-0$. Specifically, 
+The deformation retraction of $\mathbb R^{n+1}-0$ onto $S^n$ is a function that normalizes all of the vectors beginning at the origin in $\mathbb R^{n+1}-0$. Specifically, we can define a function $f:(\mathbb R^{n+1}-0)\times I\rightarrow S^n$ that projects each point onto the circle. So, $f(x,t)=\frac{x}{(1-t)||x||+t}$ where $||x||$ is the norm of $x$. Here $t\in I$ interpolates between $x$ and the projected point on $S^n$.
+
+We have each of the following:
+1. $f(x,0)=x$ since when $t=0$ we have not moved.
+2. $f(x,1)=\frac{x}{||x||}\in S^n$ is the complete projection onto $S^n$.
+3. $f(a,t)=\frac{a}{(1-t)||a||+t}=\frac{a}{(1-t)+t}=\frac a1 = a$.
+
+Therefore this is a deformation retraction.
