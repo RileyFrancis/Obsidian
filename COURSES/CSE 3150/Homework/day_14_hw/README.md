@@ -1,0 +1,2 @@
+# Day 14 Homework
+In this assignment I implemented a few functions for managing the GPA of students. These functions include `addStudent`, `updateGPA`, `printStudent`, `averageGPA`. Pointers were used to dynamically allocate memory for student names and to update GPA values in place. `const` was used to mark read-only parameters in `printStudent` and `averageGPA`. Exceptions are thrown as C-style strings to handle cases like a full list or empty average, and `static_cast<int>` is used to display the average GPA as a truncated integer.
