@@ -23,6 +23,7 @@
 > [!problem] Question 3
 > Show that if $A$ is a deformation retract of $X$ and $B$ is a deformation retract of $A$, then $B$ is a deformation retract of $X$
 
+***Proof:*** Let $A$ be a deformation retract of $X$ and $B$ be a deformation retract of $A$. We must show that $B$ is a deformation retract of $X$.
 
 > [!problem] Question 4
 > Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction.
