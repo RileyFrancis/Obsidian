@@ -4,6 +4,7 @@
 > The last HW asked you to: Prove that if there are simply connected open subsets $U$ and $V$ of $X$ such that $U \cup V=X$ and $U \cap V$ is nonempty and path connected, then $X$ is simply connected. Look through the book's proof of this and make sure you understand it. Note: we are proving a piece of the Seifert-van Kampen Theorem so you can't just say it is true due to Van-Kampen. Why is it important that $U \cap V$ is path connected?
 
 
+
 > [!problem] Question 2
 > For each of the following spaces, the fundamental group is either trivial, isomorphic to $\mathbb{Z}$ or isomorphic to the fundamental group of the figure eight. Determine which one it is in each case.
 > 1. The "solid torus" $B^2 \times S^1$
