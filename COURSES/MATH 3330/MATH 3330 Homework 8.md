@@ -26,5 +26,9 @@
 
 ***Proof:*** Let $A$ be a deformation retract of $X$ and $B$ be a deformation retract of $A$. We must show that $B$ is a deformation retract of $X$.
 
+Since $A$ is a deformation retract of $X$, $A\subseteq X$ and there exists a continuous homotopic map $H_1:X\times I\rightarrow X$ such that:
+1. $H_1(x,0)=x$
+2. $H_2(x,1)\in A$
+
 > [!problem] Question 4
 > Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction.
