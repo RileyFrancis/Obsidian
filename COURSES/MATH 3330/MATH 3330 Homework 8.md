@@ -26,7 +26,19 @@
 
 ***Proof:*** Let $A$ be a deformation retract of $X$ and $B$ be a deformation retract of $A$. We must show that $B$ is a deformation retract of $X$.
 
-Since $A$ is a deformation retract of $X$, there is a map $f:X\rightarrow A$ where $f(a)=a$ for all $a\in A$. Similarly, since $B$ is a deformation retraction of $A$, there is a map $g:A\rightarrow B$ where $g(b)=b$ for all $b\in B$. Then the composition $g(f(x))=g(x)=x$.
+Since $A$ is a deformation retract of $X$, then $A\subseteq X$ and there is a map $f:X\rightarrow A$ where $f(a)=a$ for all $a\in A$. The following are true:
+1. $f(x,0)=x$ for all $x\in X$
+2. $f(x,1)\in A$ for all $x\in X$
+3. $f(a,t)=a$ for all $a\in A$ and $t\in I$.
+
+Similarly, since $B$ is a deformation retraction of $A$, $B\subseteq A$ and there is a map $g:A\rightarrow B$ where $g(b)=b$ for all $b\in B$. The following are true:
+1. $g(a,0)=a$ for all $a\in A$
+2. $g(a,1)\in B$ for all $a\in A$
+3. $g(b,t)=a$ for all $b\in B$ and $t\in I$.
+
+We can then define the homotopy $h:X\rightarrow B$ as $$h(x, t) = \begin{cases} f(x, 2t) & t \in \left[0, \tfrac{1}{2}\right] \\ g\big(f(x,1), 2t-1\big) & t \in \left[\tfrac{1}{2}, 1\right] \end{cases}$$
+1. $h(x,0)=f(x,2(0))=f(x,0)=x$ for all $x\in X$ $\checkmark$
+2. 
 
 > [!problem] Question 4
 > Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction.
