@@ -34,11 +34,16 @@ Since $A$ is a deformation retract of $X$, then $A\subseteq X$ and there is a ma
 Similarly, since $B$ is a deformation retraction of $A$, $B\subseteq A$ and there is a map $g:A\rightarrow B$ where $g(b)=b$ for all $b\in B$. The following are true:
 1. $g(a,0)=a$ for all $a\in A$
 2. $g(a,1)\in B$ for all $a\in A$
-3. $g(b,t)=a$ for all $b\in B$ and $t\in I$.
+3. $g(b,t)=b$ for all $b\in B$ and $t\in I$.
 
 We can then define the homotopy $h:X\rightarrow B$ as $$h(x, t) = \begin{cases} f(x, 2t) & t \in \left[0, \tfrac{1}{2}\right] \\ g\big(f(x,1), 2t-1\big) & t \in \left[\tfrac{1}{2}, 1\right] \end{cases}$$
 1. $h(x,0)=f(x,2(0))=f(x,0)=x$ for all $x\in X$ $\checkmark$
-2. 
+2. $h(x,1)=g(f(x,1),2(1)-1)=g(f(x,1),1)\in B$ for all $x\in X$ $\checkmark$
+3. When $t\in[0,\tfrac12]$, $h(b,t)=f(b,2t)=b$ and when $t\in[\frac12,1]$, $h(b,t)=g(f(b,1),2t-1)=g(b,2t-1)=b$ $\checkmark$
+
+Since $h$ satisfies each of the above conditions, $B$ must be a deformation retraction of $X$.
 
 > [!problem] Question 4
-> Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction.
+> Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction. ^[I think that this is supposed to be the other way, so I am going to solve this question as if it is asking about $\mathbb R^{n+1}-0$ onto $S^n$]
+
+The deformation retraction of $\mathbb R^{n+1}-0$ onto $S^n$ is a function that normalizes all of the vectors beginning at the origin in $\mathbb R^{n+1}-0$. Specifically, 
