@@ -26,7 +26,7 @@
 
 ***Proof:*** Let $A$ be a deformation retract of $X$ and $B$ be a deformation retract of $A$. We must show that $B$ is a deformation retract of $X$.
 
-Since $A$ is a deformation retract of $X$, there is a map $f:X\rightarrow A$ where $f(a)=a$ for all $a\in A$. Similarly, since $B$ is a deformation retraction of $A$, there is a map $g:A\rightarrow B$ where $g(b)=b$ for all $b\in B$.
+Since $A$ is a deformation retract of $X$, there is a map $f:X\rightarrow A$ where $f(a)=a$ for all $a\in A$. Similarly, since $B$ is a deformation retraction of $A$, there is a map $g:A\rightarrow B$ where $g(b)=b$ for all $b\in B$. Then the composition $g(f(x))=g(x)=x$.
 
 > [!problem] Question 4
 > Describe the deformation retraction of $S^n$ onto $\mathbb{R}^{n+1}-0$. Cleary explain why it meets all the conditions of a deformation retraction.
