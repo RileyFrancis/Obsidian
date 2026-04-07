@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KSADS Variables.md",
+                "file": "Other Stuff/Research/KSADS Variables.md",
                 "mode": "source",
                 "source": false
               },
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Anhedonia",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -208,8 +209,8 @@
   },
   "active": "2ba0bd61eaa807da",
   "lastOpenFiles": [
+    "Other Stuff/Research/KSADS Variables.md",
     "COURSES/MATH 3330/MATH 3330 Homework 8.md",
-    "KSADS Variables.md",
     "PDFs/MATH 3330 Homework 8.pdf",
     "Images/Pasted image 20260407133538.png",
     "COURSES/CSE 3150/Course_Project/include/test.hpp",
