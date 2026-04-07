@@ -3,7 +3,9 @@
 > [!problem] Question 1
 > The last HW asked you to: Prove that if there are simply connected open subsets $U$ and $V$ of $X$ such that $U \cup V=X$ and $U \cap V$ is nonempty and path connected, then $X$ is simply connected. Look through the book's proof of this and make sure you understand it. Note: we are proving a piece of the Seifert-van Kampen Theorem so you can't just say it is true due to Van-Kampen. Why is it important that $U \cap V$ is path connected?
 
+![[Pasted image 20260407133538.png]]
 
+$U\cap V$ must be path connected because if it were not, then you could not guarantee that you can connect $x_0$ to $f(a_n)$ via a path $\alpha_n$ that stays entirely within $U\cap V$. This would then mean that you can't create loops that are entirely contained within $U$ and $V$ separately.
 
 > [!problem] Question 2
 > For each of the following spaces, the fundamental group is either trivial, isomorphic to $\mathbb{Z}$ or isomorphic to the fundamental group of the figure eight. Determine which one it is in each case.
