@@ -1,14 +1,14 @@
-Below are the KSADS variables that are most important for irritability, listed from most important to least important. We can select a few of the most important from each of these files to use. I've already selected variables from these files that seem most important, but they can be further pruned.
+Below are the KSADS variables that are most important for irritability. We can select a few of the most important from each of these files to use. I've already selected variables from these files that seem most important, but they can be further pruned.
 
-| Module  | File(s)                        | Variables to use (csv rows, inclusive)                            | Parent/Child | Pruned Variables | Total Variables |
-| ------- | ------------------------------ | ----------------------------------------------------------------- | ------------ | ---------------- | --------------- |
-| ODD     | `opp_defiant_disorder_p01.csv` | `7:34`, `41`                                                      | Parent       | $28$             | $41$            |
-| MDD     | `depressive_disorders_p01.csv` | `8, 11, 23:29, 31:32, 45, 71:75, 77:78, 82, 86:89, 91, 93, 95:96` | Parent       | $28$             | $97$            |
-| MDD     | `depressive_disorders01.csv`   | `8, 11, 23:29, 31:32, 45, 71:75, 77:78, 82, 86:89, 91, 93, 95:96` | Child        | $28$             | $97$            |
-| Various | `abcd_ksads01.csv`             | See below                                                         | Child        | $30$             | $959$           |
-| DMDD    | `disruptive_mood_dysreg_p`     | `7:17`                                                            | Parent       | $10$             | $17$            |
-| DMDD    |                                |                                                                   |              |                  |                 |
-Total pruned variables: $144$
+| Module  | File(s)                          | Variables to use (csv rows, inclusive)                            | Parent/Child | Pruned Variables | Total Variables |
+| ------- | -------------------------------- | ----------------------------------------------------------------- | ------------ | ---------------- | --------------- |
+| ODD     | `opp_defiant_disorder_p01.csv`   | `7:34`, `41`                                                      | Parent       | $28$             | $41$            |
+| MDD     | `depressive_disorders_p01.csv`   | `8, 11, 23:29, 31:32, 45, 71:75, 77:78, 82, 86:89, 91, 93, 95:96` | Parent       | $28$             | $97$            |
+| MDD     | `depressive_disorders01.csv`     | `8, 11, 23:29, 31:32, 45, 71:75, 77:78, 82, 86:89, 91, 93, 95:96` | Child        | $28$             | $97$            |
+| Various | `abcd_ksads01.csv`               | See below                                                         | Child        | $30$             | $959$           |
+| DMDD    | `disruptive_mood_dysreg_p01.csv` | `7:17`                                                            | Parent       | $10$             | $17$            |
+| DMDD    | `disruptive_mood_dysreg01.csv`   | `7:17`                                                            | Child        | $10$             | $17$            |
+Total pruned variables: $134$
 ## abcd_ksads01.csv
 This contains some overlap with other files, but the variables are different. This is a heavily pruned list. The full file contains 959 variables.
 
