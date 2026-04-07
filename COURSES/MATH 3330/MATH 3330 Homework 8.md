@@ -21,7 +21,7 @@ $U\cap V$ must be path connected because if it were not, then you could not guar
 3. The fundamental group of $S^1\times I$ is isomorphic to $\mathbb Z$.
 4. The fundamental group of $\mathbb R^3$ with the non-negative $x$, $y$, and $z$ axes removed is isomorphic to the figure eight.
 5. $S^1 \cup (\mathbb{R}_+ \times \mathbb{R})$ is isomorphic to $\mathbb Z$.
-6. 
+6. $S^1 \cup (\mathbb{R}_+ \times 0)$ is isomorphic to $\mathbb Z$.
 
 > [!problem] Question 3
 > Show that if $A$ is a deformation retract of $X$ and $B$ is a deformation retract of $A$, then $B$ is a deformation retract of $X$
