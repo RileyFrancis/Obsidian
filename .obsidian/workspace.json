@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9f70e70e548c8439",
+        "id": "fd9996639b6f9a7d",
         "type": "tabs",
         "children": [
           {
-            "id": "4c29e791cc64a880",
+            "id": "785d11c7f7f2f143",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "COURSES/MATH 3330/MATH 3330 Homework 7.md",
-                "mode": "source",
-                "source": false
+                "file": "PDFs/KSADS Variables.pdf"
               },
-              "icon": "lucide-file",
-              "title": "MATH 3330 Homework 7"
+              "icon": "lucide-file-text",
+              "title": "KSADS Variables"
             }
           }
         ]
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 263.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -175,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 296.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,8 +191,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4c29e791cc64a880",
+  "active": "785d11c7f7f2f143",
   "lastOpenFiles": [
+    "COURSES/MATH 3330/MATH 3330 Homework 7.md",
     "MATH 3330 Homework 8.md",
     "PDFs/MATH 3330 Homework 8.pdf",
     "PDFs/KSADS Variables.pdf",
@@ -203,7 +204,6 @@
     "COURSES/CSE 3150/Homework/day_14_hw/day_14_hw.zip",
     "COURSES/CSE 3150/Homework/day_14_hw/README.md",
     "COURSES/CSE 3150/Course_Project",
-    "COURSES/MATH 3330/MATH 3330 Homework 7.md",
     "PDFs/MATH 3330 Homework 7.pdf",
     "Images/Pasted image 20260401204901.png",
     "Other Stuff/STAR Interview Format.md",
