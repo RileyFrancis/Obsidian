@@ -10,7 +10,7 @@ private:
     T* data_;
     size_t size_;
     size_t capacity_;
-    
+
     void resize_capacity(size_t new_capacity);
 
 public:
@@ -23,5 +23,10 @@ public:
 
     void push_back(const T& value);
 
-    T& at(size_t index);
+    T& at(size_t index) {
+        if (index >= size_) {
+            throw std::out_of_range("Index out of range");
+        }
+        return data_[index];
+    }
 };
