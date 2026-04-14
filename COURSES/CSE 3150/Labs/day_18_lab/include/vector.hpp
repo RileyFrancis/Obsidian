@@ -1,10 +1,17 @@
 #pragma once
 
-#include <cstddef> // for size_t
+#include <cstddef>
 #include <stdexcept>
+#include <concepts>
 
 
 template <typename T>
+concept EqualityComparable = requires(const T& a, const T& b) {
+    { a == b } -> std::convertible_to<bool>;
+};
+
+template <typename T>
+requires EqualityComparable<T>
 class Vector {
 private:
     T* data_;
@@ -34,15 +41,15 @@ public:
         delete[] data_;
     }
 
-    size_t size() {
+    size_t size() const {
         return size_;
     }
 
-    size_t capacity() {
+    size_t capacity() const {
         return capacity_;
     }
 
-    bool empty() {
+    bool empty() const {
         return size_ == 0;
     }
 
@@ -67,4 +74,7 @@ public:
         }
         return data_[index];
     }
+
+    Vector(const Vector&) = delete;
+    Vector& operator=(const Vector&) = delete;
 };
