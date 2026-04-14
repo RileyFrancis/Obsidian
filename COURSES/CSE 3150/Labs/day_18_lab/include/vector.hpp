@@ -77,4 +77,41 @@ public:
 
     Vector(const Vector&) = delete;
     Vector& operator=(const Vector&) = delete;
+
+
+    // Part 2
+
+    T& operator[](size_t index) {
+        return data_[index];
+    }
+
+    const T& operator[](size_t index) const {
+        return data_[index];
+    }    
+
+    bool operator==(const Vector<T>& other) const {
+        if (size_ != other.size_) {
+            return false;
+        }
+        
+        for (size_t i = 0; i < size_; ++i) {
+            if (data_[i] != other.data_[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+    // Part 3
+
+    template <typename T>
+    class Itterator {
+    private:
+        T* current_;
+
+    public:
+        Itterator(T* ptr)
+    }
 };
