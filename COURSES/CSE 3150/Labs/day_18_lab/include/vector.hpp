@@ -107,11 +107,32 @@ public:
     // Part 3
 
     template <typename T>
-    class Itterator {
+    class VectorItterator {
     private:
         T* current_;
 
     public:
-        Itterator(T* ptr)
+        VectorItterator(T* ptr) : current_(ptr) {}
+
+        T& operator*() {
+            return *current_;
+        }
+
+        VectorItterator& operator++() {
+            ++current_;
+            return *this;
+        }
+
+        bool operator!=(const VectorIterator& other) const {
+            return current_ != other.current_;
+        }
+    }
+
+    VectorItterator<T> begin() {
+        return VectorItterator(data_);
+    }
+
+    VectorItterator<T> end() {
+        return VectorItterator(data_ + size_)
     }
 };
