@@ -11,11 +11,28 @@ private:
     size_t size_;
     size_t capacity_;
 
-    void resize_capacity(size_t new_capacity);
+    void resize_capacity(size_t new_capacity) {
+        T* new_data = new T[new_capacity];
+
+        for (size_t i = 0; i < size_; ++i) {
+            new_data[i] = data_[i];
+        }
+
+        delete[] data_;
+        data_ = new_data;
+        capacity_ = new_capacity;
+    }
 
 public:
-    Vector();
-    ~Vector();
+    Vector() {
+        data_ = nullptr;
+        size_ = 0;
+        capacity_ = 0;
+    }
+
+    ~Vector() {
+        delete[] data_;
+    }
 
     size_t size() {
         return size_;
@@ -30,7 +47,18 @@ public:
     }
 
     void push_back(const T& value) {
-        
+        if (size_ == capacity_) {
+            size_t new_capacity;
+            if (capacity_ == 0) 
+                new_capacity = 1;
+            else
+                new_capacity = capacity_ * 2;
+
+            resize_capacity(new_capacity);
+        }
+
+        data_[size_] = value;
+        ++size_;
     }
 
     T& at(size_t index) {
