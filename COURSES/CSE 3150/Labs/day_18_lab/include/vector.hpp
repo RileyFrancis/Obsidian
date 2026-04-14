@@ -106,33 +106,61 @@ public:
 
     // Part 3
 
-    template <typename T>
-    class VectorItterator {
+    class Iterator {  // Remove "template <typename T>"
     private:
         T* current_;
 
     public:
-        VectorItterator(T* ptr) : current_(ptr) {}
+        Iterator(T* ptr) : current_(ptr) {}
 
         T& operator*() {
             return *current_;
         }
 
-        VectorItterator& operator++() {
+        Iterator& operator++() {
             ++current_;
             return *this;
         }
 
-        bool operator!=(const VectorIterator& other) const {
+        bool operator!=(const Iterator& other) const {
             return current_ != other.current_;
         }
+    };
+
+    class ConstIterator {
+    private:
+        const T* current_;
+
+    public:
+        ConstIterator(const T* ptr) : current_(ptr) {}
+
+        const T& operator*() const {
+            return *current_;
+        }
+
+        ConstIterator& operator++() {
+            ++current_;
+            return *this;
+        }
+
+        bool operator!=(const ConstIterator& other) const {
+            return current_ != other.current_;
+        }
+    };
+
+    Iterator begin() {
+        return Iterator(data_);
     }
 
-    VectorItterator<T> begin() {
-        return VectorItterator(data_);
+    Iterator end() {
+        return Iterator(data_ + size_);
     }
 
-    VectorItterator<T> end() {
-        return VectorItterator(data_ + size_)
+    ConstIterator begin() const {
+        return ConstIterator(data_);
+    }
+
+    ConstIterator end() const {
+        return ConstIterator(data_ + size_);
     }
 };
