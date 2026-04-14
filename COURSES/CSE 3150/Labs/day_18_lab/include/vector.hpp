@@ -22,7 +22,7 @@ private:
         T* new_data = static_cast<T*>(::operator new(new_capacity * sizeof(T)));
         
         for (size_t i = 0; i < size_; ++i) {
-            new (&new_data[i]) T(data_[i]);  // Placement new
+            new (&new_data[i]) T(data_[i]);
         }
         
         for (size_t i = 0; i < size_; ++i) {
@@ -115,7 +115,7 @@ public:
 
     // Part 3
 
-    class Iterator {  // Remove "template <typename T>"
+    class Iterator {
     private:
         T* current_;
 
