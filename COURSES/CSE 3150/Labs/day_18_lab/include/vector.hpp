@@ -17,11 +17,21 @@ public:
     Vector();
     ~Vector();
 
-    size_t size() const;
-    size_t capacity() const;
-    bool empty() const;
+    size_t size() {
+        return size_;
+    }
 
-    void push_back(const T& value);
+    size_t capacity() {
+        return capacity_;
+    }
+
+    bool empty() {
+        return size_ == 0;
+    }
+
+    void push_back(const T& value) {
+        
+    }
 
     T& at(size_t index) {
         if (index >= size_) {
