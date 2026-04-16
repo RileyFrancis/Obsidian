@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 263.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -194,6 +195,8 @@
   },
   "active": "785d11c7f7f2f143",
   "lastOpenFiles": [
+    "Images/KSADS_ABCD.png",
+    "Other Stuff/Research/KSADS Variables.md",
     "PDFs/KSADS Variables.pdf",
     "COURSES/CSE 3150/Labs/day_18_lab/day_18_lab.zip",
     "COURSES/CSE 3150/Labs/day_18_lab/zi7qX0Bh",
@@ -204,10 +207,8 @@
     "COURSES/CSE 3150/Labs/day_18_lab/include/vector.hpp",
     "COURSES/CSE 3150/Labs/day_18_lab/src/main.cpp",
     "COURSES/CSE 3150/Labs/day_18_lab/src",
-    "COURSES/CSE 3150/Labs/day_18_lab/include/src",
     "COURSES/MATH 3330/MATH 3330 Homework 7.md",
     "MATH 3330 Homework 8.md",
-    "Other Stuff/Research/KSADS Variables.md",
     "Images/Pasted image 20260407133538.png",
     "COURSES/MATH 3330/MATH 3330 Homework 8.md",
     "COURSES/CSE 3150/Homework/day_14_hw/README.md",
@@ -230,7 +231,6 @@
     "COURSES/MATH 3330/MATH 3330 Homework 3.md",
     "Images/all_classes_mean_trajectories.png",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
-    "Images/KSADS_ABCD.png",
     "Other Stuff/Research/Presentation For Feb. 20th.md",
     "COURSES/CSE 3150/CPP/Week_3_p2/Notes.md",
     "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
