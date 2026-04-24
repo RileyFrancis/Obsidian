@@ -11,13 +11,11 @@
             "id": "785d11c7f7f2f143",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Other Stuff/Research/KSADS Variables.md",
-                "mode": "source",
-                "source": false
+                "file": "KSADS Variables.pdf"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-file-text",
               "title": "KSADS Variables"
             }
           }
@@ -195,8 +193,9 @@
   },
   "active": "785d11c7f7f2f143",
   "lastOpenFiles": [
-    "Images/KSADS_ABCD.png",
     "Other Stuff/Research/KSADS Variables.md",
+    "KSADS Variables.pdf",
+    "Images/KSADS_ABCD.png",
     "PDFs/KSADS Variables.pdf",
     "COURSES/CSE 3150/Labs/day_18_lab/day_18_lab.zip",
     "COURSES/CSE 3150/Labs/day_18_lab/zi7qX0Bh",
@@ -206,7 +205,6 @@
     "COURSES/CSE 3150/Labs/day_18_lab/a.out",
     "COURSES/CSE 3150/Labs/day_18_lab/include/vector.hpp",
     "COURSES/CSE 3150/Labs/day_18_lab/src/main.cpp",
-    "COURSES/CSE 3150/Labs/day_18_lab/src",
     "COURSES/MATH 3330/MATH 3330 Homework 7.md",
     "MATH 3330 Homework 8.md",
     "Images/Pasted image 20260407133538.png",
