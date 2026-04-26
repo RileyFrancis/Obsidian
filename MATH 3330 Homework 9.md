@@ -1,10 +1,10 @@
 > [!tip] Siefert-van Kampen Theorem 
-> Suppose $X$ is a space which is the union of closed subspaces $Y$ and $Z$ and there is a point $p$ such that $Y\cap Z=\{\}$. Then we call $X$ the wedge of $Y$ and $Z$ and write $X=Y\vee Z$. 
+> Suppose $X$ is a space which is the union of closed subspaces $Y$ and $Z$ and there is a point $p$ such that $Y\cap Z=\{p\}$. Then we call $X$ the wedge of $Y$ and $Z$ and write $X=Y\vee Z$. 
 
 > [!problem] Question 1
 > Find $\pi_1(S^1\vee S^1)$. Explain your reasoning in terms of the Siefert-van Kampen Theorem.
 
-
+Using the Siefert-van Kampen Theorem, we can decompose $S^1\vee S^1$ into a two pieces that are glued together at a single point. So let $Y=S^1$ be the first loop and $Z=S^1$ be the second loop which are joined at a point $p$ where $Y\cap Z=\{p\}$. Since $Y\cap Z$ is contractible to $p$, then $\pi_1(Y\cup Z) \cong \pi_1(Y)*\pi_1(Z)$. Since $Y$ and $Z$ are both just $S^1$, $\pi_1(Y),\pi_1(Z) \cong \mathbb Z$ $\pi_1(S^1\vee S^1)$
 
 > [!problem] Question 2
 > Assume $p$ is the deformation retract of of some $W_1$ in $Y$ and of some $W_2$ in $Z$. What is $\pi_1(Y \vee Z).$ Explain your reasoning in terms of the Seifert-van Kampen Theorem.
