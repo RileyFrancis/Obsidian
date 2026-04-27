@@ -8,31 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "785d11c7f7f2f143",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDFs/KSADS Variables 1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "KSADS Variables 1"
-            }
-          },
-          {
             "id": "bfc588d0a2e42bdb",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDFs/KSADS Variables 1.pdf"
+                "file": "COURSES/MATH 3330/MATH 3330 Homework 9.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "KSADS Variables 1"
+              "icon": "lucide-file",
+              "title": "MATH 3330 Homework 9"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 263.5,
+    "collapsed": true
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -205,6 +195,7 @@
   },
   "active": "bfc588d0a2e42bdb",
   "lastOpenFiles": [
+    "PDFs/KSADS Variables 1.pdf",
     "PDFs/KSADS Variables.pdf",
     "COURSES/MATH 3330/MATH 3330 Homework 9.md",
     "COURSES/SDP/poster/compile.sh",
@@ -215,7 +206,6 @@
     "COURSES/SDP/poster/poster.out",
     "COURSES/SDP/poster/poster.aux",
     "COURSES/SDP/poster/poster.log",
-    "PDFs/KSADS Variables 1.pdf",
     "COURSES/CSE 3150/Homework/day_18_hw/day_18_hw.zip",
     "Other Stuff/Research/KSADS Variables.md",
     "Images/KSADS_ABCD.png",
