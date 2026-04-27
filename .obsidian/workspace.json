@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "KSADS Variables.pdf"
+                "file": "PDFs/KSADS Variables 1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "KSADS Variables"
+              "title": "KSADS Variables 1"
             }
           },
           {
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MATH 3330 Homework 9.md",
+                "file": "COURSES/MATH 3330/MATH 3330 Homework 9.md",
                 "mode": "source",
                 "source": false
               },
@@ -205,7 +205,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bfc588d0a2e42bdb",
+  "active": "78a60046cd749609",
   "lastOpenFiles": [
     "COURSES/SDP/poster/compile.sh",
     "COURSES/SDP/poster/poster.snm",
@@ -215,8 +215,8 @@
     "COURSES/SDP/poster/poster.out",
     "COURSES/SDP/poster/poster.aux",
     "COURSES/SDP/poster/poster.log",
-    "KSADS Variables.pdf",
-    "MATH 3330 Homework 9.md",
+    "PDFs/KSADS Variables 1.pdf",
+    "COURSES/MATH 3330/MATH 3330 Homework 9.md",
     "COURSES/CSE 3150/Homework/day_18_hw/day_18_hw.zip",
     "COURSES/CSE 3150/Homework/day_18_hw/zin8Vmbb",
     "Other Stuff/Research/KSADS Variables.md",

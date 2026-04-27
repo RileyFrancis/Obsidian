@@ -16,13 +16,19 @@ Being in the free group here means that order matters. Wrapping around the $Y$ l
 > [!problem] Question 3
 > Explain how to find the fundamental group of both the standard torus and the real projective plane using the Seifert-van Kampen Theorem.
 
+
+
 > [!problem] Question 4
 > Let's find the fundamental group of the 2-fold torus two ways.
 > 1. Find the fundamental group of the 2-fold torus using the appropriate identification of a polygon. Explain using Sefiert-van Kampen( - are you noticing a theme?).
 > 2. Find the fundamental group of the 2-fold torus by viewing it as the connect sum of two standard tori and use Seifert-van Kampen where U and V are the punctured tori and the intersection is a cylinder.
 
+
+
 > [!problem] Question 5
 > Find spaces $X$ and $Y$ with $\pi_1(X,p) \cong \mathbb{Z}_n \times \mathbb{Z}_m$ and $\pi_1(Y,p) \cong \mathbb{Z}_n * \mathbb{Z}_m$
+
+
 
 > [!problem] Question 6
 > (Not on Test 5 but could be on final exam) For each of the following surface presentations, compute the Euler characteristic and determine which standard surface it represents.
