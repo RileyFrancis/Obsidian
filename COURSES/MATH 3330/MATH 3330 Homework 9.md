@@ -20,11 +20,11 @@ We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retr
 
 **Torus:**
 $T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$ be a small open ball around $p$.
-1. $\pi_1(U\cap V)=S^1$ (Since their intersection creates a very small disk around the point $p$ which can be contracted to a circle)
-2. $V$ can be contracted to a point.
-3. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
+1. $U\cap V$ retracts to $S^1$ which is the same as $\mathbb Z$. 
+2. $V$ can be contracted to a point and is trivial.
+3. $U$ contracts to the frame which is $aba^{-1}b^{-1}$ and is the same as $\mathbb Z * \mathbb Z$.
 
-So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$. 
+Then $\pi_1(T)=(\mathbb Z*\mathbb Z)*_{\mathbb Z}e$. Figuring out the amalgamation: $\pi_1(T)=\langle a,b \mid aba^{-1}b^{-1}=e \rangle = \langle a,b \mid ab=ba \rangle= \mathbb Z\times Z$ which is the abelian group on two generators.
 
 **Real Projective Plane:**
 1. $U=\mathbb RP^2\setminus p$ for some point $p$. This retracts to the frame, and is then the same as $\mathbb Z$
