@@ -19,13 +19,13 @@ We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retr
 > Explain how to find the fundamental group of both the standard torus and the real projective plane using the Seifert-van Kampen Theorem.
 
 **Torus:**
-$T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$ be a small open ball around $p$. Then,
+$T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$ be a small open ball around $p$.
 1. $U\cup V=T$
 2. $U\cap V=S^1$ (Since their intersection creates a very small disk around the point $p$ which can be contracted to a circle)
 3. $V$ can be contracted to a point.
 4. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
 
-So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$.
+So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$. Then, by the Siefert-van Kampen Theorem, 
 
 > [!problem] Question 4
 > Let's find the fundamental group of the 2-fold torus two ways.
