@@ -13,7 +13,7 @@ Being in the free group here means that order matters. Wrapping around the $Y$ l
 
 $\pi_1(Y\vee Z)=\pi_1(Y)*\pi_1(Z)$.
 
-We can let $U=W_1$ and $V=W_2$ where $U\cap V=\{p\}$. Since $p$ is a deformation retract of $W_1$, then $\pi_1(W_1)\cong\pi_1(p)$ which is trivial. Likewise, $p$ is a deformation retract of $W_1$, so $\pi_1(W_2)\cong \pi_1(p)$ is also trivial. Since their intersection is only one point $p$, then $\pi_1(U\cap V)$ is also trivial.
+We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retracts into $Y$, and $V$ be an open neighborhood of $Z$ in $Y\vee Z$ that deformation retracts into $Z$.
 
 > [!problem] Question 3
 > Explain how to find the fundamental group of both the standard torus and the real projective plane using the Seifert-van Kampen Theorem.
