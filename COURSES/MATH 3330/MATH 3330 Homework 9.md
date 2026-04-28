@@ -11,6 +11,8 @@ Being in the free group here means that order matters. Wrapping around the $Y$ l
 > [!problem] Question 2
 > Assume $p$ is the deformation retract of of some $W_1$ in $Y$ and of some $W_2$ in $Z$. What is $\pi_1(Y \vee Z).$ Explain your reasoning in terms of the Seifert-van Kampen Theorem.
 
+$\pi_1(Y\vee Z)=\pi_1(Y)*\pi_1(Z)$.
+
 We can let $U=W_1$ and $V=W_2$ where $U\cap V=\{p\}$. Since $p$ is a deformation retract of $W_1$, then $\pi_1(W_1)\cong\pi_1(p)$ which is trivial. Likewise, $p$ is a deformation retract of $W_1$, so $\pi_1(W_2)\cong \pi_1(p)$ is also trivial. Since their intersection is only one point $p$, then $\pi_1(U\cap V)$ is also trivial.
 
 > [!problem] Question 3
@@ -34,7 +36,9 @@ For $U$, it retracts onto the figure eight, so $\pi_1(U)=\mathbb Z * \mathbb Z$.
 > [!problem] Question 5
 > Find spaces $X$ and $Y$ with $\pi_1(X,p) \cong \mathbb{Z}_n \times \mathbb{Z}_m$ and $\pi_1(Y,p) \cong \mathbb{Z}_n * \mathbb{Z}_m$
 
-$X=L(n,1)\times L(m,1)$ is the product of two lens spaces. $L(n,1)\cong \mathbb Z_n$ so then $\pi_1(X)=$
+$X=L(n,1)\times L(m,1)$ is the product of two lens spaces. $L(n,1)\cong \mathbb Z_n$ so then $\pi_1(X)=\pi_1(L(n,1)\times L(m,1)) = \pi_1(L(n,1))\times \pi_1(L(m,1))=\mathbb Z_n\times\mathbb Z_m$.
+
+$Y=L(n,1)\vee L(m,1)$
 
 > [!problem] Question 6
 > (Not on Test 5 but could be on final exam) For each of the following surface presentations, compute the Euler characteristic and determine which standard surface it represents.
