@@ -20,10 +20,9 @@ We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retr
 
 **Torus:**
 $T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$ be a small open ball around $p$.
-1. $U\cup V=T$
-2. $U\cap V=S^1$ (Since their intersection creates a very small disk around the point $p$ which can be contracted to a circle)
-3. $V$ can be contracted to a point.
-4. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
+1. $\pi_1(U\cap V)=S^1$ (Since their intersection creates a very small disk around the point $p$ which can be contracted to a circle)
+2. $V$ can be contracted to a point.
+3. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
 
 So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$. 
 
@@ -32,7 +31,7 @@ So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap 
 2. $V$ is a disk around the point $p$ which retracts to a trivial point.
 3. $U\cap V$ retracts to $S^1$ which is the same as $\mathbb Z$.
 
-Then $\pi_1(\mathbb RP^2)\cong\mathbb Z *_\mathbb Z 1$.
+Then $\pi_1(\mathbb RP^2)\cong\mathbb Z *_\mathbb Z e$. Figuring out the amalgamation: $\pi(\mathbb RP^2)=\langle 1,a \mid i_U(\gamma)=i_V(\gamma)\rangle$. $i_V(\gamma)=e$ since loops in $V$ are trivial. $i_U(\gamma)=a^2$ since loops in $U$ must make two loops around $p$ in order to return to their starting point. So, $\pi_1(\mathbb RP^2)=\langle 1,a\mid b^2=e\rangle=\mathbb Z\setminus2\mathbb Z$ which is the cyclic group of order 2.
 
 > [!problem] Question 4
 > Let's find the fundamental group of the 2-fold torus two ways.
