@@ -23,22 +23,23 @@ $T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$
 1. $U\cup V=T$
 2. $U\cap V=S^1$ (Since their intersection creates a very small disk around the point $p$ which can be contracted to a circle)
 3. $V$ can be contracted to a point.
+4. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
 
-For $U$, it retracts onto the figure eight, so $\pi_1(U)=\mathbb Z * \mathbb Z$.
+So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$.
 
 > [!problem] Question 4
 > Let's find the fundamental group of the 2-fold torus two ways.
 > 1. Find the fundamental group of the 2-fold torus using the appropriate identification of a polygon. Explain using Sefiert-van Kampen( - are you noticing a theme?).
 > 2. Find the fundamental group of the 2-fold torus by viewing it as the connect sum of two standard tori and use Seifert-van Kampen where U and V are the punctured tori and the intersection is a cylinder.
 
-1. 
+5. 
 
 > [!problem] Question 5
 > Find spaces $X$ and $Y$ with $\pi_1(X,p) \cong \mathbb{Z}_n \times \mathbb{Z}_m$ and $\pi_1(Y,p) \cong \mathbb{Z}_n * \mathbb{Z}_m$
 
 $X=L(n,1)\times L(m,1)$ is the product of two lens spaces. $L(n,1)\cong \mathbb Z_n$ so then $\pi_1(X)=\pi_1(L(n,1)\times L(m,1)) = \pi_1(L(n,1))\times \pi_1(L(m,1))=\mathbb Z_n\times\mathbb Z_m$.
 
-$Y=L(n,1)\vee L(m,1)$
+$Y=L(n,1)\vee L(m,1)$. By the Siefert-van Kampen Theorem, the wedge of two spaces is isomorphic to their free product: $\pi_1(L(n,1)\vee L(m,1))\cong \pi_1(L(n,1))* \pi_1 (L(m,1))\cong \mathbb Z_n*\mathbb Z_m$.
 
 > [!problem] Question 6
 > (Not on Test 5 but could be on final exam) For each of the following surface presentations, compute the Euler characteristic and determine which standard surface it represents.
