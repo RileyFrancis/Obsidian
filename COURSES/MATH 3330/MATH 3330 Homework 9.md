@@ -50,4 +50,4 @@ $Y=L(n,1)\vee L(m,1)$. By the Siefert-van Kampen Theorem, the wedge of two space
 
 1. Each edge appears twice, so $abcdad^{-1}cb^{-1}$ is a proper labeling scheme of projective plane type (since there are letters of alike sign). There is 1 face, 4 edges, and 2 vertices (the tails of $b$ and the heads of $d$ are the same, and both sides of the $c$ edges are the same), so $1-4+2=2-m\rightarrow m=3$. This is a 3-fold projective plane.
 
-2. 
+2. We can concatenate identity loops where they have shared edges$$\begin{align}&abfg \\ &a[bchi]bfg \\ &ab[cdjf^{-1}]chibgf \\ &abc[deg^{-1}h^{-1}]\end{align}$$
