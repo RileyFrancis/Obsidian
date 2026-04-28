@@ -48,4 +48,4 @@ $Y=L(n,1)\vee L(m,1)$. By the Siefert-van Kampen Theorem, the wedge of two space
 > 1. $S=\left\langle a,b,c,d\ |\ abcdad^{-1}cb^{-1}\right\rangle$.
 > 2. $S=\left< a, b, c, d, e, f, g, h, i, j\;\vert \;abfg;\; bchi;\; cdjf^{-1};\; deg^{-1}h^{-1};\; eai^{-1}j^{-1}\right>$. 
 
-1. 
+1. Each edge appears twice, so $abcdad^{-1}cb^{-1}$ is a proper labeling scheme of projective plane type (since there are ).
