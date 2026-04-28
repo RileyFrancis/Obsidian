@@ -11,9 +11,9 @@ Being in the free group here means that order matters. Wrapping around the $Y$ l
 > [!problem] Question 2
 > Assume $p$ is the deformation retract of of some $W_1$ in $Y$ and of some $W_2$ in $Z$. What is $\pi_1(Y \vee Z).$ Explain your reasoning in terms of the Seifert-van Kampen Theorem.
 
-$\pi_1(Y\vee Z)=\pi_1(Y)*\pi_1(Z)$.
+$\pi_1(Y\vee Z)=\pi_1(Y)*\pi_1(Z)$. (* is the free product)
 
-We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retracts into $Y$, and $V$ be an open neighborhood of $Z$ in $Y\vee Z$ that deformation retracts into $Z$.
+We can let $U$ be an open neighborhood of $Y$ in $Y\vee Z$ that deformation retracts into $Y$, and $V$ be an open neighborhood of $Z$ in $Y\vee Z$ that deformation retracts into $Z$. Then $U\cup V=Y\vee Z$ and $U\cup V$ is an open neighborhood of $p$ that deformation retracts to that point. Then since $\pi_1(U\cap V)$ is isomorphic to the identity, $\pi_1(Y\vee Z)\cong \pi_1(Y)*_{\pi_1(U\cap V)}\pi_1(Z)=\pi_1(Y)*\pi_1(Z)$ where $*$ is the free product.
 
 > [!problem] Question 3
 > Explain how to find the fundamental group of both the standard torus and the real projective plane using the Seifert-van Kampen Theorem.
