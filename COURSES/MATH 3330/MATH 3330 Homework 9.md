@@ -25,7 +25,7 @@ $T=S^1\times S^1$. Let $U= T\setminus {p}$ for a point $p$ on the torus, and $V$
 3. $V$ can be contracted to a point.
 4. $U$ contracts to the figure eight ($\mathbb Z * \mathbb Z$)
 
-So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$. Then, by the Siefert-van Kampen Theorem, 
+So $\pi_1(V)$ is trivial, $\pi_1(U)\cong \mathbb Z*\mathbb Z$, and $\pi_1(U\cap V)\cong \mathbb Z$. 
 
 > [!problem] Question 4
 > Let's find the fundamental group of the 2-fold torus two ways.
