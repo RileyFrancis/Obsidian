@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Other Stuff/COURSE ARCHIVE/CSE 5819/CSE 5819 - Assignment 7.md",
+                "file": "franka_duo_teleop_design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSE 5819 - Assignment 7"
+              "title": "franka_duo_teleop_design"
             }
           }
         ],
@@ -210,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 960.5
+    "width": 960.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,8 +228,9 @@
       "3d-graph:3D Graph": false
     }
   },
-  "active": "1d60aeca76922f1d",
+  "active": "15cf60fbbd32948e",
   "lastOpenFiles": [
+    "franka_duo_teleop_design.md",
     "Other Stuff/COURSE ARCHIVE/CSE 5819/CSE 5819 - Assignment 7.md",
     "Untitled.md",
     "Hello.md",
@@ -272,7 +274,6 @@
     "Images/all_classes_mean_trajectories.png",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
     "Other Stuff/Research/Presentation For Feb. 20th.md",
-    "COURSES/CSE 3150/CPP/Week_3_p2/Notes.md",
     "Images/Pasted image 20260204163429.png",
     "Images/Pasted image 20260204163233.png",
     "Images/Pasted image 20260128192208.png",
