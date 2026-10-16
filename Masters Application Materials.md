@@ -22,3 +22,27 @@ Dean's List, School of Engineering, University of Connecticut, 2023 - Present;
 Dean's List, College of Liberal Arts and Sciences, University of Connecticut, 2023 - Present;
 Babbage Scholar, 2025;
 Global Citizen Scholarship and Merit Scholarship, Sep 2024;
+
+##### Please provide a list of computers and operating systems you have used and your degree of familiarity with them (excellent, good, fair). If you do not have any, type in NONE.
+Windows (Windows 10/11) - Excellent;
+Linux (Ubuntu, RHEL, Fedora) - Excellent;
+macOS - Fair;
+Cloud computing (AWS) - Good;
+Embedded/robot computers (NVIDIA Jetson, Raspberry Pi, etc.) - Good;
+
+##### Please provide a list of all computer science courses taken at the college level. Please include name of each course, the institution where the course was taken, date taken (MM/YYYY), textbook used, and grade received. If you do not have any, type in NONE.
+CSE 1010 Introduction to Computing for Engineers - University of Connecticut (Early College Experience) - [MM/YYYY] - [textbook] - A;
+CSE 2050 Data Structures and Object-Oriented Design - University of Connecticut (Early College Experience) - [MM/YYYY] - [textbook] - A;
+CSE 2500 Introduction to Discrete Systems - University of Connecticut (Early College Experience) - [MM/YYYY] - [textbook] - A;
+[UConn equivalent] Reasoning and Agents - University of Edinburgh - 05/2025 - [textbook] - A;
+CSE 3000 Contemporary Issues in CSE - University of Connecticut - 12/2024 - [textbook] - A;
+CSE 3140 Cybersecurity Lab - University of Connecticut - 05/2024 - [textbook] - A;
+CSE 3150 C++ Essentials - University of Connecticut - 05/2026 - [textbook] - A;
+CSE 3500 Algorithms and Complexity - University of Connecticut - 12/2024 - [textbook] - A;
+CSE 3666 Introduction to Computer Architecture (Honors) - University of Connecticut - 12/2023 - [textbook] - B+;
+CSE 4099 Independent Study in Computer Science & Engineering - University of Connecticut - 12/2025 - [textbook] - A;
+CSE 4701 Principles of Databases - University of Connecticut - 12/2025 - [textbook] - A;
+CSE 4939W CSE Design Project I - University of Connecticut - 12/2025 - [textbook] - A;
+CSE 4940 CSE Design Project II - University of Connecticut - 05/2026 - [textbook] - A;
+[UConn equivalent] Parallel Programming Languages and Systems - University of Edinburgh - 05/2025 - [textbook] - B;
+CSE 5819 Introduction to Machine Learning - University of Connecticut - 12/2025 - [textbook] - A-;
