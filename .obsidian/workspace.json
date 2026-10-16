@@ -4,51 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "fd9996639b6f9a7d",
+        "id": "c3d0413b52dabb9c",
         "type": "tabs",
         "children": [
           {
-            "id": "bfc588d0a2e42bdb",
+            "id": "cee5f2874011f0a5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COURSES/SDP/Habitat-Lab Installation and Run Output.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Habitat-Lab Installation and Run Output"
-            }
-          },
-          {
-            "id": "eaeb94d358ee3c37",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-06-19 15.01.24.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-19 15.01.24.excalidraw"
-            }
-          },
-          {
-            "id": "15cf60fbbd32948e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "franka_duo_teleop_design.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "franka_duo_teleop_design"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -121,6 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Feb.20th Presentation"
             }
           },
           {
@@ -139,11 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Other Stuff/Research/Feb.20th Presentation.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Feb.20th Presentation"
             }
           },
           {
@@ -194,24 +167,13 @@
               "icon": "lucide-ghost",
               "title": "advanced-tables-toolbar"
             }
-          },
-          {
-            "id": "1d60aeca76922f1d",
-            "type": "leaf",
-            "state": {
-              "type": "3d_graph_view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "3d_graph_view"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 960.5,
-    "collapsed": true
+    "width": 296.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,33 +186,26 @@
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "3d-graph:3D Graph": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "15cf60fbbd32948e",
+  "active": "cee5f2874011f0a5",
   "lastOpenFiles": [
-    "franka_duo_teleop_design.md",
-    "Other Stuff/COURSE ARCHIVE/CSE 5819/CSE 5819 - Assignment 7.md",
-    "Untitled.md",
-    "Hello.md",
-    "Excalidraw/Drawing 2026-06-19 15.01.24.excalidraw.md",
-    "COURSES/SDP/Habitat-Lab Installation and Run Output.md",
-    "COURSES/SDP/Habitat-Lab Installation and Run Output.pdf",
-    "PDFs/CSE 5819 - Assignment 7.pdf",
-    "PDFs/CSE 5819 - Assignment 8.pdf",
-    "PDFs/MATH 3330 Homework 5.pdf",
-    "PDFs/MATH 3330 Homework 1.pdf",
-    "COURSES/MATH 3330/MATH 3330 Homework 9.md",
-    "PDFs/MATH 3330 Homework 9.pdf",
-    "PDFs/KSADS Variables 1.pdf",
-    "PDFs/KSADS Variables.pdf",
-    "COURSES/SDP/poster/compile.sh",
-    "COURSES/SDP/poster/poster.snm",
-    "Other Stuff/Research/KSADS Variables.md",
-    "Images/KSADS_ABCD.png",
     "COURSES/MATH 3330/MATH 3330 Homework 7.md",
+    "COURSES/CSE 3150/Labs/day_18_lab/src/main.cpp",
+    "COURSES/CSE 3150/Labs/day_18_lab/include/vector.hpp",
+    "COURSES/CSE 3150/Labs/day_18_lab/src",
+    "COURSES/CSE 3150/Labs/day_18_lab/program.exe",
+    "COURSES/CSE 3150/Labs/day_18_lab/include",
+    "COURSES/CSE 3150/Labs/day_18_lab/day_18_lab.zip",
+    "COURSES/CSE 3150/Labs/day_18_lab",
+    "COURSES/CSE 3150/Final_Study/src/main.cpp",
+    "COURSES/CSE 3150/Final_Study/src",
+    "COURSES/CSE 3150/Final_Study/include/vector.h",
+    "franka_duo_teleop_design.md",
+    "COURSES/CSE 3150/Final_Study/CLAUDE.md",
     "MATH 3330 Homework 8.md",
+    "Other Stuff/Research/KSADS Variables.md",
     "Images/Pasted image 20260407133538.png",
     "COURSES/MATH 3330/MATH 3330 Homework 8.md",
     "COURSES/CSE 3150/Homework/day_14_hw/README.md",
@@ -273,7 +228,12 @@
     "COURSES/MATH 3330/MATH 3330 Homework 3.md",
     "Images/all_classes_mean_trajectories.png",
     "Other Stuff/Research/Feb. 20th Presentation.canvas",
+    "Images/KSADS_ABCD.png",
     "Other Stuff/Research/Presentation For Feb. 20th.md",
+    "COURSES/CSE 3150/CPP/Week_3_p2/Notes.md",
+    "COURSES/CSE 4502-5717/The Basics of Algorithms.md",
+    "Other Stuff/Research/fMRI Explanations Meeting 12-2-25.md",
+    "COURSES/ECON 1201/ECON 1201.md",
     "Images/Pasted image 20260204163429.png",
     "Images/Pasted image 20260204163233.png",
     "Images/Pasted image 20260128192208.png",
