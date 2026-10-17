@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"Pattern Recognition and Machine Learning\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,12 +76,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 263.5,
-    "collapsed": true
+    "width": 263.5
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -195,7 +195,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cee5f2874011f0a5",
+  "active": "d032d67e40301deb",
   "lastOpenFiles": [
     "Masters Application Materials.md",
     "franka_duo_teleop_design.md",
