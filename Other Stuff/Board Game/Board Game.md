@@ -8,3 +8,4 @@ All players begin the game with a soul lantern
 ### Exorcist
 ### Warden
 ### Lamplighter
+1: 
