@@ -17,5 +17,5 @@ On a monster's turn, it will perform all possible actions in its action set sequ
 > - **MOVE 5:** toward the nearest player **IF** no other monster is within 3 tiles.
 
 > [!tip] **ATTACK {range} {# players}**
-> **Attack** one or more players that are within range of the monster. Monsters may only attack in straight lines through open connections between tiles up to their max range. When attacking a player, that player rolls both their D20 and the monster D20. 
+> **Attack** one or more players that are within range of the monster. Monsters may only attack in straight lines through open connections between tiles up to their max range. When attacking a player, that player rolls both their D20 and the monster D20. Then they add their speed score to 
 
