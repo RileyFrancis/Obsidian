@@ -11,10 +11,10 @@ All players begin the game with a soul lantern.
 ### Lamplighter
 The lamplighter is designed around controlling regions of the map by gathering information about areas.
 
-The lamplighter begins the game with 8 flame tokens. These flame tokens can be placed on locations. When you place a flame token, immediately reveal all neighboring unexplored tiles (you do not get placement bonuses for these tiles). Locations with flame tokens and all neig
+The lamplighter begins the game with 8 flame tokens. These flame tokens can be placed on locations. When you place a flame token, immediately reveal all neighboring unexplored tiles (you do not get placement bonuses for these tiles). Locations with flame tokens and all neighboring locations can not be enshrouded. 
 #### Base abilities
-| Ability Name | Type | Cost | Description                                                         |
-| ------------ | ---- | ---- | ------------------------------------------------------------------- |
-| Ignite       |      | 1    | Place a flame token at your current location.                       |
-| Flamemeld    |      | 3    | Step into the flame to travel to any other tile containing a flame. |
-|              |      |      |                                                                     |
+| Ability Name | Type    | Cost | Description                                                         |
+| ------------ | ------- | ---- | ------------------------------------------------------------------- |
+| Combust      | Passive |      |                                                                     |
+| Ignite       |         | 1    | Place a flame token at your current location.                       |
+| Flamemeld    |         | 3    | Step into the flame to travel to any other tile containing a flame. |
