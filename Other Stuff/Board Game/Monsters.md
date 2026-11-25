@@ -27,3 +27,20 @@ On a monster's turn, it will perform all possible actions in its action set sequ
 > - **ATTACK 3 range, 2 player:** Drain 2 sanity
 > - **ATTACK 1 range, 1 player:** Swap locations with the target hit
 
+> [!tip] **Transform {stat increases}**
+> **Attack** one or more players that are within range of the monster. Monsters may only attack in straight lines through open connections between tiles up to their max range. The range is counted as the tile distance between the player and the monster (so being in the same tile counts as range 0). If there are more players within range than targets that the monster can hit, it will prioritize attacking the player with lower sanity.
+> 
+> When attacking a player, that player rolls both their D20 and the monster D20. Then they add their speed score to their roll and the monster's speed score to the monster's roll. If the player's roll is then lower, the monster will deal damage equal to its attack to the player (sometimes reduced by defense). Sometimes an attack also triggers some effect too which triggers only on a successful hit.
+> - **ATTACK 2 range, 1 player:** -
+> - **ATTACK 0 range, $\infty$ player:** -
+> - **ATTACK $\infty$ range, $\infty$ player:** -
+> - **ATTACK 3 range, 2 player:** Drain 2 sanity
+> - **ATTACK 1 range, 1 player:** Swap locations with the target hit
+
+> [!tip] **General Action**
+> A **general action** is any action that does not fit into the other actions above. This could include changing the stats of some players, placing tokens, or any other action  
+> 
+> - Players that share a tile with this monster lose 1 sanity
+> - Place a acid token at the monster's location.
+> - If this monster has not transformed, teleport to location X
+> - 
