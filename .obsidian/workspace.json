@@ -11,14 +11,12 @@
             "id": "8948b1ad97b60354",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Other Stuff/Board Game/Monsters.md",
-                "mode": "source",
-                "source": false
+                "file": "Other Stuff/Board Game/Card Frames/monster_frame_example.png"
               },
-              "icon": "lucide-file",
-              "title": "Monsters"
+              "icon": "lucide-image",
+              "title": "monster_frame_example"
             }
           }
         ]
@@ -80,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 360.05078125
   },
   "right": {
     "id": "58499761a6b9a844",
@@ -195,6 +193,19 @@
   },
   "active": "8948b1ad97b60354",
   "lastOpenFiles": [
+    "Other Stuff/Board Game/Card Frames/monster_frame_outlined.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame_example.png",
+    "Other Stuff/Board Game/Card Frames/monster_frame.png",
+    "Other Stuff/Board Game/Card Frames/monster_frame_example.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.png",
+    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame.svg",
+    "Other Stuff/Board Game/Monsters.md",
+    "Other Stuff/Board Game/Card Frames/_crop.png",
+    "Other Stuff/Board Game/Card Frames/render.sh",
+    "Other Stuff/Board Game/Card Frames/make_monster_frame.py",
+    "Other Stuff/Board Game/Card Frames/make_monster_frame.py.tmp.28397.78866270796a",
+    "Other Stuff/Board Game/Card Frames",
     "Other Stuff/Board Game/Board Game.md",
     "Untitled.base",
     "Excalidraw/CSE5819_assignment6_decision_tree.md",
@@ -204,7 +215,6 @@
     "Excalidraw/Drawing 2025-11-18 19.24.32.excalidraw.md",
     "Excalidraw/Drawing 2026-06-19 15.01.24.excalidraw.md",
     "Other Stuff/Board Game/Stats.md",
-    "Other Stuff/Board Game/Monsters.md",
     "README.md",
     "Masters Application Materials.md",
     "Other Stuff/Card Game.md",
@@ -217,10 +227,6 @@
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/include/vector.hpp",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/src",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/program.exe",
-    "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/include",
-    "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/day_18_lab.zip",
-    "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab",
-    "Other Stuff/COURSE ARCHIVE/CSE 3150/Final_Study/src/main.cpp",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Final_Study/CLAUDE.md",
     "MATH 3330 Homework 8.md",
     "Other Stuff/Research/KSADS Variables.md",
@@ -230,17 +236,9 @@
     "Images/Pasted image 20260401204901.png",
     "Other Stuff/STAR Interview Format.md",
     "Other Stuff/COURSE ARCHIVE/MATH 3330/MATH 3330 Homework 6.md",
-    "Images/Pasted image 20260326193725.png",
-    "Pasted image 20260326193628.png",
     "Other Stuff/Research/Feb.20th Presentation.canvas",
     "Other Stuff/COURSE ARCHIVE/MATH 3330/MATH 3330 Homework 5.md",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Notes/Pointers.md",
-    "Images/all_classes_mean_trajectories.png",
-    "Other Stuff/Research/Feb. 20th Presentation.canvas",
-    "Images/KSADS_ABCD.png",
-    "Images/Pasted image 20260204163429.png",
-    "Images/Pasted image 20260204163233.png",
-    "Images/Pasted image 20260128192208.png",
-    "Images/Pasted image 20260128192100.png"
+    "Other Stuff/Research/Feb. 20th Presentation.canvas"
   ]
 }

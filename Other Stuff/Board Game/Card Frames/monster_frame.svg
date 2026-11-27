@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="120mm" viewBox="0 0 70 120">
+<defs>
+  <!-- slight hand-inked wobble on frame linework -->
+  <filter id="wobble" x="-2%" y="-2%" width="104%" height="104%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="0.32" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <!-- mottled grime used on dark surfaces -->
+  <filter id="grime" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="4" seed="11" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.45  0 0 0 0 0.42  0 0 0 2.2 -1.05"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+  <!-- fine paper grain -->
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" seed="3" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+  <!-- blotchy stains for the parchment box -->
+  <filter id="stain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="3" seed="21" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.15  0 0 0 2.6 -1.35"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+
+  <radialGradient id="artGrad" cx="50%" cy="45%" r="70%">
+    <stop offset="0" stop-color="#3a2f31"/>
+    <stop offset="0.6" stop-color="#1d1618"/>
+    <stop offset="1" stop-color="#0c0909"/>
+  </radialGradient>
+  <radialGradient id="parchGrad" cx="50%" cy="45%" r="75%">
+    <stop offset="0" stop-color="#cdbf9e"/>
+    <stop offset="0.75" stop-color="#c2b392"/>
+    <stop offset="1" stop-color="#9c8c6c"/>
+  </radialGradient>
+  <linearGradient id="plateGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#352a2c"/>
+    <stop offset="1" stop-color="#1a1416"/>
+  </linearGradient>
+  <linearGradient id="cellGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a0c0d"/>
+    <stop offset="1" stop-color="#2e1213"/>
+  </linearGradient>
+  <linearGradient id="cellGradHi" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2a0f10"/>
+    <stop offset="1" stop-color="#4a1818"/>
+  </linearGradient>
+  <radialGradient id="lvlGrad" cx="45%" cy="40%" r="65%">
+    <stop offset="0" stop-color="#4a1a1a"/>
+    <stop offset="1" stop-color="#1e0b0b"/>
+  </radialGradient>
+  <radialGradient id="medGrad" cx="40%" cy="35%" r="70%">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
+  </radialGradient>
+</defs>
+<g id="background">
+  <rect x="0" y="0" width="70" height="120" fill="#0b0909"/>
+  <rect x="0" y="0" width="70" height="120" fill="#191315"/>
+  <rect x="0" y="0" width="70" height="120" fill="#000" filter="url(#grime)" opacity="0.55"/>
+  <rect x="0" y="0" width="70" height="120" fill="#000" filter="url(#grain)" opacity="0.35"/>
+</g>
+<g id="card" transform="translate(0,0)">
+<g id="outer-border" filter="url(#wobble)">
+  <rect x="1.5" y="1.5" width="67" height="117" rx="2.2" fill="none" stroke="#a8997b" stroke-width="0.4"/>
+  <rect x="2.15" y="2.15" width="65.7" height="115.7" rx="1.7" fill="none" stroke="#5e5344" stroke-width="0.18"/>
+</g>
+<g id="health-bar">
+<rect x="3" y="3" width="8.4" height="114" rx="1.4" fill="#0e0a0b" stroke="#070506" stroke-width="0.6"/>
+<g filter="url(#wobble)"><rect x="3" y="3" width="8.4" height="114" rx="1.4" fill="none" stroke="#a8997b" stroke-width="0.35"/></g>
+<g transform="translate(7.2,6) scale(0.78)">
+  <path d="M0,-3.1 C1.1,-1.5 2.3,-0.2 2.3,1.25 A2.3,2.3 0 0 1 -2.3,1.25 C-2.3,-0.2 -1.1,-1.5 0,-3.1 Z" fill="#a8302a" stroke="#070506" stroke-width="0.35"/>
+  <path d="M-1.15,0.6 C-1.15,1.4 -0.7,2.0 -0.1,2.2" fill="none" stroke="#ddd1b3" stroke-width="0.32" stroke-linecap="round" opacity="0.8"/>
+</g>
+<text x="7.2" y="9.15" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.35" letter-spacing="0.12" text-anchor="middle" fill="#a8997b">hp</text>
+<rect x="4" y="9.975" width="6.4" height="4.531" rx="0.75" fill="url(#cellGradHi)" stroke="#ddd1b3" stroke-width="0.3"/>
+<path d="M4.5,10.325 L9.9,10.325" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="13.19" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="bold" text-anchor="middle" fill="#ddd1b3">20</text>
+<path d="M3,12.24 L3.7,12.24 M10.7,12.24 L11.4,12.24" stroke="#ddd1b3" stroke-width="0.35"/>
+<rect x="4" y="15.056" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,15.406 L9.9,15.406" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="18.271" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">19</text>
+<rect x="4" y="20.137" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,20.487 L9.9,20.487" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="23.352" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">18</text>
+<rect x="4" y="25.218" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,25.568 L9.9,25.568" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="28.433" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">17</text>
+<rect x="4" y="30.299" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,30.649 L9.9,30.649" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="33.514" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">16</text>
+<rect x="4" y="35.38" width="6.4" height="4.531" rx="0.75" fill="url(#cellGradHi)" stroke="#ddd1b3" stroke-width="0.3"/>
+<path d="M4.5,35.73 L9.9,35.73" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="38.595" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="bold" text-anchor="middle" fill="#ddd1b3">15</text>
+<path d="M3,37.645 L3.7,37.645 M10.7,37.645 L11.4,37.645" stroke="#ddd1b3" stroke-width="0.35"/>
+<rect x="4" y="40.461" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,40.811 L9.9,40.811" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="43.676" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">14</text>
+<rect x="4" y="45.542" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,45.892 L9.9,45.892" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="48.757" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">13</text>
+<rect x="4" y="50.623" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,50.973 L9.9,50.973" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="53.838" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">12</text>
+<rect x="4" y="55.704" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,56.054 L9.9,56.054" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="58.919" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">11</text>
+<rect x="4" y="60.785" width="6.4" height="4.531" rx="0.75" fill="url(#cellGradHi)" stroke="#ddd1b3" stroke-width="0.3"/>
+<path d="M4.5,61.135 L9.9,61.135" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="64" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="bold" text-anchor="middle" fill="#ddd1b3">10</text>
+<path d="M3,63.05 L3.7,63.05 M10.7,63.05 L11.4,63.05" stroke="#ddd1b3" stroke-width="0.35"/>
+<rect x="4" y="65.865" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,66.215 L9.9,66.215" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="69.081" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">9</text>
+<rect x="4" y="70.946" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,71.296 L9.9,71.296" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="74.162" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">8</text>
+<rect x="4" y="76.027" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,76.377 L9.9,76.377" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="79.243" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">7</text>
+<rect x="4" y="81.108" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,81.458 L9.9,81.458" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="84.324" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">6</text>
+<rect x="4" y="86.189" width="6.4" height="4.531" rx="0.75" fill="url(#cellGradHi)" stroke="#ddd1b3" stroke-width="0.3"/>
+<path d="M4.5,86.539 L9.9,86.539" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="89.405" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="bold" text-anchor="middle" fill="#ddd1b3">5</text>
+<path d="M3,88.455 L3.7,88.455 M10.7,88.455 L11.4,88.455" stroke="#ddd1b3" stroke-width="0.35"/>
+<rect x="4" y="91.27" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,91.62 L9.9,91.62" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="94.486" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">4</text>
+<rect x="4" y="96.351" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,96.701 L9.9,96.701" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="99.567" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">3</text>
+<rect x="4" y="101.432" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,101.782 L9.9,101.782" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="104.648" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">2</text>
+<rect x="4" y="106.513" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,106.863 L9.9,106.863" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<text x="7.2" y="109.729" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" font-weight="normal" text-anchor="middle" fill="#a8997b">1</text>
+<rect x="4" y="111.594" width="6.4" height="4.531" rx="0.75" fill="url(#cellGrad)" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M4.5,111.944 L9.9,111.944" stroke="#000" stroke-width="0.25" opacity="0.6"/>
+<g transform="translate(7.2,113.86) scale(0.72)">
+  <path d="M-2.1,0.6 C-2.6,-1.2 -1.6,-2.6 0,-2.6 C1.6,-2.6 2.6,-1.2 2.1,0.6 L1.5,1.0 L1.4,2.1 L-1.4,2.1 L-1.5,1.0 Z" fill="#ddd1b3" stroke="#070506" stroke-width="0.3"/>
+  <ellipse cx="-0.85" cy="-0.35" rx="0.6" ry="0.68" fill="#070506"/>
+  <ellipse cx="0.85" cy="-0.35" rx="0.6" ry="0.68" fill="#070506"/>
+  <path d="M0,0.55 L-0.32,1.1 L0.32,1.1 Z" fill="#070506"/>
+  <path d="M-0.7,1.35 L-0.7,2.1 M0,1.35 L0,2.1 M0.7,1.35 L0.7,2.1" stroke="#070506" stroke-width="0.2"/>
+</g>
+</g>
+<g id="art-window">
+  <rect x="12.6" y="12.9" width="54.2" height="48.3" fill="url(#artGrad)" stroke="#070506" stroke-width="0.8"/>
+  <rect x="12.6" y="12.9" width="54.2" height="48.3" fill="#000" filter="url(#grime)" opacity="0.35"/>
+  <g filter="url(#wobble)">
+    <rect x="12.6" y="12.9" width="54.2" height="48.3" fill="none" stroke="#ddd1b3" stroke-width="0.4"/>
+    <rect x="13.4" y="13.7" width="52.6" height="46.7" fill="none" stroke="#5e5344" stroke-width="0.18"/>
+  </g>
+<path d="M13,16.5 L13,13.3 L16.2,13.3" fill="none" stroke="#ddd1b3" stroke-width="0.55" stroke-linecap="square"/>
+<path d="M14.15,13.85 L14.75,14.45 L14.15,15.05 L13.55,14.45 Z" fill="#a8997b" stroke="#070506" stroke-width="0.2"/>
+<path d="M66.4,16.5 L66.4,13.3 L63.2,13.3" fill="none" stroke="#ddd1b3" stroke-width="0.55" stroke-linecap="square"/>
+<path d="M65.25,13.85 L65.85,14.45 L65.25,15.05 L64.65,14.45 Z" fill="#a8997b" stroke="#070506" stroke-width="0.2"/>
+<path d="M13,57.6 L13,60.8 L16.2,60.8" fill="none" stroke="#ddd1b3" stroke-width="0.55" stroke-linecap="square"/>
+<path d="M14.15,59.05 L14.75,59.65 L14.15,60.25 L13.55,59.65 Z" fill="#a8997b" stroke="#070506" stroke-width="0.2"/>
+<path d="M66.4,57.6 L66.4,60.8 L63.2,60.8" fill="none" stroke="#ddd1b3" stroke-width="0.55" stroke-linecap="square"/>
+<path d="M65.25,59.05 L65.85,59.65 L65.25,60.25 L64.65,59.65 Z" fill="#a8997b" stroke="#070506" stroke-width="0.2"/>
+</g>
+<g id="name-banner">
+  <path d="M13.9,3.2 L58.5,3.2 L58.5,11.4 L13.9,11.4 L12.6,7.3 Z" fill="url(#plateGrad)" stroke="#070506" stroke-width="0.7"/>
+  <path d="M13.9,3.2 L58.5,3.2 L58.5,11.4 L13.9,11.4 L12.6,7.3 Z" fill="#000" filter="url(#grime)" opacity="0.4"/>
+  <g filter="url(#wobble)">
+    <path d="M13.9,3.2 L58.5,3.2 L58.5,11.4 L13.9,11.4 L12.6,7.3 Z" fill="none" stroke="#a8997b" stroke-width="0.35"/>
+    <path d="M14.35,3.95 L58.5,3.95 L58.5,10.65 L14.35,10.65 L13.425,7.3 Z" fill="none" stroke="#5e5344" stroke-width="0.18"/>
+  </g>
+  <path d="M12.65,6.55 L13.4,7.3 L12.65,8.05 L11.9,7.3 Z" fill="#ddd1b3" stroke="#070506" stroke-width="0.2"/>
+</g>
+<g id="level-badge">
+  <path d="M66.45,7.4 L67.092,8.493 L66.081,9.256 Z M66.081,9.256 L66.256,10.511 L65.029,10.829 Z M65.029,10.829 L64.711,12.056 L63.456,11.881 Z M63.456,11.881 L62.693,12.892 L61.6,12.25 Z M61.6,12.25 L60.507,12.892 L59.744,11.881 Z M59.744,11.881 L58.489,12.056 L58.171,10.829 Z M58.171,10.829 L56.944,10.511 L57.119,9.256 Z M57.119,9.256 L56.108,8.493 L56.75,7.4 Z M56.75,7.4 L56.108,6.307 L57.119,5.544 Z M57.119,5.544 L56.944,4.289 L58.171,3.971 Z M58.171,3.971 L58.489,2.744 L59.744,2.919 Z M59.744,2.919 L60.507,1.908 L61.6,2.55 Z M61.6,2.55 L62.693,1.908 L63.456,2.919 Z M63.456,2.919 L64.711,2.744 L65.029,3.971 Z M65.029,3.971 L66.256,4.289 L66.081,5.544 Z M66.081,5.544 L67.092,6.307 L66.45,7.4 Z" fill="#a8997b" stroke="#070506" stroke-width="0.25" stroke-linejoin="round"/>
+  <circle cx="61.6" cy="7.4" r="4.95" fill="#2a2023" stroke="#070506" stroke-width="0.45"/>
+  <circle cx="61.6" cy="7.4" r="4.6" fill="none" stroke="#ddd1b3" stroke-width="0.3"/>
+  <circle cx="61.6" cy="7.4" r="3.85" fill="url(#lvlGrad)" stroke="#070506" stroke-width="0.35"/>
+  <circle cx="61.6" cy="7.4" r="3.85" fill="url(#medGrad)"/>
+  <circle cx="61.6" cy="7.4" r="3.4" fill="none" stroke="#5e5344" stroke-width="0.15"/>
+  <text x="61.6" y="5.35" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.25" letter-spacing="0.1" text-anchor="middle" fill="#a8997b">lvl</text>
+</g>
+<g id="stats">
+<rect x="12.6" y="62.7" width="17" height="8.8" rx="1.0" fill="url(#plateGrad)" stroke="#070506" stroke-width="0.6"/>
+<g filter="url(#wobble)"><rect x="12.6" y="62.7" width="17" height="8.8" rx="1.0" fill="none" stroke="#a8997b" stroke-width="0.3"/></g>
+<circle cx="16.9" cy="67.1" r="3.55" fill="#6a1a1a" stroke="#070506" stroke-width="0.45"/>
+<circle cx="16.9" cy="67.1" r="3.55" fill="url(#medGrad)"/>
+<circle cx="16.9" cy="67.1" r="3.15" fill="none" stroke="#ddd1b3" stroke-width="0.25"/>
+<g transform="translate(16.9,67.1) rotate(45) scale(0.62)">
+  <path d="M0,-4.4 L0.62,-3.6 L0.62,1.15 L-0.62,1.15 L-0.62,-3.6 Z" fill="#ddd1b3" stroke="#070506" stroke-width="0.28"/>
+  <path d="M0,-3.9 L0,0.9" stroke="#5e5344" stroke-width="0.18"/>
+  <path d="M-2.0,1.1 Q0,1.55 2.0,1.1 L2.0,1.75 Q0,2.2 -2.0,1.75 Z" fill="#a8997b" stroke="#070506" stroke-width="0.25"/>
+  <rect x="-0.38" y="1.85" width="0.76" height="1.9" fill="#5e5344" stroke="#070506" stroke-width="0.22"/>
+  <circle cx="0" cy="4.15" r="0.55" fill="#a8997b" stroke="#070506" stroke-width="0.22"/>
+</g>
+<rect x="21.1" y="63.55" width="7.6" height="7.1" rx="0.6" fill="#0d0a0b" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M21.5,63.85 L28.3,63.85" stroke="#000" stroke-width="0.3" opacity="0.7"/>
+<text x="24.9" y="65.3" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.65" letter-spacing="0.12" text-anchor="middle" fill="#a8997b">atk</text>
+<rect x="31.2" y="62.7" width="17" height="8.8" rx="1.0" fill="url(#plateGrad)" stroke="#070506" stroke-width="0.6"/>
+<g filter="url(#wobble)"><rect x="31.2" y="62.7" width="17" height="8.8" rx="1.0" fill="none" stroke="#a8997b" stroke-width="0.3"/></g>
+<circle cx="35.5" cy="67.1" r="3.55" fill="#25403f" stroke="#070506" stroke-width="0.45"/>
+<circle cx="35.5" cy="67.1" r="3.55" fill="url(#medGrad)"/>
+<circle cx="35.5" cy="67.1" r="3.15" fill="none" stroke="#ddd1b3" stroke-width="0.25"/>
+<g transform="translate(35.5,67.1) scale(0.62)">
+  <path d="M-3,-3.4 Q0,-4.3 3,-3.4 L3,-0.2 C3,2.3 0.9,3.6 0,4.1 C-0.9,3.6 -3,2.3 -3,-0.2 Z" fill="#ddd1b3" stroke="#070506" stroke-width="0.32"/>
+  <path d="M-2.2,-2.75 Q0,-3.4 2.2,-2.75 L2.2,-0.3 C2.2,1.6 0.7,2.65 0,3.05 C-0.7,2.65 -2.2,1.6 -2.2,-0.3 Z" fill="none" stroke="#5e5344" stroke-width="0.22"/>
+  <path d="M0,-3.3 L0,3.4 M-2.6,-0.6 L2.6,-0.6" stroke="#070506" stroke-width="0.28"/>
+</g>
+<rect x="39.7" y="63.55" width="7.6" height="7.1" rx="0.6" fill="#0d0a0b" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M40.1,63.85 L46.9,63.85" stroke="#000" stroke-width="0.3" opacity="0.7"/>
+<text x="43.5" y="65.3" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.65" letter-spacing="0.12" text-anchor="middle" fill="#a8997b">def</text>
+<rect x="49.8" y="62.7" width="17" height="8.8" rx="1.0" fill="url(#plateGrad)" stroke="#070506" stroke-width="0.6"/>
+<g filter="url(#wobble)"><rect x="49.8" y="62.7" width="17" height="8.8" rx="1.0" fill="none" stroke="#a8997b" stroke-width="0.3"/></g>
+<circle cx="54.1" cy="67.1" r="3.55" fill="#5a4e1f" stroke="#070506" stroke-width="0.45"/>
+<circle cx="54.1" cy="67.1" r="3.55" fill="url(#medGrad)"/>
+<circle cx="54.1" cy="67.1" r="3.15" fill="none" stroke="#ddd1b3" stroke-width="0.25"/>
+<g transform="translate(54,67.45) scale(0.6)">
+  <path d="M-3.4,0.2 C-2.2,-2.4 0.8,-3.9 4.0,-3.9 L3.0,-1.9 L3.4,-1.75 L2.2,0.0 L2.6,0.2 L1.2,1.6 L1.5,1.85 L-0.2,2.7 C-1.5,2.6 -2.8,1.7 -3.4,0.2 Z" fill="#a8997b" stroke="#070506" stroke-width="0.3" stroke-linejoin="round"/>
+  <path d="M-3.4,0.2 C-2.2,-2.4 0.8,-3.9 4.0,-3.9 L3.0,-1.9 C1.0,-1.5 -1.4,-0.6 -2.6,1.2 Z" fill="#ddd1b3" stroke="#070506" stroke-width="0.26" stroke-linejoin="round"/>
+  <path d="M-2.6,1.2 L3.0,-1.9 M-2.0,1.8 L2.2,0.0 M-1.2,2.3 L1.2,1.6" stroke="#070506" stroke-width="0.22" fill="none"/>
+</g>
+<rect x="58.3" y="63.55" width="7.6" height="7.1" rx="0.6" fill="#0d0a0b" stroke="#5e5344" stroke-width="0.2"/>
+<path d="M58.7,63.85 L65.5,63.85" stroke="#000" stroke-width="0.3" opacity="0.7"/>
+<text x="62.1" y="65.3" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.65" letter-spacing="0.12" text-anchor="middle" fill="#a8997b">spd</text>
+</g>
+<g id="text-box">
+  <rect x="12.6" y="73.1" width="54.2" height="41.5" rx="0.8" fill="url(#parchGrad)"/>
+  <rect x="12.6" y="73.1" width="54.2" height="41.5" rx="0.8" fill="#000" filter="url(#stain)" opacity="0.45"/>
+  <rect x="12.6" y="73.1" width="54.2" height="41.5" rx="0.8" fill="#000" filter="url(#grain)" opacity="0.18"/>
+  <rect x="12.6" y="73.1" width="54.2" height="41.5" rx="0.8" fill="none" stroke="#070506" stroke-width="0.9"/>
+  <g filter="url(#wobble)">
+    <rect x="12.05" y="72.55" width="55.3" height="42.6" rx="1.2" fill="none" stroke="#a8997b" stroke-width="0.3"/>
+    <rect x="13.6" y="74.1" width="52.2" height="39.5" rx="0.4" fill="none" stroke="#9c8c6c" stroke-width="0.15"/>
+  </g>
+<text x="14.8" y="76.4" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="2.1" letter-spacing="0.22" fill="#6e1717">actions</text><path d="M25.06,75.75 L64.6,75.75" stroke="#6e1717" stroke-width="0.18" opacity="0.7"/><path d="M64.6,75.3 L65.05,75.75 L64.6,76.2 L64.15,75.75 Z" fill="#6e1717" stroke="#6e1717" stroke-width="0.1"/>
+<path d="M14.8,99.66 L64.6,99.66" stroke="#070506" stroke-width="0.22" opacity="0.65"/>
+<path d="M39.7,98.86 L40.5,99.66 L39.7,100.46 L38.9,99.66 Z" fill="#cdbf9e" stroke="#070506" stroke-width="0.22"/>
+<path d="M39.7,99.36 L40,99.66 L39.7,99.96 L39.4,99.66 Z" fill="#6e1717" stroke="#6e1717" stroke-width="0.05"/>
+<text x="14.8" y="102.96" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="2.1" letter-spacing="0.22" fill="#6e1717">passive</text><path d="M25.06,102.31 L64.6,102.31" stroke="#6e1717" stroke-width="0.18" opacity="0.7"/><path d="M64.6,101.86 L65.05,102.31 L64.6,102.76 L64.15,102.31 Z" fill="#6e1717" stroke="#6e1717" stroke-width="0.1"/>
+<rect x="56.3" y="113.1" width="9" height="3.1" rx="0.6" fill="url(#plateGrad)" stroke="#070506" stroke-width="0.45"/>
+<rect x="56.3" y="113.1" width="9" height="3.1" rx="0.6" fill="none" stroke="#a8997b" stroke-width="0.25"/>
+<text x="57.2" y="115.25" font-family="'EB Garamond SC', 'EB Garamond', serif" font-size="1.5" fill="#a8997b">no.</text>
+</g>
+
+</g>
+</svg>
