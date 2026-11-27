@@ -30,7 +30,7 @@ SOUL_DK = "#0d4639"
 INK = "#030606"
 PARCH = "#cfcdb5"
 PARCH_DK = "#959c87"
-BLOOD_HI = "#b3362c"      # HP drop only; set to SOUL_MID for an all-soul look
+BLOOD_HI = "#6e1a1d"      # HP drop only; set to SOUL_MID for an all-soul look
 ATK_C, DEF_C, SPD_C = "#5b1e24", "#233f52", "#1a5546"
 
 LABEL_FONT = "'EB Garamond SC', 'EB Garamond', serif"
@@ -88,7 +88,7 @@ def icon_wing(cx, cy, s):
 def icon_drop(cx, cy, s, fill=BLOOD_HI):
     return f'''<g transform="translate({f(cx)},{f(cy)}) scale({f(s)})">
   <path d="M0,-3.1 C1.1,-1.5 2.3,-0.2 2.3,1.25 A2.3,2.3 0 0 1 -2.3,1.25 C-2.3,-0.2 -1.1,-1.5 0,-3.1 Z" fill="{fill}" stroke="{INK}" stroke-width="0.35"/>
-  <path d="M-1.15,0.6 C-1.15,1.4 -0.7,2.0 -0.1,2.2" fill="none" stroke="{BONE}" stroke-width="0.32" stroke-linecap="round" opacity="0.8"/>
+  <path d="M-1.15,0.6 C-1.15,1.4 -0.7,2.0 -0.1,2.2" fill="none" stroke="{BONE_MID}" stroke-width="0.3" stroke-linecap="round" opacity="0.45"/>
 </g>'''
 
 
@@ -102,6 +102,42 @@ def icon_skull(cx, cy, s):
   <path d="M0,0.55 L-0.32,1.1 L0.32,1.1 Z" fill="{INK}"/>
   <path d="M-0.7,1.35 L-0.7,2.1 M0,1.35 L0,2.1 M0.7,1.35 L0.7,2.1" stroke="{INK}" stroke-width="0.2"/>
 </g>'''
+
+
+# health cell colours: reddish-purple at 20 -> purple -> blue at 0
+HP_RAMP = [(0.0, "#5e1a3c"), (0.5, "#3f1b5c"), (1.0, "#1b2e60")]
+
+
+def _hex(c):
+    return tuple(int(c[i:i + 2], 16) for i in (1, 3, 5))
+
+
+def _mix(a, b, t):
+    return "#" + "".join(f"{round(x + (y - x) * t):02x}" for x, y in zip(_hex(a), _hex(b)))
+
+
+def _scale(c, k):
+    return "#" + "".join(f"{min(255, round(x * k)):02x}" for x in _hex(c))
+
+
+HP_RAMP_END = 0.65   # how far along HP_RAMP the 0 cell reaches (1.0 = full blue)
+
+
+def hp_color(val):
+    t = (20 - val) / 20 * HP_RAMP_END
+    for (t0, c0), (t1, c1) in zip(HP_RAMP, HP_RAMP[1:]):
+        if t <= t1:
+            return _mix(c0, c1, (t - t0) / (t1 - t0))
+    return HP_RAMP[-1][1]
+
+
+def hp_gradients():
+    out = []
+    for val in range(21):
+        c = hp_color(val)
+        out.append(f'<linearGradient id="hp{val}" x1="0" y1="0" x2="0" y2="1">'
+                   f'<stop offset="0" stop-color="{_scale(c, 0.5)}"/><stop offset="1" stop-color="{c}"/></linearGradient>')
+    return "\n  ".join(out)
 
 
 def diamond(cx, cy, r, fill=BONE_MID, stroke=INK, sw=0.2):
@@ -175,6 +211,7 @@ def defs():
     <stop offset="0" stop-color="#062019"/>
     <stop offset="1" stop-color="#0d3a30"/>
   </linearGradient>
+  {hp_gradients()}
   <radialGradient id="lvlGrad" cx="50%" cy="50%" r="60%">
     <stop offset="0" stop-color="#1d6b58"/>
     <stop offset="0.7" stop-color="#0b2e27"/>
@@ -230,7 +267,7 @@ def health_bar():
     out.append(icon_drop(cx, HB_Y0 + HB_CAP / 2 + 0.25, 0.85))
     for val, x, y, cw, ch in hb_cells():
         out.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(cw)}" height="{f(ch)}" rx="0.75" '
-                   f'fill="url(#cellGrad)" stroke="{BONE_DK}" stroke-width="0.22"/>')
+                   f'fill="url(#hp{val})" stroke="{_mix(hp_color(val), BONE_MID, 0.45)}" stroke-width="0.22"/>')
         out.append(f'<path d="M{f(x+0.5)},{f(y+0.35)} L{f(x+cw-0.5)},{f(y+0.35)}" stroke="#000" stroke-width="0.25" opacity="0.6"/>')
         cy = y + ch / 2
         if val == 0:

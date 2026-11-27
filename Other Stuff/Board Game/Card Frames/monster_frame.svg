@@ -57,6 +57,27 @@
     <stop offset="0" stop-color="#062019"/>
     <stop offset="1" stop-color="#0d3a30"/>
   </linearGradient>
+  <linearGradient id="hp0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a102e"/><stop offset="1" stop-color="#34215d"/></linearGradient>
+  <linearGradient id="hp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c102e"/><stop offset="1" stop-color="#371f5d"/></linearGradient>
+  <linearGradient id="hp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c0f2e"/><stop offset="1" stop-color="#391e5d"/></linearGradient>
+  <linearGradient id="hp3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e0e2e"/><stop offset="1" stop-color="#3b1d5c"/></linearGradient>
+  <linearGradient id="hp4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f0e2e"/><stop offset="1" stop-color="#3e1c5c"/></linearGradient>
+  <linearGradient id="hp5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#200e2e"/><stop offset="1" stop-color="#401b5b"/></linearGradient>
+  <linearGradient id="hp6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#210e2c"/><stop offset="1" stop-color="#421b59"/></linearGradient>
+  <linearGradient id="hp7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#220e2c"/><stop offset="1" stop-color="#441b57"/></linearGradient>
+  <linearGradient id="hp8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#230e2a"/><stop offset="1" stop-color="#461b55"/></linearGradient>
+  <linearGradient id="hp9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#240e2a"/><stop offset="1" stop-color="#481b53"/></linearGradient>
+  <linearGradient id="hp10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#250e28"/><stop offset="1" stop-color="#4a1b51"/></linearGradient>
+  <linearGradient id="hp11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#260e28"/><stop offset="1" stop-color="#4c1b4f"/></linearGradient>
+  <linearGradient id="hp12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#270e26"/><stop offset="1" stop-color="#4e1b4d"/></linearGradient>
+  <linearGradient id="hp13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#280d26"/><stop offset="1" stop-color="#501a4b"/></linearGradient>
+  <linearGradient id="hp14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#290d24"/><stop offset="1" stop-color="#521a48"/></linearGradient>
+  <linearGradient id="hp15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a0d23"/><stop offset="1" stop-color="#541a46"/></linearGradient>
+  <linearGradient id="hp16" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b0d22"/><stop offset="1" stop-color="#561a44"/></linearGradient>
+  <linearGradient id="hp17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c0d21"/><stop offset="1" stop-color="#581a42"/></linearGradient>
+  <linearGradient id="hp18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d0d20"/><stop offset="1" stop-color="#5a1a40"/></linearGradient>
+  <linearGradient id="hp19" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e0d1f"/><stop offset="1" stop-color="#5c1a3e"/></linearGradient>
+  <linearGradient id="hp20" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f0d1e"/><stop offset="1" stop-color="#5e1a3c"/></linearGradient>
   <radialGradient id="lvlGrad" cx="50%" cy="50%" r="60%">
     <stop offset="0" stop-color="#1d6b58"/>
     <stop offset="0.7" stop-color="#0b2e27"/>
@@ -85,70 +106,70 @@
 <rect x="3" y="3" width="8.4" height="114" rx="1.4" fill="#070c0c" stroke="#030606" stroke-width="0.6"/>
 <g filter="url(#wobble)"><rect x="3" y="3" width="8.4" height="114" rx="1.4" fill="none" stroke="#8fa49b" stroke-width="0.35"/></g>
 <g transform="translate(7.2,6.05) scale(0.85)">
-  <path d="M0,-3.1 C1.1,-1.5 2.3,-0.2 2.3,1.25 A2.3,2.3 0 0 1 -2.3,1.25 C-2.3,-0.2 -1.1,-1.5 0,-3.1 Z" fill="#b3362c" stroke="#030606" stroke-width="0.35"/>
-  <path d="M-1.15,0.6 C-1.15,1.4 -0.7,2.0 -0.1,2.2" fill="none" stroke="#d4d9c8" stroke-width="0.32" stroke-linecap="round" opacity="0.8"/>
+  <path d="M0,-3.1 C1.1,-1.5 2.3,-0.2 2.3,1.25 A2.3,2.3 0 0 1 -2.3,1.25 C-2.3,-0.2 -1.1,-1.5 0,-3.1 Z" fill="#6e1a1d" stroke="#030606" stroke-width="0.35"/>
+  <path d="M-1.15,0.6 C-1.15,1.4 -0.7,2.0 -0.1,2.2" fill="none" stroke="#8fa49b" stroke-width="0.3" stroke-linecap="round" opacity="0.45"/>
 </g>
-<rect x="4" y="9.175" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="9.175" width="6.4" height="4.569" rx="0.75" fill="url(#hp20)" stroke="#745867" stroke-width="0.22"/>
 <path d="M4.5,9.525 L9.9,9.525" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="12.41" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">20</text>
-<rect x="4" y="14.294" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="14.294" width="6.4" height="4.569" rx="0.75" fill="url(#hp19)" stroke="#735868" stroke-width="0.22"/>
 <path d="M4.5,14.644 L9.9,14.644" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="17.529" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">19</text>
-<rect x="4" y="19.413" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="19.413" width="6.4" height="4.569" rx="0.75" fill="url(#hp18)" stroke="#725869" stroke-width="0.22"/>
 <path d="M4.5,19.763 L9.9,19.763" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="22.648" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">18</text>
-<rect x="4" y="24.532" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="24.532" width="6.4" height="4.569" rx="0.75" fill="url(#hp17)" stroke="#71586a" stroke-width="0.22"/>
 <path d="M4.5,24.882 L9.9,24.882" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="27.767" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">17</text>
-<rect x="4" y="29.651" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="29.651" width="6.4" height="4.569" rx="0.75" fill="url(#hp16)" stroke="#70586b" stroke-width="0.22"/>
 <path d="M4.5,30.001 L9.9,30.001" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="32.886" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">16</text>
-<rect x="4" y="34.77" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="34.77" width="6.4" height="4.569" rx="0.75" fill="url(#hp15)" stroke="#6f586c" stroke-width="0.22"/>
 <path d="M4.5,35.12 L9.9,35.12" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="38.005" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">15</text>
-<rect x="4" y="39.889" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="39.889" width="6.4" height="4.569" rx="0.75" fill="url(#hp14)" stroke="#6d586d" stroke-width="0.22"/>
 <path d="M4.5,40.239 L9.9,40.239" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="43.124" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">14</text>
-<rect x="4" y="45.008" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="45.008" width="6.4" height="4.569" rx="0.75" fill="url(#hp13)" stroke="#6c586f" stroke-width="0.22"/>
 <path d="M4.5,45.358 L9.9,45.358" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="48.243" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">13</text>
-<rect x="4" y="50.127" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="50.127" width="6.4" height="4.569" rx="0.75" fill="url(#hp12)" stroke="#6b5970" stroke-width="0.22"/>
 <path d="M4.5,50.477 L9.9,50.477" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="53.362" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">12</text>
-<rect x="4" y="55.246" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="55.246" width="6.4" height="4.569" rx="0.75" fill="url(#hp11)" stroke="#6a5971" stroke-width="0.22"/>
 <path d="M4.5,55.596 L9.9,55.596" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="58.481" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">11</text>
-<rect x="4" y="60.365" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="60.365" width="6.4" height="4.569" rx="0.75" fill="url(#hp10)" stroke="#695972" stroke-width="0.22"/>
 <path d="M4.5,60.715 L9.9,60.715" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="63.6" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">10</text>
-<rect x="4" y="65.485" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="65.485" width="6.4" height="4.569" rx="0.75" fill="url(#hp9)" stroke="#685973" stroke-width="0.22"/>
 <path d="M4.5,65.835 L9.9,65.835" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="68.719" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">9</text>
-<rect x="4" y="70.604" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="70.604" width="6.4" height="4.569" rx="0.75" fill="url(#hp8)" stroke="#675974" stroke-width="0.22"/>
 <path d="M4.5,70.954 L9.9,70.954" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="73.838" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">8</text>
-<rect x="4" y="75.723" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="75.723" width="6.4" height="4.569" rx="0.75" fill="url(#hp7)" stroke="#665976" stroke-width="0.22"/>
 <path d="M4.5,76.073 L9.9,76.073" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="78.957" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">7</text>
-<rect x="4" y="80.842" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="80.842" width="6.4" height="4.569" rx="0.75" fill="url(#hp6)" stroke="#655977" stroke-width="0.22"/>
 <path d="M4.5,81.192 L9.9,81.192" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="84.076" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">6</text>
-<rect x="4" y="85.961" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="85.961" width="6.4" height="4.569" rx="0.75" fill="url(#hp5)" stroke="#645978" stroke-width="0.22"/>
 <path d="M4.5,86.311 L9.9,86.311" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="89.195" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">5</text>
-<rect x="4" y="91.08" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="91.08" width="6.4" height="4.569" rx="0.75" fill="url(#hp4)" stroke="#625978" stroke-width="0.22"/>
 <path d="M4.5,91.43 L9.9,91.43" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="94.314" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">4</text>
-<rect x="4" y="96.199" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="96.199" width="6.4" height="4.569" rx="0.75" fill="url(#hp3)" stroke="#615a78" stroke-width="0.22"/>
 <path d="M4.5,96.549 L9.9,96.549" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="99.433" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">3</text>
-<rect x="4" y="101.318" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="101.318" width="6.4" height="4.569" rx="0.75" fill="url(#hp2)" stroke="#605a79" stroke-width="0.22"/>
 <path d="M4.5,101.668 L9.9,101.668" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="104.552" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">2</text>
-<rect x="4" y="106.437" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="106.437" width="6.4" height="4.569" rx="0.75" fill="url(#hp1)" stroke="#5f5b79" stroke-width="0.22"/>
 <path d="M4.5,106.787 L9.9,106.787" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <text x="7.2" y="109.671" font-family="'Linux Libertine O', 'EB Garamond', serif" font-size="2.7" text-anchor="middle" fill="#8fa49b">1</text>
-<rect x="4" y="111.556" width="6.4" height="4.569" rx="0.75" fill="url(#cellGrad)" stroke="#435851" stroke-width="0.22"/>
+<rect x="4" y="111.556" width="6.4" height="4.569" rx="0.75" fill="url(#hp0)" stroke="#5d5c79" stroke-width="0.22"/>
 <path d="M4.5,111.906 L9.9,111.906" stroke="#000" stroke-width="0.25" opacity="0.6"/>
 <g transform="translate(7.2,113.84) scale(0.72)">
   <path d="M-2.1,0.6 C-2.6,-1.2 -1.6,-2.6 0,-2.6 C1.6,-2.6 2.6,-1.2 2.1,0.6 L1.5,1.0 L1.4,2.1 L-1.4,2.1 L-1.5,1.0 Z" fill="#d4d9c8" stroke="#030606" stroke-width="0.3"/>
