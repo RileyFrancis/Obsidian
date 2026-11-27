@@ -8,14 +8,14 @@ All monsters have the following attributes:
 
 On a monster's turn, it will perform all possible actions in its action set sequentially. If one or more of the actions in its action set are impossible, those actions will be skipped. The possible actions that a monster can take are outlined below:
 
-> [!tip] **MOVE {distance}: {target}**
+> [!tip] **MOVE {distance} {target}**
 > **MOVE** a number of tiles toward or away from some target. This target could be the nearest player, the nearest token, a specific tile, or something else. The monster will always take the path that will move it to its goal fastest. If multiple targets are equally far away or if multiple tiles/paths bring the monster closest to its goal, the players may decide which of those targets/tiles the monster goes to.
-> - **MOVE 5:** toward the nearest player
-> - **MOVE 2:** toward the nearest token
-> - **MOVE 8:** toward the nearest player that lost health during their last turn
-> - **MOVE 1:** away from the closest player
-> - **MOVE 2:** toward the nearest monster
-> - **MOVE 5:** toward the nearest player **IF** no other monster is within 3 tiles.
+> - **MOVE 5** toward the nearest player
+> - **MOVE 2** toward the nearest token
+> - **MOVE 8** toward the nearest player that lost health during their last turn
+> - **MOVE 1** away from the closest player
+> - **MOVE 2** toward the nearest monster
+> - **MOVE 5** toward the nearest player **IF** no other monster is within 3 tiles.
 
 > [!tip] **ATTACK {range} {# players}: {hit effect}**
 > **Attack** one or more players that are within range of the monster. Monsters may only attack in straight lines through open connections between tiles up to their max range. The range is counted as the tile distance between the player and the monster (so being in the same tile counts as range 0). If there are more players within range than targets that the monster can hit, it will prioritize attacking the player with lower sanity.
@@ -30,7 +30,7 @@ On a monster's turn, it will perform all possible actions in its action set sequ
 > [!tip] **TRANSFORM {requirements}: {stat increases}**
 > Some monsters might **Transform**, gaining stats or extra abilities. In order for a monster to transform, all of the requirements for its transformation must be fulfilled. Stat increases could 
 > - **TRANSFORM** 10 rounds: +3 speed, +2 defense
-> - **TRANSFORM**
+> - **TRANSFORM** if a 
 
 > [!tip] **General Action**
 > A **general action** is any action that does not fit into the other actions above. This could include changing the stats of some players, placing tokens, or any other action  
