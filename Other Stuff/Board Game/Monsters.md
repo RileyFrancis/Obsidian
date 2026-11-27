@@ -30,7 +30,8 @@ On a monster's turn, it will perform all possible actions in its action set sequ
 > [!tip] **TRANSFORM {requirements}: {stat increases}**
 > Some monsters might **Transform**, gaining stats or extra abilities. In order for a monster to transform, all of the requirements for its transformation must be fulfilled. Stat increases could 
 > - **TRANSFORM** 10 rounds: +3 speed, +2 defense
-> - **TRANSFORM** if a 
+> - **TRANSFORM** if I share a location with a player: +3 attack
+> - **TRANSFORM** 15 rounds, no other monsters exist: -
 
 > [!tip] **General Action**
 > A **general action** is any action that does not fit into the other actions above. This could include changing the stats of some players, placing tokens, or any other action  
@@ -38,3 +39,4 @@ On a monster's turn, it will perform all possible actions in its action set sequ
 > - Players that share a tile with this monster lose 1 sanity
 > - Place a acid token at the monster's location.
 > - If this monster has not transformed, teleport to location X
+
