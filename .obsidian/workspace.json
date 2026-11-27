@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Other Stuff/Board Game/Card Frames/monster_frame.png"
+                "file": "Other Stuff/Board Game/Card Frames/ability icons/_preview_card.png"
               },
               "icon": "lucide-image",
-              "title": "monster_frame"
+              "title": "_preview_card"
             }
           }
         ]
@@ -191,27 +191,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "78a60046cd749609",
+  "active": "8948b1ad97b60354",
   "lastOpenFiles": [
+    "Other Stuff/Board Game/Card Frames/ability icons/action.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/action.svg",
+    "Other Stuff/Board Game/Card Frames/ability icons/passive.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/transform.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/move.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/attack.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/_preview_card.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/_preview_card.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/_sheet.png",
+    "Other Stuff/Board Game/Card Frames/ability icons/transform.svg",
+    "Other Stuff/Board Game/Card Frames/ability icons",
+    "Other Stuff/Board Game/Card Frames/__pycache__/make_monster_frame.cpython-314.pyc",
+    "Other Stuff/Board Game/Card Frames/__pycache__",
+    "Other Stuff/Board Game/Card Frames/make_ability_icons.py",
+    "Other Stuff/Board Game/Card Frames/make_ability_icons.py.tmp.28397.d48c98b05c6c",
     "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Black.ttf",
     "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-ExtraBold.ttf",
     "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Bold.ttf",
     "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-SemiBold.ttf",
     "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Medium.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Regular.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Light.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-ExtraLight.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Thin.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/OFL.txt",
-    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame.png",
-    "Other Stuff/Board Game/Card Frames/_crop.png",
-    "Other Stuff/Board Game/Card Frames/monster_frame.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame_example.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame_example.png",
-    "Other Stuff/Board Game/Card Frames/monster_frame_outlined.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.png",
     "Other Stuff/Board Game/Monsters.md",
     "Other Stuff/Board Game/Board Game.md",
     "Excalidraw/CSE5819_assignment6_decision_tree.md",
@@ -231,10 +233,8 @@
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Final_Study/CLAUDE.md",
     "MATH 3330 Homework 8.md",
     "Other Stuff/Research/KSADS Variables.md",
-    "Images/Pasted image 20260407133538.png",
     "Other Stuff/COURSE ARCHIVE/MATH 3330/MATH 3330 Homework 8.md",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Homework/day_14_hw/README.md",
-    "Images/Pasted image 20260401204901.png",
     "Other Stuff/STAR Interview Format.md",
     "Other Stuff/COURSE ARCHIVE/MATH 3330/MATH 3330 Homework 6.md",
     "Other Stuff/Research/Feb.20th Presentation.canvas",

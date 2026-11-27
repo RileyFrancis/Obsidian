@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="7.375mm" height="6.5mm" viewBox="0 0 7.375 6.5">
+<defs>
+  <filter id="wobble" x="-3%" y="-10%" width="106%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="0.25" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <linearGradient id="bPlate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#26332f"/><stop offset="1" stop-color="#121a18"/>
+  </linearGradient>
+  <linearGradient id="bSheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.3"/>
+  </linearGradient>
+</defs>
+<g class="badge-passive">
+<path d="M0.5,3.25 L2.1,0.5 L5.275,0.5 L6.875,3.25 L5.275,6 L2.1,6 Z" fill="url(#bPlate)" stroke="#030606" stroke-width="0.55" stroke-linejoin="round"/>
+<path d="M0.5,3.25 L2.1,0.5 L5.275,0.5 L6.875,3.25 L5.275,6 L2.1,6 Z" fill="#233f52"/>
+<path d="M0.5,3.25 L2.1,0.5 L5.275,0.5 L6.875,3.25 L5.275,6 L2.1,6 Z" fill="url(#bSheen)"/>
+<g transform="translate(3.688,3.25) scale(0.44)"><path d="M-4.7,0 Q0,-4.1 4.7,0 Q0,4.1 -4.7,0 Z" fill="#d4d9c8" stroke="#030606" stroke-width="0.4" stroke-linejoin="round"/><circle r="1.95" fill="#2bb592" stroke="#030606" stroke-width="0.3"/><circle r="1.2" fill="#62f5c8" opacity="0.55"/><ellipse rx="0.5" ry="1.55" fill="#030606"/><circle cx="0.8" cy="-0.8" r="0.35" fill="#fff" opacity="0.8"/></g>
+<g filter="url(#wobble)"><path d="M0.5,3.25 L2.1,0.5 L5.275,0.5 L6.875,3.25 L5.275,6 L2.1,6 Z" fill="none" stroke="#8fa49b" stroke-width="0.3" stroke-linejoin="round"/></g>
+</g>
+</svg>
