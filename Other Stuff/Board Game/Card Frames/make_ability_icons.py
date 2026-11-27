@@ -21,7 +21,8 @@ OUT = Path(__file__).resolve().parent / "ability icons"
 BADGE_H = 5.5        # mm; fits beside two lines of rules text
 POINT = 1.6          # depth of the pointed ends
 SLANT = 0.7          # half the horizontal lean of the section dividers
-ICON_W = 6.2         # icon section width
+HEX_FLAT = BADGE_H / 3 ** 0.5   # flat top of a regular hexagon of this height
+ICON_W = HEX_FLAT + POINT       # icon section matches the icon-only hexagon width
 NUM_W = 4.8          # plain number well width
 GLYPH_NUM_W = 7.0    # number well that carries a small glyph (range / players)
 
@@ -106,7 +107,7 @@ def badge(kind, x=0.0, y=0.0, values=None):
     h = BADGE_H
     widths = [GLYPH_NUM_W if g else NUM_W for g in wells]
     # icon-only badges are regular hexagons (flat top = h / sqrt(3))
-    body_w = ICON_W + sum(widths) if wells else h / 3 ** 0.5
+    body_w = ICON_W + sum(widths) if wells else HEX_FLAT
     total = POINT * 2 + body_w
     ym = h / 2
 
@@ -162,12 +163,9 @@ def badge(kind, x=0.0, y=0.0, values=None):
                    f'<path d="M{P(d - SLANT, 0)} L{P(d + SLANT, h)}" stroke="{BONE_MID}" stroke-width="0.2"/>')
 
     # icon
-    if wells:
-        icx = POINT * 0.55 + ICON_W / 2
-        sc = 0.43 if kind != "passive" else 0.47
-    else:
-        icx = total / 2
-        sc = 0.41 if kind != "passive" else 0.44
+    # same icon position and size as on the icon-only hexagons
+    icx = POINT + HEX_FLAT / 2
+    sc = 0.41 if kind != "passive" else 0.44
     out.append(f'<g transform="translate({f(x + icx)},{f(y + ym)}) scale({sc})">{globals()[icon_fn]()}</g>')
 
     # bone outline, hand-inked
@@ -193,9 +191,28 @@ def badge_defs():
 </defs>'''
 
 
-def standalone(kind):
+# pre-numbered variants, so a sheet cell like "{move-3.png} toward the nearest player." just works
+MOVE_VALUES = [str(n) for n in range(1, 13)]
+RANGE_VALUES = [str(n) for n in range(0, 7)] + ["inf"]
+PLAYER_VALUES = [str(n) for n in range(1, 5)] + ["inf"]
+
+
+def shown(v):
+    return "\u221e" if v == "inf" else v
+
+
+def numbered_variants():
+    """Yields (filename_stem, kind, values)."""
+    for v in MOVE_VALUES:
+        yield f"move-{v}", "move", [v]
+    for r in RANGE_VALUES:
+        for n in PLAYER_VALUES:
+            yield f"attack-{r}-{n}", "attack", [r, n]
+
+
+def standalone(kind, values=None):
     m = 0.5
-    body, w = badge(kind, m, m)
+    body, w = badge(kind, m, m, [shown(v) for v in values] if values else None)
     cw, ch = w + 2 * m, BADGE_H + 2 * m
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{f(cw)}mm" height="{f(ch)}mm" viewBox="0 0 {f(cw)} {f(ch)}">
@@ -276,6 +293,10 @@ if __name__ == "__main__":
     OUT.mkdir(exist_ok=True)
     for kind in TYPES:
         (OUT / f"{kind}.svg").write_text(standalone(kind))
+    num = OUT / "numbered"
+    num.mkdir(exist_ok=True)
+    for stem, kind, vals in numbered_variants():
+        (num / f"{stem}.svg").write_text(standalone(kind, vals))
     (OUT / "_sheet.svg").write_text(sheet())
     (OUT / "_preview_card.svg").write_text(preview_card())
     print("wrote badges to", OUT)
