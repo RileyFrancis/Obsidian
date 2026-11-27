@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="5mm" height="5mm" viewBox="0 0 5 5">
+<defs>
+  <radialGradient id="mkCirc" cx="40%" cy="35%" r="70%">
+    <stop offset="0" stop-color="#1f5a4c"/><stop offset="1" stop-color="#0a221d"/>
+  </radialGradient>
+  <linearGradient id="mkTab" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2c3a36"/><stop offset="1" stop-color="#141c1a"/>
+  </linearGradient>
+</defs>
+<g class="hp-marker-6">
+<circle cx="2.5" cy="2.5" r="2.15" fill="none" stroke="#030606" stroke-width="0.95"/>
+<circle cx="2.5" cy="2.5" r="2.15" fill="none" stroke="#8fa49b" stroke-width="0.5"/>
+<circle cx="2.5" cy="2.5" r="2.15" fill="url(#mkCirc)"/>
+<circle cx="2.5" cy="2.5" r="1.73" fill="none" stroke="#2bb592" stroke-width="0.22"/>
+<text x="2.5" y="3.6" font-family="'Linux Libertine O', 'EB Garamond', serif" font-weight="bold" font-size="3.1" text-anchor="middle" fill="#d4d9c8">6</text>
+</g>
+</svg>

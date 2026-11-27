@@ -18,4 +18,9 @@ done
 inkscape --export-type=png --export-dpi=600 "$A"/numbered/*.svg 2>/dev/null
 mkdir -p "$A/numbered/svg" && mv -f "$A"/numbered/*.svg "$A/numbered/svg/"   # keep only PNGs at top level for easy upload
 inkscape "$A/_preview_card.svg" --export-type=png --export-dpi=300 --export-filename="$A/_preview_card.png" 2>/dev/null
+# Starting-health markers
+python3 "$D/make_health_markers.py"
+H="$D/health markers"
+inkscape --export-type=png --export-dpi=600 "$H"/start-*.svg 2>/dev/null
+inkscape "$H/_preview_card.svg" --export-type=png --export-dpi=300 --export-filename="$H/_preview_card.png" 2>/dev/null
 echo done

@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Other Stuff/Board Game/Card Frames/ability icons/_preview_card.png"
+                "file": "Other Stuff/Board Game/Card Frames/health markers/start-4p.png"
               },
               "icon": "lucide-image",
-              "title": "_preview_card"
+              "title": "start-4p"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "8948b1ad97b60354",
   "lastOpenFiles": [
+    "Other Stuff/Board Game/Card Frames/_check.png",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-inf-inf.svg",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-inf-4.svg",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-inf-3.svg",
@@ -203,17 +204,16 @@
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-6-3.svg",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-6-2.svg",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-6-1.svg",
-    "Other Stuff/Board Game/Card Frames/ability icons/numbered/attack-5-inf.svg",
+    "Other Stuff/Board Game/Card Frames/__pycache__/make_health_markers.cpython-314.pyc",
+    "Other Stuff/Board Game/Card Frames/health markers",
+    "Other Stuff/Board Game/Card Frames/make_health_markers.py",
+    "Other Stuff/Board Game/Card Frames/make_health_markers.py.tmp.28397.d624e56d734f",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered/svg",
     "Other Stuff/Board Game/Card Frames/ability icons/numbered",
     "Other Stuff/Board Game/Card Frames/ability icons",
     "Other Stuff/Board Game/Card Frames/__pycache__/make_monster_frame.cpython-314.pyc",
     "Other Stuff/Board Game/Card Frames/__pycache__",
     "Other Stuff/Board Game/Card Frames/make_ability_icons.py",
-    "Other Stuff/Board Game/Card Frames/make_ability_icons.py.tmp.28397.d48c98b05c6c",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Black.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-ExtraBold.ttf",
-    "Other Stuff/Board Game/Card Frames/fonts/Grenze Gotisch/static/GrenzeGotisch-Bold.ttf",
     "Other Stuff/Board Game/Monsters.md",
     "Other Stuff/Board Game/Board Game.md",
     "Excalidraw/CSE5819_assignment6_decision_tree.md",
