@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Other Stuff/Board Game/Card Frames/monster_frame_example.png"
+                "file": "Other Stuff/Board Game/Card Frames/monster_frame.png"
               },
               "icon": "lucide-image",
-              "title": "monster_frame_example"
+              "title": "monster_frame"
             }
           }
         ]
@@ -193,15 +193,16 @@
   },
   "active": "8948b1ad97b60354",
   "lastOpenFiles": [
-    "Other Stuff/Board Game/Card Frames/monster_frame_outlined.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame_example.png",
-    "Other Stuff/Board Game/Card Frames/monster_frame.png",
-    "Other Stuff/Board Game/Card Frames/monster_frame_example.svg",
-    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.png",
-    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.svg",
     "Other Stuff/Board Game/Card Frames/monster_frame.svg",
-    "Other Stuff/Board Game/Monsters.md",
+    "Other Stuff/Board Game/Card Frames/monster_frame.png",
     "Other Stuff/Board Game/Card Frames/_crop.png",
+    "Other Stuff/Board Game/Card Frames/make_monster_frame.py.tmp.28397.83b732af3b72",
+    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame_example.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame_example.png",
+    "Other Stuff/Board Game/Card Frames/monster_frame_outlined.svg",
+    "Other Stuff/Board Game/Card Frames/monster_frame_bleed.png",
+    "Other Stuff/Board Game/Monsters.md",
     "Other Stuff/Board Game/Card Frames/render.sh",
     "Other Stuff/Board Game/Card Frames/make_monster_frame.py",
     "Other Stuff/Board Game/Card Frames/make_monster_frame.py.tmp.28397.78866270796a",
@@ -226,7 +227,6 @@
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/src/main.cpp",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/include/vector.hpp",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/src",
-    "Other Stuff/COURSE ARCHIVE/CSE 3150/Labs/day_18_lab/program.exe",
     "Other Stuff/COURSE ARCHIVE/CSE 3150/Final_Study/CLAUDE.md",
     "MATH 3330 Homework 8.md",
     "Other Stuff/Research/KSADS Variables.md",
