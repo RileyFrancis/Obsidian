@@ -89,6 +89,18 @@ def rng(col):
     return f"Lists!${col}$2:${col}${len(lists[col][1]) + 1}"
 
 
+# folder prefixes for Dextrous image paths (editable on the Lists page)
+ABILITY_DIR, PLAYER_DIR = "Lists!$G$2", "Lists!$H$2"
+for col, h, v in [("G", "Ability icon folder", "ability_tags/"), ("H", "Player tag folder", "player_tags/")]:
+    c = ls[f"{col}1"]
+    c.value, c.font, c.fill = h, Font(name=FONT, bold=True, color="FFFFFF"), fill(HDR["id"])
+    c = ls[f"{col}2"]
+    c.value, c.font, c.fill, c.number_format = v, Font(name=FONT, size=10, bold=True), fill("FFF2CC"), "@"
+    c.comment = Comment("Folder prefix added in front of the image filenames on the Dextrous page. "
+                        "Change it here if your Dextrous folder name or path format differs.", "Card sheet")
+    ls.column_dimensions[col].width = 20
+
+
 # ================================================================ Monsters: header + rows
 for i, (k, h, g, w, note, inp, txt) in enumerate(mcols, start=1):
     c = ws.cell(row=1, column=i, value=h)
@@ -208,7 +220,7 @@ for hdr, key in [("image", "image"), ("card_title", "name"), ("level", "level"),
 for n in range(1, ABILITIES + 1):
     def icon(r, n=n):
         T, A, B = ref(f"t{n}", r), ref(f"a{n}", r), ref(f"b{n}", r)
-        return (f'=IF({T}="","",IF({T}="move","move-"&{A}&".png",'
+        return (f'=IF({T}="","",{ABILITY_DIR}&IF({T}="move","move-"&{A}&".png",'
                 f'IF({T}="attack","attack-"&{A}&"-"&{B}&".png",{T}&".png")))')
     dfields.append((f"ability_{n}", icon))
 
@@ -225,7 +237,7 @@ dfields.append(("expansion", lambda r: blank_or("expansion", r)))
 for v in range(0, 21):
     def mark(r, v=v):
         hp = f"{SRC}{MC['hp1']}{r}:{MC[f'hp{PLAYERS}']}{r}"
-        return f'=IF({ref("name", r)}="","",IFERROR("start-"&MATCH({v},{hp},0)&"p.png",""))'
+        return f'=IF({ref("name", r)}="","",IFERROR({PLAYER_DIR}&"start-"&MATCH({v},{hp},0)&"p.png",""))'
     dfields.append((f"p_tracker_{v}", mark))
 
 for i, (h, fn) in enumerate(dfields, start=1):
@@ -265,16 +277,17 @@ lines = [
     ("image, card_title, level", "Copied from Image, Name, Level."),
     ("atk_main … spd_tsf", "Copied from the stat columns."),
     ("passive_text", "Copied from Passive."),
-    ("ability_1 … ability_5", "Badge filename for each ability, e.g. move-3.png, attack-inf-1.png, action.png."),
+    ("ability_1 … ability_5", "Badge image path for each ability, e.g. ability_tags/move-3.png, ability_tags/attack-inf-1.png."),
     ("ability_text_s1 … s15", "Three text boxes per ability, numbered in sequence: ability n uses s(3n−2) after a hexagon badge (transform/action), "
                               "s(3n−1) after a MOVE badge and s(3n) after an ATTACK badge. Only the matching box gets the text."),
     ("number, expansion", "Copied from Number and Expansion."),
-    ("p_tracker_0 … p_tracker_20", "Marker image for that health box (start-3p.png etc.), blank if no player count starts there."),
+    ("p_tracker_0 … p_tracker_20", "Marker image path for that health box (player_tags/start-3p.png etc.), blank if no player count starts there."),
+    ("Image folders", "The folder names (ability_tags/, player_tags/) live in yellow cells G2 and H2 on the Lists page. Change them there if Dextrous needs a different folder or path format."),
     ("", ""),
     ("Connecting to Dextrous", "h"),
     ("1", "Upload this file to Google Drive and open it with Google Sheets (File > Save as Google Sheets)."),
     ("2", "Connect Dextrous to the 'Dextrous' tab. For a CSV, open that tab and use File > Download > Comma-separated values."),
-    ("3", "Upload the art, the badge PNGs (ability icons/numbered + transform/action) and the start-Np markers, filenames unchanged."),
+    ("3", "Badge PNGs go in the Dextrous folder ability_tags, start-Np markers in player_tags, with filenames unchanged."),
     ("Blank rows", f"The Dextrous page has formulas in rows 2–{last}, so rows with no monster are blank but not empty. "
                    "If Dextrous makes blank cards from them, delete the unused rows on the Dextrous page (or copy the formulas down only as far as you need)."),
 ]
