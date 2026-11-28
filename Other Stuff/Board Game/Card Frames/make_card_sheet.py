@@ -225,7 +225,8 @@ for n in range(1, ABILITIES + 1):
     dfields.append((f"ability_{n}", icon))
 
 for n in range(1, ABILITIES + 1):
-    for size, cond in [(1, 'OR({T}="transform",{T}="action")'), (2, '{T}="move"'), (3, '{T}="attack"')]:
+    # s(3n-2) = narrow box after an ATTACK badge, s(3n-1) = MOVE, s(3n) = wide box after a hexagon badge
+    for size, cond in [(1, '{T}="attack"'), (2, '{T}="move"'), (3, 'OR({T}="transform",{T}="action")')]:
         s = 3 * (n - 1) + size
         def txt(r, n=n, cond=cond):
             T, X = ref(f"t{n}", r), ref(f"x{n}", r)
@@ -278,8 +279,8 @@ lines = [
     ("atk_main … spd_tsf", "Copied from the stat columns."),
     ("passive_text", "Copied from Passive."),
     ("ability_1 … ability_5", "Badge image path for each ability, e.g. ability_tags/move-3.png, ability_tags/attack-inf-1.png."),
-    ("ability_text_s1 … s15", "Three text boxes per ability, numbered in sequence: ability n uses s(3n−2) after a hexagon badge (transform/action), "
-                              "s(3n−1) after a MOVE badge and s(3n) after an ATTACK badge. Only the matching box gets the text."),
+    ("ability_text_s1 … s15", "Three text boxes per ability, numbered in sequence: ability n uses s(3n−2) (narrow) after an ATTACK badge, "
+                              "s(3n−1) (medium) after a MOVE badge and s(3n) (wide) after a hexagon badge (transform/action). Only the matching box gets the text."),
     ("number, expansion", "Copied from Number and Expansion."),
     ("p_tracker_0 … p_tracker_20", "Marker image path for that health box (player_tags/start-3p.png etc.), blank if no player count starts there."),
     ("Image folders", "The folder names (ability_tags/, player_tags/) live in yellow cells G2 and H2 on the Lists page. Change them there if Dextrous needs a different folder or path format."),
