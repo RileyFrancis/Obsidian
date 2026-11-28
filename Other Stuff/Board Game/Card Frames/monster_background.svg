@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="120mm" viewBox="0 0 70 120">
+<defs>
+  <!-- slight hand-inked wobble on frame linework -->
+  <filter id="wobble" x="-2%" y="-2%" width="104%" height="104%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="0.32" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <!-- soft spectral glow -->
+  <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+    <feGaussianBlur stdDeviation="0.55"/>
+  </filter>
+  <!-- drifting soul mist on the background -->
+  <filter id="mist" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="4" seed="11" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.25  0 0 0 0 0.75  0 0 0 0 0.62  0 0 0 2.4 -1.2"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+  <!-- cool grime used on plates -->
+  <filter id="grime" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="4" seed="5" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.4  0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 2.2 -1.05"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+  <!-- fine paper grain -->
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" seed="3" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+  <!-- blotchy stains for the parchment box -->
+  <filter id="stain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="3" seed="21" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.22  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 2.6 -1.35"/>
+    <feComposite in2="SourceGraphic" operator="in"/>
+  </filter>
+
+  <radialGradient id="artGrad" cx="50%" cy="45%" r="70%">
+    <stop offset="0" stop-color="#1f3a35"/>
+    <stop offset="0.6" stop-color="#101c1a"/>
+    <stop offset="1" stop-color="#060b0b"/>
+  </radialGradient>
+  <radialGradient id="parchGrad" cx="50%" cy="45%" r="75%">
+    <stop offset="0" stop-color="#cfcdb5"/>
+    <stop offset="0.75" stop-color="#c0c0a6"/>
+    <stop offset="1" stop-color="#959c87"/>
+  </radialGradient>
+  <linearGradient id="plateGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#26332f"/>
+    <stop offset="1" stop-color="#121a18"/>
+  </linearGradient>
+  <linearGradient id="cellGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#08110f"/>
+    <stop offset="1" stop-color="#0f2a24"/>
+  </linearGradient>
+  <linearGradient id="modGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#062019"/>
+    <stop offset="1" stop-color="#0d3a30"/>
+  </linearGradient>
+  <linearGradient id="hp0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a102e"/><stop offset="1" stop-color="#34215d"/></linearGradient>
+  <linearGradient id="hp1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c102e"/><stop offset="1" stop-color="#371f5d"/></linearGradient>
+  <linearGradient id="hp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c0f2e"/><stop offset="1" stop-color="#391e5d"/></linearGradient>
+  <linearGradient id="hp3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e0e2e"/><stop offset="1" stop-color="#3b1d5c"/></linearGradient>
+  <linearGradient id="hp4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f0e2e"/><stop offset="1" stop-color="#3e1c5c"/></linearGradient>
+  <linearGradient id="hp5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#200e2e"/><stop offset="1" stop-color="#401b5b"/></linearGradient>
+  <linearGradient id="hp6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#210e2c"/><stop offset="1" stop-color="#421b59"/></linearGradient>
+  <linearGradient id="hp7" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#220e2c"/><stop offset="1" stop-color="#441b57"/></linearGradient>
+  <linearGradient id="hp8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#230e2a"/><stop offset="1" stop-color="#461b55"/></linearGradient>
+  <linearGradient id="hp9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#240e2a"/><stop offset="1" stop-color="#481b53"/></linearGradient>
+  <linearGradient id="hp10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#250e28"/><stop offset="1" stop-color="#4a1b51"/></linearGradient>
+  <linearGradient id="hp11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#260e28"/><stop offset="1" stop-color="#4c1b4f"/></linearGradient>
+  <linearGradient id="hp12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#270e26"/><stop offset="1" stop-color="#4e1b4d"/></linearGradient>
+  <linearGradient id="hp13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#280d26"/><stop offset="1" stop-color="#501a4b"/></linearGradient>
+  <linearGradient id="hp14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#290d24"/><stop offset="1" stop-color="#521a48"/></linearGradient>
+  <linearGradient id="hp15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a0d23"/><stop offset="1" stop-color="#541a46"/></linearGradient>
+  <linearGradient id="hp16" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b0d22"/><stop offset="1" stop-color="#561a44"/></linearGradient>
+  <linearGradient id="hp17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c0d21"/><stop offset="1" stop-color="#581a42"/></linearGradient>
+  <linearGradient id="hp18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d0d20"/><stop offset="1" stop-color="#5a1a40"/></linearGradient>
+  <linearGradient id="hp19" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e0d1f"/><stop offset="1" stop-color="#5c1a3e"/></linearGradient>
+  <linearGradient id="hp20" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f0d1e"/><stop offset="1" stop-color="#5e1a3c"/></linearGradient>
+  <radialGradient id="lvlGrad" cx="50%" cy="50%" r="60%">
+    <stop offset="0" stop-color="#1d6b58"/>
+    <stop offset="0.7" stop-color="#0b2e27"/>
+    <stop offset="1" stop-color="#051310"/>
+  </radialGradient>
+  <radialGradient id="medGrad" cx="40%" cy="35%" r="70%">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
+  </radialGradient>
+</defs>
+<g id="background">
+  <rect x="0" y="0" width="70" height="120" fill="#050909"/>
+  <rect x="0" y="0" width="70" height="120" fill="#0f1615"/>
+  <rect x="0" y="0" width="70" height="120" fill="#000" filter="url(#mist)" opacity="0.45"/>
+  <rect x="0" y="0" width="70" height="120" fill="#000" filter="url(#grain)" opacity="0.35"/>
+</g>
+</svg>

@@ -225,8 +225,9 @@ def defs():
 
 
 # ------------------------------------------------------------------ parts
-def background(x, y, w, h):
-    return f'''<g id="background">
+def background(x, y, w, h, mask=None):
+    m = f' mask="url(#{mask})"' if mask else ""
+    return f'''<g id="background"{m}>
   <rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="{VOID}"/>
   <rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="{STONE}"/>
   <rect x="{f(x)}" y="{f(y)}" width="{f(w)}" height="{f(h)}" fill="#000" filter="url(#mist)" opacity="0.45"/>
@@ -323,13 +324,16 @@ def level_badge():
 </g>'''
 
 
-def art_window():
+def art_window(transparent=False):
     x0, x1, y0, y1 = COL_X0, COL_X1, ART_Y0, ART_Y1
     w, h = x1 - x0, y1 - y0
+    fill = "none" if transparent else "url(#artGrad)"
+    mist = "" if transparent else (f'<rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="#000" '
+                                   f'filter="url(#mist)" opacity="0.3"/>')
     out = [f'''<g id="art-window">
   <rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="none" stroke="{SOUL}" stroke-width="0.9" opacity="0.45" filter="url(#glow)"/>
-  <rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="url(#artGrad)" stroke="{INK}" stroke-width="0.8"/>
-  <rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="#000" filter="url(#mist)" opacity="0.3"/>
+  <rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="{fill}" stroke="{INK}" stroke-width="0.8"/>
+  {mist}
   <g filter="url(#wobble)">
     <rect x="{f(x0)}" y="{f(y0)}" width="{f(w)}" height="{f(h)}" fill="none" stroke="{BONE}" stroke-width="0.4"/>
     <rect x="{f(x0+0.8)}" y="{f(y0+0.8)}" width="{f(w-1.6)}" height="{f(h-1.6)}" fill="none" stroke="{SOUL_DK}" stroke-width="0.22"/>
@@ -461,12 +465,22 @@ def example_fill():
 
 
 # ------------------------------------------------------------------ assemble
-def build(bleed=0.0, example=False):
+def build(bleed=0.0, example=False, transparent_art=None):
+    """transparent_art: cut the art window out so artwork can sit underneath.
+    Defaults to True for blank frames, False for the filled-in example."""
+    if transparent_art is None:
+        transparent_art = not example
     cw, ch = W + 2 * bleed, H + 2 * bleed
+    hole = ""
+    if transparent_art:
+        hole = (f'<mask id="artHole" maskUnits="userSpaceOnUse" x="0" y="0" width="{f(cw)}" height="{f(ch)}">'
+                f'<rect width="{f(cw)}" height="{f(ch)}" fill="#fff"/>'
+                f'<rect x="{f(COL_X0 + bleed)}" y="{f(ART_Y0 + bleed)}" width="{f(COL_X1 - COL_X0)}" '
+                f'height="{f(ART_Y1 - ART_Y0)}" fill="#000"/></mask>')
     body = "\n".join([
         outer_border(),
         health_bar(),
-        art_window(),
+        art_window(transparent_art),
         name_banner(),
         level_badge(),
         stat_plates(),
@@ -475,8 +489,8 @@ def build(bleed=0.0, example=False):
     ])
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{f(cw)}mm" height="{f(ch)}mm" viewBox="0 0 {f(cw)} {f(ch)}">
-{defs()}
-{background(0, 0, cw, ch)}
+{defs().replace("</defs>", hole + "</defs>")}
+{background(0, 0, cw, ch, "artHole" if transparent_art else None)}
 <g id="card" transform="translate({f(bleed)},{f(bleed)})">
 {body}
 </g>
@@ -484,7 +498,20 @@ def build(bleed=0.0, example=False):
 '''
 
 
+def build_background(bleed=0.0):
+    """Just the background texture (dark stone, soul mist, grain), no frame."""
+    cw, ch = W + 2 * bleed, H + 2 * bleed
+    return f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{f(cw)}mm" height="{f(ch)}mm" viewBox="0 0 {f(cw)} {f(ch)}">
+{defs()}
+{background(0, 0, cw, ch)}
+</svg>
+'''
+
+
 if __name__ == "__main__":
+    (OUT / "monster_background.svg").write_text(build_background())
+    (OUT / "monster_background_bleed.svg").write_text(build_background(bleed=3.0))
     (OUT / "monster_frame.svg").write_text(build())
     (OUT / "monster_frame_bleed.svg").write_text(build(bleed=3.0))
     (OUT / "monster_frame_example.svg").write_text(build(example=True))

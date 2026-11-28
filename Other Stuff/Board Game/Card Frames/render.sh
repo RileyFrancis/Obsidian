@@ -3,7 +3,7 @@
 set -e
 D="$(cd "$(dirname "$0")" && pwd)"
 python3 "$D/make_monster_frame.py"
-for n in monster_frame monster_frame_bleed monster_frame_example; do
+for n in monster_frame monster_frame_bleed monster_frame_example monster_background monster_background_bleed; do
   inkscape "$D/$n.svg" --export-type=png --export-dpi=300 --export-filename="$D/$n.png" 2>/dev/null
 done
 # Portable copy with text converted to outlines (looks the same on machines without the fonts)

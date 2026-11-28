@@ -87,8 +87,8 @@
     <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
     <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
   </radialGradient>
-</defs>
-<g id="background">
+<mask id="artHole" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="120"><rect width="70" height="120" fill="#fff"/><rect x="12.6" y="12.9" width="54.2" height="42.5" fill="#000"/></mask></defs>
+<g id="background" mask="url(#artHole)">
   <rect x="0" y="0" width="70" height="120" fill="#050909"/>
   <rect x="0" y="0" width="70" height="120" fill="#0f1615"/>
   <rect x="0" y="0" width="70" height="120" fill="#000" filter="url(#mist)" opacity="0.45"/>
@@ -183,8 +183,8 @@
 </g>
 <g id="art-window">
   <rect x="12.6" y="12.9" width="54.2" height="42.5" fill="none" stroke="#62f5c8" stroke-width="0.9" opacity="0.45" filter="url(#glow)"/>
-  <rect x="12.6" y="12.9" width="54.2" height="42.5" fill="url(#artGrad)" stroke="#030606" stroke-width="0.8"/>
-  <rect x="12.6" y="12.9" width="54.2" height="42.5" fill="#000" filter="url(#mist)" opacity="0.3"/>
+  <rect x="12.6" y="12.9" width="54.2" height="42.5" fill="none" stroke="#030606" stroke-width="0.8"/>
+  
   <g filter="url(#wobble)">
     <rect x="12.6" y="12.9" width="54.2" height="42.5" fill="none" stroke="#d4d9c8" stroke-width="0.4"/>
     <rect x="13.4" y="13.7" width="52.6" height="40.9" fill="none" stroke="#0d4639" stroke-width="0.22"/>
